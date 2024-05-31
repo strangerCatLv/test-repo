@@ -84,6 +84,13 @@
                 "settings" : { },
                 "_hash" : 0.37572755001832925
               }, {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Label",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.6646650442255602
+              }, {
                 "name" : "humidity",
                 "type" : "timeseries",
                 "label" : "humidity",
@@ -97,13 +104,6 @@
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.6117137924199134
-              }, {
-                "name" : "label",
-                "type" : "entityField",
-                "label" : "Label",
-                "color" : "#607d8b",
-                "settings" : { },
-                "_hash" : 0.6646650442255602
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -174,12 +174,10 @@
           "id" : "6aa902a2-d9b5-efdf-79d3-cfed745021eb",
           "alias" : "device",
           "filter" : {
-            "type" : "singleEntity",
-            "resolveMultiple" : false,
-            "singleEntity" : {
-              "entityType" : "DEVICE",
-              "id" : "e0e1dc00-d5d6-11ee-bebe-d97a1bfe6a79"
-            }
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "8bcf4750-1f1b-11ef-8c10-c7b60c0f15a9", "e0e1dc00-d5d6-11ee-bebe-d97a1bfe6a79" ]
           }
         }
       },
