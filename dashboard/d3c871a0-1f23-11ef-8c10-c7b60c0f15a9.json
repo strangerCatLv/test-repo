@@ -40,19 +40,23 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "4px",
             "settings" : {
-              "enableSearch" : true,
+              "entitiesTitle" : "Data Devices",
+              "enableSearch" : false,
               "enableSelectColumnDisplay" : true,
               "enableStickyHeader" : true,
               "enableStickyAction" : true,
+              "showCellActionsMenu" : true,
               "reserveSpaceForHiddenAction" : "true",
               "displayEntityName" : false,
+              "entityNameColumnTitle" : "",
               "displayEntityLabel" : false,
+              "entityLabelColumnTitle" : "",
               "displayEntityType" : false,
               "displayPagination" : true,
               "defaultPageSize" : 10,
               "defaultSortOrder" : "name",
               "useRowStyleFunction" : false,
-              "entitiesTitle" : "Entities"
+              "rowStyleFunction" : ""
             },
             "title" : "Entities table",
             "dropShadow" : true,
@@ -96,14 +100,26 @@
                 "label" : "humidity",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.45878135374493256
+                "_hash" : 0.45878135374493256,
+                "aggregationType" : "NONE",
+                "units" : "%",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "temperature",
                 "type" : "timeseries",
                 "label" : "temperature",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.6117137924199134
+                "_hash" : 0.6117137924199134,
+                "aggregationType" : "NONE",
+                "units" : "°C",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -117,7 +133,13 @@
             "iconColor" : null,
             "titleFont" : null,
             "titleColor" : null,
-            "enableDataExport" : true
+            "enableDataExport" : true,
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : null,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
