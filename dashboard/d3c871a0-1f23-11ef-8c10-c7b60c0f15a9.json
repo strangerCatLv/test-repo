@@ -36,8 +36,8 @@
               }
             },
             "showTitle" : true,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
+            "backgroundColor" : "rgb(161, 173, 177)",
+            "color" : "rgb(244, 67, 54)",
             "padding" : "4px",
             "settings" : {
               "entitiesTitle" : "Data Devices",
@@ -59,7 +59,7 @@
               "rowStyleFunction" : ""
             },
             "title" : "Entities table",
-            "dropShadow" : true,
+            "dropShadow" : false,
             "enableFullscreen" : true,
             "titleStyle" : {
               "fontSize" : "16px",
@@ -128,18 +128,27 @@
             "displayTimewindow" : false,
             "configMode" : "advanced",
             "actions" : { },
-            "showTitleIcon" : false,
+            "showTitleIcon" : true,
             "titleIcon" : "list",
             "iconColor" : null,
-            "titleFont" : null,
-            "titleColor" : null,
-            "enableDataExport" : true,
+            "titleFont" : {
+              "size" : 24,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null
+            },
+            "titleColor" : "#E91E63",
+            "enableDataExport" : false,
             "titleTooltip" : "",
+            "margin" : "",
+            "borderRadius" : "8px",
             "widgetStyle" : { },
             "widgetCss" : "",
             "pageSize" : 1024,
             "units" : null,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "iconSize" : "24px"
           },
           "row" : 0,
           "col" : 0,
