@@ -13,11 +13,15 @@
             "main" : {
               "widgets" : { },
               "gridSettings" : {
-                "backgroundColor" : "#eeeeee",
+                "backgroundColor" : "#B46C00",
                 "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : false,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
