@@ -127,7 +127,22 @@
             } ],
             "displayTimewindow" : false,
             "configMode" : "advanced",
-            "actions" : { },
+            "actions" : {
+              "actionCellButton" : [ {
+                "name" : "details",
+                "icon" : "open_in_new",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "details",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "1f53fb5d-92f7-67fe-f54d-2ff7db60e88e"
+              } ]
+            },
             "showTitleIcon" : true,
             "titleIcon" : "list",
             "iconColor" : null,
