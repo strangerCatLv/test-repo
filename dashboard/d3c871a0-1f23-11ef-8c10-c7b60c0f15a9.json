@@ -52,7 +52,7 @@
               "displayEntityLabel" : false,
               "entityLabelColumnTitle" : "",
               "displayEntityType" : false,
-              "displayPagination" : true,
+              "displayPagination" : false,
               "defaultPageSize" : 10,
               "defaultSortOrder" : "name",
               "useRowStyleFunction" : false,
