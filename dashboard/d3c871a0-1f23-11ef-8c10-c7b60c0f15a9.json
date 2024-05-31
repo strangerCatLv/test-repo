@@ -639,6 +639,16 @@
             "deviceTypes" : [ "Sensor" ],
             "deviceNameFilter" : ""
           }
+        },
+        "eda69ba7-a1e7-b814-9c4d-c3977f858e0c" : {
+          "id" : "eda69ba7-a1e7-b814-9c4d-c3977f858e0c",
+          "alias" : "current",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null
+          }
         }
       },
       "filters" : { },
