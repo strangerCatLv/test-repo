@@ -586,7 +586,7 @@
           }
         },
         "details" : {
-          "name" : "details",
+          "name" : "${entityName}",
           "root" : false,
           "layouts" : {
             "main" : {
