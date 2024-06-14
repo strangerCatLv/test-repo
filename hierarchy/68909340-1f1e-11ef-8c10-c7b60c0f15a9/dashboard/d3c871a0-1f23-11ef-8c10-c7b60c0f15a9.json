@@ -705,7 +705,7 @@
               "widgets" : {
                 "e7bd5fcb-d17a-9f1e-f9b7-2f85d4e5e892" : {
                   "sizeX" : 12,
-                  "sizeY" : 4,
+                  "sizeY" : 3,
                   "row" : 0,
                   "col" : 0
                 },
@@ -717,8 +717,8 @@
                 },
                 "6a0833b4-05e1-d08c-e04a-c7745e247510" : {
                   "sizeX" : 12,
-                  "sizeY" : 4,
-                  "row" : 4,
+                  "sizeY" : 5,
+                  "row" : 3,
                   "col" : 0
                 }
               },
