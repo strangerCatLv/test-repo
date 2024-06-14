@@ -1215,8 +1215,8 @@
             "main" : {
               "widgets" : {
                 "2725541e-6d2e-6ba5-5dfa-61d6bf7b7019" : {
-                  "sizeX" : 6,
-                  "sizeY" : 5,
+                  "sizeX" : 14,
+                  "sizeY" : 10,
                   "row" : 0,
                   "col" : 0
                 }
