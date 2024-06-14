@@ -386,14 +386,14 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "6aa902a2-d9b5-efdf-79d3-cfed745021eb",
+              "entityAliasId" : "4aa6a5d1-ee82-439e-d1c5-f8edd107b9ea",
               "dataKeys" : [ {
                 "name" : "temperature",
                 "type" : "timeseries",
-                "label" : "Temperature",
+                "label" : "temperature",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.4673754080699235
+                "_hash" : 0.8103316487700558
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1283,6 +1283,16 @@
               "entityType" : "ASSET",
               "id" : "568c90a0-1f1d-11ef-8c10-c7b60c0f15a9"
             }
+          }
+        },
+        "4aa6a5d1-ee82-439e-d1c5-f8edd107b9ea" : {
+          "id" : "4aa6a5d1-ee82-439e-d1c5-f8edd107b9ea",
+          "alias" : "current devices",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null
           }
         }
       },
