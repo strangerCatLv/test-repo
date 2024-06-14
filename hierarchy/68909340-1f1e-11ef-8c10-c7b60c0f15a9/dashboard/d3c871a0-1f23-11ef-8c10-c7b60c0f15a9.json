@@ -133,7 +133,7 @@
                 "icon" : "open_in_new",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
+                "type" : "updateDashboardState",
                 "targetDashboardStateId" : "details",
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
