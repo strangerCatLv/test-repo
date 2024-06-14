@@ -134,7 +134,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboard",
-                "targetDashboardStateId" : "list",
+                "targetDashboardStateId" : "default",
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openNewBrowserTab" : false,
