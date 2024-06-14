@@ -128,7 +128,8 @@
             "displayTimewindow" : false,
             "configMode" : "advanced",
             "actions" : {
-              "actionCellButton" : [ {
+              "actionCellButton" : [ ],
+              "headerButton" : [ {
                 "name" : "details",
                 "icon" : "open_in_new",
                 "useShowWidgetActionFunction" : null,
