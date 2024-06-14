@@ -128,8 +128,7 @@
             "displayTimewindow" : false,
             "configMode" : "advanced",
             "actions" : {
-              "actionCellButton" : [ ],
-              "headerButton" : [ {
+              "actionCellButton" : [ {
                 "name" : "details",
                 "icon" : "open_in_new",
                 "useShowWidgetActionFunction" : null,
@@ -148,7 +147,8 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : true,
                 "id" : "1f53fb5d-92f7-67fe-f54d-2ff7db60e88e"
-              } ]
+              } ],
+              "headerButton" : [ ]
             },
             "showTitleIcon" : true,
             "titleIcon" : "list",
