@@ -873,7 +873,7 @@
         "hideToolbar" : false,
         "showFilters" : false,
         "showUpdateDashboardImage" : true,
-        "dashboardCss" : "/*.tb-widget-container > .tb-widget {*/\r\n/*    border-radius: 8px;*/\r\n/*}*/"
+        "dashboardCss" : ".tb-widget-container > .tb-widget {\r\n    border-radius: 8px;\r\n}"
       }
     },
     "customerId" : {
