@@ -138,14 +138,8 @@
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
-                "popoverPreferredPlacement" : "top",
-                "popoverHideOnClickOutside" : true,
-                "popoverHideDashboardToolbar" : true,
-                "popoverWidth" : "200px",
-                "popoverHeight" : "200px",
-                "popoverStyle" : { },
                 "openInSeparateDialog" : false,
-                "openInPopover" : true,
+                "openInPopover" : false,
                 "id" : "1f53fb5d-92f7-67fe-f54d-2ff7db60e88e"
               } ],
               "headerButton" : [ ]
