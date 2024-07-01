@@ -23,6 +23,13 @@
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.29117920705173495
+              }, {
+                "name" : "qr_code",
+                "type" : "timeseries",
+                "label" : "qr_code",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5117938200621586
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -57,7 +64,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "qrCodeTextPattern" : "${barcode}",
+              "qrCodeTextPattern" : "${qr_code}",
               "useQrCodeTextFunction" : false,
               "qrCodeTextFunction" : "return data[0] ? data[0]['entityName'] : '';"
             },
