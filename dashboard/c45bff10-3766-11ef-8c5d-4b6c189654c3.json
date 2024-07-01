@@ -347,7 +347,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\r\n **Current entity**: ${entityName}.\r\n  **Current value**: ${qr_code}.\r\n ",
-              "markdownTextFunction" : "var image = data[0].qr_code;\r\n\r\n// var divs = '<img height=\"100%\" style=\"  display: block; margin-left: auto; margin-right: auto;\" src=\"'+image+'\" >';\r\n\r\nvar text = image;\r\n\r\nreturn text;\r\n",
+              "markdownTextFunction" : "var image = data[0].qr_code;\r\n\r\nvar text = image;\r\n\r\n\r\nreturn text;\r\n",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
             },
