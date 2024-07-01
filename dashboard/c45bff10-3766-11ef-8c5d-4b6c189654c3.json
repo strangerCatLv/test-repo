@@ -198,7 +198,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <title>QR Code Display</title>\r\n  <script src=\"https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js\"></script>\r\n</head>\r\n<body>\r\n  <div id=\"qr-container\" style=\"text-align: center;\"></div>\r\n  \r\n  <script>\r\n    // URL untuk QR code\r\n    var qr = ${qr_code};\r\n\r\n    // Membuat QR code\r\n    var qrCode = new QRious({\r\n      value: qr,\r\n      size: 200 // Ukuran QR code\r\n    });\r\n\r\n    // Menambahkan QR code ke container\r\n    var qrContainer = document.getElementById('qr-container');\r\n    qrContainer.appendChild(qrCode.canvas);\r\n  </script>\r\n</body>\r\n</html>\r\n",
+              "markdownTextPattern" : "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <title>QR Code Display</title>\r\n  <script src=\"https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js\"></script>\r\n</head>\r\n<body>\r\n  <div id=\"qr-container\" style=\"text-align: center;\"></div>\r\n  \r\n  <script>\r\n    // URL untuk QR code\r\n    var qr = 'https://solu.co.id/';\r\n\r\n    // Membuat QR code\r\n    var qrCode = new QRious({\r\n      value: qr,\r\n      size: 200 // Ukuran QR code\r\n    });\r\n\r\n    // Menambahkan QR code ke container\r\n    var qrContainer = document.getElementById('qr-container');\r\n    qrContainer.appendChild(qrCode.canvas);\r\n  </script>\r\n</body>\r\n</html>\r\n",
               "markdownTextFunction" : "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <title>QR Code Display</title>\r\n  <script src=\"https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js\"></script>\r\n</head>\r\n<body>\r\n  <div id=\"qr-container\" style=\"text-align: center;\"></div>\r\n  \r\n  <script>\r\n    // URL untuk QR code\r\n    var qr = 'https://drive.google.com/drive/my-drive';\r\n\r\n    // Membuat QR code\r\n    var qrCode = new QRious({\r\n      value: qr,\r\n      size: 200 // Ukuran QR code\r\n    });\r\n\r\n    // Menambahkan QR code ke container\r\n    var qrContainer = document.getElementById('qr-container');\r\n    qrContainer.appendChild(qrCode.canvas);\r\n  </script>\r\n</body>\r\n</html>\r\n",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
@@ -293,6 +293,83 @@
           "row" : 0,
           "col" : 0,
           "id" : "95a9d995-7b2a-f1d7-dc88-bf7f46c6f6a0"
+        },
+        "830a8213-844a-5c53-56ec-90917e3b973f" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
+              "dataKeys" : [ {
+                "name" : "qr_code",
+                "type" : "timeseries",
+                "label" : "qr_code",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15652372645826196
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1719730283780,
+                  "endTimeMs" : 1719816683780
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "### Markdown/HTML card\r\n **Current entity**: ${entityName}.\r\n  **Current value**: ${qr_code}.\r\n ",
+              "markdownTextFunction" : "var image = data[0].qr_code;\r\n\r\n// var divs = '<img height=\"100%\" style=\"  display: block; margin-left: auto; margin-right: auto;\" src=\"'+image+'\" >';\r\n\r\nvar text = image;\r\n\r\nreturn text;\r\n",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "830a8213-844a-5c53-56ec-90917e3b973f"
         }
       },
       "states" : {
@@ -325,6 +402,12 @@
                   "sizeY" : 3,
                   "row" : 9,
                   "col" : 0
+                },
+                "830a8213-844a-5c53-56ec-90917e3b973f" : {
+                  "sizeX" : 5,
+                  "sizeY" : 9,
+                  "row" : 8,
+                  "col" : 8
                 }
               },
               "gridSettings" : {
