@@ -22,13 +22,7 @@
                 "label" : "qr_code",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.27756842596029774,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value;"
+                "_hash" : 0.6728647843049846
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -203,9 +197,11 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${qr_code}.",
               "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
-              "useMarkdownTextFunction" : false
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
             },
             "title" : "Markdown/HTML Card",
             "showTitleIcon" : false,
