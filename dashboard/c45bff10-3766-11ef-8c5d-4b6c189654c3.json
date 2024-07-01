@@ -167,6 +167,76 @@
           "row" : 0,
           "col" : 0,
           "id" : "3ad4d425-e7af-4c65-8b8e-3abd5a04812b"
+        },
+        "9199213d-091f-426f-c4ed-ed70a28ab03e" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
+              "filterId" : null,
+              "dataKeys" : null,
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1695019258348,
+                  "endTimeMs" : 1695105658348
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n    <img height=\"80px\" id=\"image\"/>\n        <audio id=\"sound\">\n         <source src=\"https://free-sound-effects.net/mp3/01/free-sound-effects-AA2G40A6.mp3\"  type=\"audio/mpeg\" />\n        </audio>\n    </div>\n</div>\n\n\n<script type=\"text/javascript\" charset=\"utf-8\">\n    var image = document.getElementById(\"image\");\n    if (${criticalAlarmsCountOffice} >= 1) {\n        document.getElementById(\"sound\").setAttribute(\"autoplay\", ${criticalAlarmsCountOffice});\n        document.getElementById(\"sound\").setAttribute(\"loop\", ${criticalAlarmsCountOffice});\n        image.src= \"https://media.tenor.com/8vSJsVW-1pQAAAAi/police-car-light-joypixels.gif\";\n    } else {\n        document.getElementById(\"sound\").removeAttribute(\"autoplay\");\n        document.getElementById(\"sound\").removeAttribute(\"loop\");\n        image.src= \"https://cdn-icons-png.flaticon.com/128/2785/2785693.png\";\n    }\n    </script>",
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 0px solid #ccc;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 20px;\n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 20px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}\n\n.card .value {\n    font-size: 38px;\n    font-weight: 200;\n}\n\n.card .description {\n    font-size: 20px;\n    color: #999;\n}\n"
+            },
+            "title" : "New HTML Value Card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "8px",
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "9199213d-091f-426f-c4ed-ed70a28ab03e",
+          "typeFullFqn" : "system.cards.html_value_card"
         }
       },
       "states" : {
@@ -187,6 +257,12 @@
                   "sizeY" : 3,
                   "row" : 0,
                   "col" : 7
+                },
+                "9199213d-091f-426f-c4ed-ed70a28ab03e" : {
+                  "sizeX" : 6,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 16
                 }
               },
               "gridSettings" : {
@@ -213,6 +289,23 @@
             "resolveMultiple" : true,
             "entityType" : "DEVICE",
             "entityList" : [ "d84b9a80-3766-11ef-8c5d-4b6c189654c3" ]
+          }
+        },
+        "db0ac323-6fcf-a72c-0055-e34e9b2fdf64" : {
+          "id" : "db0ac323-6fcf-a72c-0055-e34e9b2fdf64",
+          "alias" : "Asset Devices",
+          "filter" : {
+            "type" : "deviceSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedAsset",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "Contains",
+            "deviceTypes" : [ "Sonoff", "Temperature", "sensor smoke" ]
           }
         }
       },
