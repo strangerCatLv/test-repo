@@ -22,7 +22,13 @@
                 "label" : "qr_code",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.5117938200621586
+                "_hash" : 0.5117938200621586,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var clear ;\n\nreturn value;"
               }, {
                 "name" : "clear",
                 "type" : "timeseries",
