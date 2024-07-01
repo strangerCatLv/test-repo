@@ -256,7 +256,7 @@
             "padding" : "0px",
             "settings" : {
               "onClickState" : {
-                "action" : "EXECUTE_RPC",
+                "action" : "ADD_TIME_SERIES",
                 "executeRpc" : {
                   "method" : "setState",
                   "requestTimeout" : 5000,
@@ -264,14 +264,14 @@
                   "persistentPollingInterval" : 1000
                 },
                 "setAttribute" : {
-                  "key" : "state",
-                  "scope" : "SERVER_SCOPE"
-                },
-                "putTimeSeries" : {
+                  "scope" : "SERVER_SCOPE",
                   "key" : "state"
                 },
+                "putTimeSeries" : {
+                  "key" : "clear"
+                },
                 "valueToData" : {
-                  "type" : "NONE",
+                  "type" : "CONSTANT",
                   "constantValue" : true,
                   "valueToDataFunction" : "/* Return RPC parameters or attribute/time-series value */\nreturn true;"
                 }
@@ -294,6 +294,7 @@
               },
               "appearance" : {
                 "type" : "outlined",
+                "autoScale" : true,
                 "showLabel" : true,
                 "label" : "Clear",
                 "showIcon" : true,
@@ -302,7 +303,6 @@
                 "iconSizeUnit" : "px",
                 "mainColor" : "var(--tb-primary-500)",
                 "backgroundColor" : "#FFFFFF",
-                "autoScale" : true,
                 "customStyle" : {
                   "enabled" : null,
                   "hovered" : null,
