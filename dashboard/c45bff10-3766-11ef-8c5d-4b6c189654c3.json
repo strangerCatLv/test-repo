@@ -405,24 +405,7 @@
             "type" : "entityList",
             "resolveMultiple" : true,
             "entityType" : "DEVICE",
-            "entityList" : [ "d84b9a80-3766-11ef-8c5d-4b6c189654c3" ]
-          }
-        },
-        "db0ac323-6fcf-a72c-0055-e34e9b2fdf64" : {
-          "id" : "db0ac323-6fcf-a72c-0055-e34e9b2fdf64",
-          "alias" : "Asset Devices",
-          "filter" : {
-            "type" : "deviceSearchQuery",
-            "resolveMultiple" : true,
-            "rootStateEntity" : true,
-            "stateEntityParamName" : "selectedAsset",
-            "defaultStateEntity" : null,
-            "rootEntity" : null,
-            "direction" : "FROM",
-            "maxLevel" : 1,
-            "fetchLastLevelOnly" : false,
-            "relationType" : "Contains",
-            "deviceTypes" : [ "Sonoff", "Temperature", "sensor smoke" ]
+            "entityList" : [ "37bac1b0-378c-11ef-8c5d-4b6c189654c3" ]
           }
         }
       },
