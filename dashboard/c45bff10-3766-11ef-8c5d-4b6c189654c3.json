@@ -23,6 +23,20 @@
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.5117938200621586
+              }, {
+                "name" : "clear",
+                "type" : "timeseries",
+                "label" : "clear",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5958793244742218
+              }, {
+                "name" : "refresh",
+                "type" : "attribute",
+                "label" : "refresh",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.4333078211978538
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
