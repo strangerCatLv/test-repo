@@ -78,10 +78,10 @@
             "main" : {
               "widgets" : {
                 "ae40d427-4b53-83bf-4922-70b00a06e58d" : {
-                  "sizeX" : 5,
-                  "sizeY" : 4,
-                  "row" : 0,
-                  "col" : 3
+                  "sizeX" : 6,
+                  "sizeY" : 6,
+                  "row" : 1,
+                  "col" : 6
                 }
               },
               "gridSettings" : {
