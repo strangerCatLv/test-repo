@@ -4,14 +4,86 @@
     "assignedCustomers" : null,
     "configuration" : {
       "description" : "",
-      "widgets" : { },
+      "widgets" : {
+        "ae40d427-4b53-83bf-4922-70b00a06e58d" : {
+          "typeFullFqn" : "system.cards.qr_code",
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "qr_code",
+                "type" : "timeseries",
+                "label" : "qr_code",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.27756842596029774
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1719728057227,
+                  "endTimeMs" : 1719814457227
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "qrCodeTextPattern" : "${entityName}",
+              "useQrCodeTextFunction" : false,
+              "qrCodeTextFunction" : "return data[0] ? data[0]['entityName'] : '';"
+            },
+            "title" : "QR Code",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "ae40d427-4b53-83bf-4922-70b00a06e58d"
+        }
+      },
       "states" : {
         "default" : {
           "name" : "SOUNDBOX V.1.0",
           "root" : true,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "ae40d427-4b53-83bf-4922-70b00a06e58d" : {
+                  "sizeX" : 5,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 3
+                }
+              },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
