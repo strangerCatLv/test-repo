@@ -294,15 +294,15 @@
               },
               "appearance" : {
                 "type" : "outlined",
-                "autoScale" : true,
                 "showLabel" : true,
-                "label" : "Send",
+                "label" : "Clear",
                 "showIcon" : true,
                 "icon" : "arrow_outward",
                 "iconSize" : 24,
                 "iconSizeUnit" : "px",
                 "mainColor" : "var(--tb-primary-500)",
                 "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
                 "customStyle" : {
                   "enabled" : null,
                   "hovered" : null,
