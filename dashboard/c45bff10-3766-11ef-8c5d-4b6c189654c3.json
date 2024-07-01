@@ -17,13 +17,6 @@
               "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "barcode",
-                "type" : "attribute",
-                "label" : "barcode",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.29117920705173495
-              }, {
                 "name" : "qr_code",
                 "type" : "timeseries",
                 "label" : "qr_code",
