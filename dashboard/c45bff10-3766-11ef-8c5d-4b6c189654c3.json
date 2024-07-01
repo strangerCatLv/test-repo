@@ -264,8 +264,8 @@
                   "persistentPollingInterval" : 1000
                 },
                 "setAttribute" : {
-                  "scope" : "SERVER_SCOPE",
-                  "key" : "state"
+                  "key" : "state",
+                  "scope" : "SERVER_SCOPE"
                 },
                 "putTimeSeries" : {
                   "key" : "clear"
@@ -279,23 +279,23 @@
               "disabledState" : {
                 "action" : "GET_TIME_SERIES",
                 "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
                 "getAttribute" : {
-                  "key" : "state",
-                  "scope" : null
+                  "scope" : null,
+                  "key" : "state"
                 },
                 "getTimeSeries" : {
                   "key" : "clear"
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "compareToValue" : false,
-                  "dataToValueFunction" : "if (data != \"false\") {\n    return true;\n}\nreturn false;\n\n/* Should return boolean value */\n// return data;"
-                },
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
+                  "dataToValueFunction" : "if (data != \"true\") {\n    return true;\n}\nreturn false;\n\n/* Should return boolean value */\n// return data;",
+                  "compareToValue" : false
                 }
               },
               "appearance" : {
