@@ -184,7 +184,13 @@
                 "label" : "status",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.3219248650230182
+                "_hash" : 0.3219248650230182,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == \"success\") {\n    return 1;\n} else if (value == \"failed\") {\n    return 0;\n} \n\nreturn value;\n"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
