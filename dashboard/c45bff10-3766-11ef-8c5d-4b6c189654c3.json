@@ -354,6 +354,77 @@
           "row" : 0,
           "col" : 0,
           "id" : "c0b39d47-da23-f866-e5e5-44163e5f79a3"
+        },
+        "f0213dac-2d0f-e882-b748-3dc7e2f1ba13" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
+              "dataKeys" : [ {
+                "name" : "refresh",
+                "type" : "attribute",
+                "label" : "refresh",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9062667080071469
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1719743720906,
+                  "endTimeMs" : 1719830120906
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n        <div class='column'>\n            <h1>Value title</h1>\n            <div class='value'>\n                ${My value:2} units.\n            </div>    \n            <div class='description'>\n                Value description text\n            </div>\n        </div>\n        <img height=\"80px\" src=\"${refresh}\">\n    </div>\n</div>",
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 2px solid #ccc;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 20px;\n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 20px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}\n\n.card .value {\n    font-size: 38px;\n    font-weight: 200;\n}\n\n.card .description {\n    font-size: 20px;\n    color: #999;\n}\n"
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f0213dac-2d0f-e882-b748-3dc7e2f1ba13"
         }
       },
       "states" : {
@@ -386,6 +457,12 @@
                   "sizeY" : 1,
                   "row" : 8,
                   "col" : 13
+                },
+                "f0213dac-2d0f-e882-b748-3dc7e2f1ba13" : {
+                  "sizeX" : 7,
+                  "sizeY" : 3,
+                  "row" : 9,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
