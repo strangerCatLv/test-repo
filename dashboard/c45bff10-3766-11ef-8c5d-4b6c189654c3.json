@@ -243,117 +243,6 @@
           "col" : 0,
           "id" : "9199213d-091f-426f-c4ed-ed70a28ab03e",
           "typeFullFqn" : "system.cards.html_value_card"
-        },
-        "c0b39d47-da23-f866-e5e5-44163e5f79a3" : {
-          "typeFullFqn" : "system.command_button",
-          "type" : "rpc",
-          "sizeX" : 3,
-          "sizeY" : 1,
-          "config" : {
-            "showTitle" : false,
-            "backgroundColor" : "rgba(255, 255, 255, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "onClickState" : {
-                "action" : "ADD_TIME_SERIES",
-                "executeRpc" : {
-                  "method" : "turnOffClear",
-                  "requestTimeout" : 5000,
-                  "requestPersistent" : false,
-                  "persistentPollingInterval" : 1000
-                },
-                "setAttribute" : {
-                  "key" : "state",
-                  "scope" : "SERVER_SCOPE"
-                },
-                "putTimeSeries" : {
-                  "key" : "clear"
-                },
-                "valueToData" : {
-                  "type" : "CONSTANT",
-                  "constantValue" : true,
-                  "valueToDataFunction" : "/* Return RPC parameters or attribute/time-series value */\nreturn true;"
-                }
-              },
-              "disabledState" : {
-                "action" : "GET_TIME_SERIES",
-                "defaultValue" : false,
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
-                },
-                "getAttribute" : {
-                  "scope" : null,
-                  "key" : "state"
-                },
-                "getTimeSeries" : {
-                  "key" : "clear"
-                },
-                "dataToValue" : {
-                  "type" : "FUNCTION",
-                  "dataToValueFunction" : "if (data != \"true\") {\n    return true;\n}\nreturn false;\n\n/* Should return boolean value */\n// return data;",
-                  "compareToValue" : false
-                }
-              },
-              "appearance" : {
-                "type" : "outlined",
-                "autoScale" : true,
-                "showLabel" : true,
-                "label" : "Clear",
-                "showIcon" : true,
-                "icon" : "arrow_outward",
-                "iconSize" : 24,
-                "iconSizeUnit" : "px",
-                "mainColor" : "var(--tb-primary-500)",
-                "backgroundColor" : "#FFFFFF",
-                "customStyle" : {
-                  "enabled" : null,
-                  "hovered" : null,
-                  "pressed" : null,
-                  "activated" : null,
-                  "disabled" : null
-                }
-              }
-            },
-            "title" : "Command button",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "actions" : { },
-            "widgetCss" : "",
-            "noDataDisplayMessage" : "",
-            "titleFont" : {
-              "size" : 12,
-              "sizeUnit" : "px",
-              "family" : null,
-              "weight" : null,
-              "style" : null,
-              "lineHeight" : "1.6"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "pageSize" : 1024,
-            "titleIcon" : "",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "14px",
-            "configMode" : "advanced",
-            "borderRadius" : "4px",
-            "datasources" : [ ],
-            "targetDevice" : {
-              "type" : "entity",
-              "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197"
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "c0b39d47-da23-f866-e5e5-44163e5f79a3"
         }
       },
       "states" : {
@@ -380,12 +269,6 @@
                   "sizeY" : 2,
                   "row" : 0,
                   "col" : 16
-                },
-                "c0b39d47-da23-f866-e5e5-44163e5f79a3" : {
-                  "sizeX" : 3,
-                  "sizeY" : 1,
-                  "row" : 8,
-                  "col" : 13
                 }
               },
               "gridSettings" : {
