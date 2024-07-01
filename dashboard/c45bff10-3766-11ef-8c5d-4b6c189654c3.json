@@ -264,8 +264,8 @@
                   "persistentPollingInterval" : 1000
                 },
                 "setAttribute" : {
-                  "scope" : "SERVER_SCOPE",
-                  "key" : "state"
+                  "key" : "state",
+                  "scope" : "SERVER_SCOPE"
                 },
                 "putTimeSeries" : {
                   "key" : "clear"
@@ -277,7 +277,7 @@
                 }
               },
               "disabledState" : {
-                "action" : "GET_TIME_SERIES",
+                "action" : "DO_NOTHING",
                 "defaultValue" : false,
                 "executeRpc" : {
                   "method" : null,
@@ -300,7 +300,6 @@
               },
               "appearance" : {
                 "type" : "outlined",
-                "autoScale" : true,
                 "showLabel" : true,
                 "label" : "Clear",
                 "showIcon" : true,
@@ -309,6 +308,7 @@
                 "iconSizeUnit" : "px",
                 "mainColor" : "var(--tb-primary-500)",
                 "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
                 "customStyle" : {
                   "enabled" : null,
                   "hovered" : null,
