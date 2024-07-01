@@ -277,19 +277,25 @@
                 }
               },
               "disabledState" : {
-                "action" : "DO_NOTHING",
+                "action" : "GET_TIME_SERIES",
                 "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
                 "getAttribute" : {
-                  "key" : "state",
-                  "scope" : null
+                  "scope" : null,
+                  "key" : "state"
                 },
                 "getTimeSeries" : {
-                  "key" : "state"
+                  "key" : "clear"
                 },
                 "dataToValue" : {
                   "type" : "NONE",
-                  "compareToValue" : true,
-                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                  "compareToValue" : false
                 }
               },
               "appearance" : {
