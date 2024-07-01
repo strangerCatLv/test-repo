@@ -22,7 +22,13 @@
                 "label" : "qr_code",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.27756842596029774
+                "_hash" : 0.27756842596029774,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
