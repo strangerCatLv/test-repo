@@ -23,7 +23,18 @@
           }
         }
       },
-      "entityAliases" : { },
+      "entityAliases" : {
+        "a0c49b70-7d5f-6439-090b-f135065c2197" : {
+          "id" : "a0c49b70-7d5f-6439-090b-f135065c2197",
+          "alias" : "device",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "d84b9a80-3766-11ef-8c5d-4b6c189654c3" ]
+          }
+        }
+      },
       "filters" : { },
       "timewindow" : {
         "displayValue" : "",
