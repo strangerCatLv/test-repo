@@ -251,13 +251,13 @@
             "main" : {
               "widgets" : {
                 "ae40d427-4b53-83bf-4922-70b00a06e58d" : {
-                  "sizeX" : 6,
-                  "sizeY" : 6,
-                  "row" : 4,
-                  "col" : 8
+                  "sizeX" : 9,
+                  "sizeY" : 5,
+                  "row" : 3,
+                  "col" : 6
                 },
                 "3ad4d425-e7af-4c65-8b8e-3abd5a04812b" : {
-                  "sizeX" : 7,
+                  "sizeX" : 9,
                   "sizeY" : 3,
                   "row" : 0,
                   "col" : 6
