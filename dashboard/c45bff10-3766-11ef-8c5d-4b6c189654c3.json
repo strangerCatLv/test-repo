@@ -87,19 +87,19 @@
               "name" : "",
               "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
               "dataKeys" : [ {
-                "name" : "logo",
-                "type" : "timeseries",
-                "label" : "logo",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.2698311103292179
-              }, {
                 "name" : "merchant",
                 "type" : "attribute",
                 "label" : "merchant",
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.9322735162411357
+              }, {
+                "name" : "logo",
+                "type" : "attribute",
+                "label" : "logo",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.9911259766770111
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
