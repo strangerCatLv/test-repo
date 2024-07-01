@@ -140,22 +140,7 @@
             "useDashboardTimewindow" : true,
             "showLegend" : false,
             "actions" : {
-              "headerButton" : [ {
-                "name" : "test",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "mobileAction",
-                "mobileAction" : {
-                  "type" : "scanQrCode",
-                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Scan QR code action was canceled!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert('Empty result', message).subscribe();\n    }, 100);\n}\n",
-                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to scan QR code', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
-                  "processQrCodeFunction" : "// Function body to process result of QR code scanning. \n// - code - scanned QR code\n// - format - scanned QR code format\n\nshowQrCodeDialog('QR Code', code, format);\n\nfunction showQrCodeDialog(title, code, format) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, 'Code: ['+code+']<br>Format: ' + format).subscribe();\n    }, 100);\n}\n"
-                },
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "e7522602-51aa-6956-29e4-92151dcb6e3f"
-              } ]
+              "headerButton" : [ ]
             },
             "displayTimewindow" : true,
             "enableDataExport" : false,
