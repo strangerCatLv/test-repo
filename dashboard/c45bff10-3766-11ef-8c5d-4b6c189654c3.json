@@ -279,7 +279,7 @@
                 }
               },
               "gridSettings" : {
-                "backgroundColor" : "#eeeeee",
+                "backgroundColor" : "#048AD3",
                 "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
