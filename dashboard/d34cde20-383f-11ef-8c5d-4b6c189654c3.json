@@ -315,6 +315,13 @@
                 "color" : "#f44336",
                 "settings" : { },
                 "_hash" : 0.4333078211978538
+              }, {
+                "name" : "status_QR",
+                "type" : "timeseries",
+                "label" : "status_QR",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.5561042976374757
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
