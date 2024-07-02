@@ -263,6 +263,83 @@
           "col" : 0,
           "id" : "9199213d-091f-426f-c4ed-ed70a28ab03e",
           "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "289aac02-e461-f5d4-2df6-6cba7213f4df" : {
+          "typeFullFqn" : "system.cards.qr_code",
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "qr_BCA",
+                "type" : "attribute",
+                "label" : "qr_BCA",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15842092042482947
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1719797775830,
+                  "endTimeMs" : 1719884175830
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "qrCodeTextPattern" : "${qr_BCA}",
+              "useQrCodeTextFunction" : false,
+              "qrCodeTextFunction" : "return data[0] ? data[0]['entityName'] : '';"
+            },
+            "title" : "QR BCA",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "289aac02-e461-f5d4-2df6-6cba7213f4df"
         }
       },
       "states" : {
@@ -289,6 +366,12 @@
                   "sizeY" : 2,
                   "row" : 0,
                   "col" : 16
+                },
+                "289aac02-e461-f5d4-2df6-6cba7213f4df" : {
+                  "sizeX" : 6,
+                  "sizeY" : 5,
+                  "row" : 4,
+                  "col" : 1
                 }
               },
               "gridSettings" : {
