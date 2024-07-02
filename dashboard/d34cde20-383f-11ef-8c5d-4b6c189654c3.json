@@ -1,0 +1,386 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "ae40d427-4b53-83bf-4922-70b00a06e58d" : {
+          "typeFullFqn" : "system.cards.qr_code",
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "qr_code",
+                "type" : "timeseries",
+                "label" : "qr_code",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5117938200621586,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var clear ;\n\nreturn value;"
+              }, {
+                "name" : "clear",
+                "type" : "timeseries",
+                "label" : "clear",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5958793244742218
+              }, {
+                "name" : "refresh",
+                "type" : "attribute",
+                "label" : "refresh",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.4333078211978538
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1719728057227,
+                  "endTimeMs" : 1719814457227
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "qrCodeTextPattern" : "${qr_code}",
+              "useQrCodeTextFunction" : false,
+              "qrCodeTextFunction" : "return data[0] ? data[0]['entityName'] : '';"
+            },
+            "title" : "QR Code",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "ae40d427-4b53-83bf-4922-70b00a06e58d"
+        },
+        "3ad4d425-e7af-4c65-8b8e-3abd5a04812b" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
+              "dataKeys" : [ {
+                "name" : "merchant",
+                "type" : "attribute",
+                "label" : "merchant",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.9322735162411357
+              }, {
+                "name" : "logo",
+                "type" : "attribute",
+                "label" : "logo",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.9911259766770111
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1719728290644,
+                  "endTimeMs" : 1719814690644
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n        <div class='column'>\n            <h1></h1>\n            <h1 class='column'>\n                ${merchant}\n            </h1>    \n            <div class='description'>\n              \n            </div>\n        </div>\n        <img height=\"100px\" src=\"${logo}\">\n    </div>\n</div>",
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   /*border: 8px solid #ccc;*/\n   /*box-sizing: border-box;*/\n   border-radius: 8px;\n}\n\n.card .content {\n   padding: 20px;\n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   /*box-sizing: border-box;*/\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: #0030DDDE;\n    font-size: 40px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n    font-family: Tahoma;\n}\n\n.card .value {\n    font-size: 38px;\n    font-weight: 200;\n}\n\n.card .description {\n    font-size: 20px;\n    color: #999;\n}\n"
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "headerButton" : [ ]
+            },
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "8px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "3ad4d425-e7af-4c65-8b8e-3abd5a04812b"
+        },
+        "9199213d-091f-426f-c4ed-ed70a28ab03e" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "status",
+                "type" : "timeseries",
+                "label" : "status",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.3219248650230182,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == \"success\") {\n    return 1;\n} else if (value == \"failed\") {\n    return 0;\n} \n\nreturn value;\n"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1695019258348,
+                  "endTimeMs" : 1695105658348
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\r\n    <div class='content'>\r\n        <img height=\"80px\" id=\"image\"/>\r\n        <audio id=\"success\">\r\n            <source src=\"https://free-sound-effects.net/mp3/03/free-sound-1674846638.mp3\" type=\"audio/mpeg\" />\r\n        </audio>\r\n        <audio id=\"failed\">\r\n            <source src=\"https://free-sound-effects.net/mp3/03/free-sound-1674744637.mp3\" type=\"audio/mpeg\" />\r\n        </audio>\r\n    </div>\r\n</div>\r\n\r\n<script type=\"text/javascript\" charset=\"utf-8\">\r\n    var image = document.getElementById(\"image\");\r\n\r\n    if (${status} >= 1) {\r\n        document.getElementById(\"failed\").pause();\r\n        document.getElementById(\"success\").play();\r\n        image.src = \"https://media.tenor.com/wnRVmJBFBigAAAAj/blackcoin-crypto.gif\";\r\n    } else if (${status} == 0) {\r\n        document.getElementById(\"success\").pause();\r\n        document.getElementById(\"failed\").play();\r\n        image.src = \"https://media.tenor.com/Gbp8h-dqDHkAAAAj/error.gif\";\r\n    }\r\n</script>\r\n",
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 0px solid #ccc;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 20px;\n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 20px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}\n\n.card .value {\n    font-size: 38px;\n    font-weight: 200;\n}\n\n.card .description {\n    font-size: 20px;\n    color: #999;\n}\n"
+            },
+            "title" : "New HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "8px",
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "9199213d-091f-426f-c4ed-ed70a28ab03e",
+          "typeFullFqn" : "system.cards.html_value_card"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "SOUNDBOX V.1.0",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "ae40d427-4b53-83bf-4922-70b00a06e58d" : {
+                  "sizeX" : 9,
+                  "sizeY" : 5,
+                  "row" : 3,
+                  "col" : 7
+                },
+                "3ad4d425-e7af-4c65-8b8e-3abd5a04812b" : {
+                  "sizeX" : 9,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 7
+                },
+                "9199213d-091f-426f-c4ed-ed70a28ab03e" : {
+                  "sizeX" : 9,
+                  "sizeY" : 2,
+                  "row" : 8,
+                  "col" : 7
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#F6F6F6",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "a0c49b70-7d5f-6439-090b-f135065c2197" : {
+          "id" : "a0c49b70-7d5f-6439-090b-f135065c2197",
+          "alias" : "device",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "37bac1b0-378c-11ef-8c5d-4b6c189654c3" ]
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1719723599920,
+            "endTimeMs" : 1719809999920
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "dashboardLogoUrl" : null,
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "dashboardCss" : ".tb-widget-container > .tb-widget {\r\n    border-radius: 8px;\r\n}"
+      }
+    },
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "d34cde20-383f-11ef-8c5d-4b6c189654c3"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "SOUNDBOX V.1.0",
+    "ownerId" : null,
+    "title" : "SOUNDBOX V.1.0"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
