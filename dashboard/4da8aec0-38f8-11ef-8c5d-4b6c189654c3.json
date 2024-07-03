@@ -13,7 +13,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : null,
-              "entityAliasId" : "ab772a91-e868-61fe-1064-297ecf43983b",
+              "entityAliasId" : "3ac6423c-b370-faa3-ef06-49b66923a942",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "status",
@@ -111,7 +111,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "ab772a91-e868-61fe-1064-297ecf43983b",
+              "entityAliasId" : "3ac6423c-b370-faa3-ef06-49b66923a942",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "qr_code",
