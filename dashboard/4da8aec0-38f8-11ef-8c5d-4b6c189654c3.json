@@ -4,14 +4,228 @@
     "assignedCustomers" : null,
     "configuration" : {
       "description" : "",
-      "widgets" : { },
+      "widgets" : {
+        "e17e8b9f-ea90-5532-8cc3-a2d5ba5255b1" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "ab772a91-e868-61fe-1064-297ecf43983b",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "status",
+                "type" : "timeseries",
+                "label" : "status",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.3219248650230182,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == \"success\") {\n    return 1;\n} else if (value == \"failed\") {\n    return 0;\n} \n\nreturn value;\n"
+              }, {
+                "name" : "clear",
+                "type" : "timeseries",
+                "label" : "clear",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5706906868794679
+              }, {
+                "name" : "status_QR",
+                "type" : "timeseries",
+                "label" : "status_QR",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.8198894203541969
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1695019258348,
+                  "endTimeMs" : 1695105658348
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\r\n    <div class='content'>\r\n        <img height=\"80px\" id=\"image\"/>\r\n        <audio id=\"success\">\r\n            <source src=\"https://free-sound-effects.net/mp3/03/free-sound-1674846638.mp3\" type=\"audio/mpeg\" />\r\n        </audio>\r\n        <audio id=\"failed\">\r\n            <source src=\"https://free-sound-effects.net/mp3/03/free-sound-1674744637.mp3\" type=\"audio/mpeg\" />\r\n        </audio>\r\n    </div>\r\n</div>\r\n\r\n<script type=\"text/javascript\" charset=\"utf-8\">\r\n    var image = document.getElementById(\"image\");\r\n\r\n    if (${status_QR} >= 1) {\r\n        document.getElementById(\"failed\").pause();\r\n        document.getElementById(\"success\").play();\r\n        image.src = \"https://media.tenor.com/Hw7f-4l0zgEAAAAM/check-green.gif\";\r\n    } else if (${status_QR} == 0) {\r\n        document.getElementById(\"success\").pause();\r\n        document.getElementById(\"failed\").play();\r\n        image.src = \"https://media.tenor.com/Gbp8h-dqDHkAAAAj/error.gif\";\r\n    }\r\n</script>\r\n",
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 0px solid #ccc;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 20px;\n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 20px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}\n\n.card .value {\n    font-size: 38px;\n    font-weight: 200;\n}\n\n.card .description {\n    font-size: 20px;\n    color: #999;\n}\n"
+            },
+            "title" : "New HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "8px",
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e17e8b9f-ea90-5532-8cc3-a2d5ba5255b1",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "2ba6fa2a-f254-9c13-3eaf-fdafd6e97fe2" : {
+          "typeFullFqn" : "system.cards.qr_code",
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "ab772a91-e868-61fe-1064-297ecf43983b",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "qr_code",
+                "type" : "timeseries",
+                "label" : "qr_code",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5117938200621586,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var clear ;\n\nreturn value;"
+              }, {
+                "name" : "refresh",
+                "type" : "attribute",
+                "label" : "refresh",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.4333078211978538
+              }, {
+                "name" : "status_QR",
+                "type" : "timeseries",
+                "label" : "status_QR",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.5561042976374757,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == 0) {\n    return \"http://192.168.35.7:5000/input\";\n} else if (value == 1) {\n    return \"https://media.licdn.com/dms/image/C510BAQHEOTT-xdI6mQ/company-logo_200_200/0/1630607622533/solu_filantropi_teknologi_logo?e=2147483647&v=beta&t=_or3Vv-awk89h4TOPaX9QZWyDlnXoYkFY8vcX-4ADFg\";\n} \n\nreturn value;\n"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1719728057227,
+                  "endTimeMs" : 1719814457227
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "qrCodeTextPattern" : "${status_QR}",
+              "useQrCodeTextFunction" : false,
+              "qrCodeTextFunction" : "return data[0] ? data[0]['entityName'] : '';"
+            },
+            "title" : "SCAN API",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2ba6fa2a-f254-9c13-3eaf-fdafd6e97fe2"
+        }
+      },
       "states" : {
         "default" : {
           "name" : "testing",
           "root" : true,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "e17e8b9f-ea90-5532-8cc3-a2d5ba5255b1" : {
+                  "sizeX" : 9,
+                  "sizeY" : 2,
+                  "row" : 5,
+                  "col" : 7
+                },
+                "2ba6fa2a-f254-9c13-3eaf-fdafd6e97fe2" : {
+                  "sizeX" : 9,
+                  "sizeY" : 5,
+                  "row" : 0,
+                  "col" : 7
+                }
+              },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
@@ -32,6 +246,16 @@
             "resolveMultiple" : true,
             "entityType" : "DEVICE",
             "entityList" : [ "2a00e000-38f8-11ef-8c5d-4b6c189654c3" ]
+          }
+        },
+        "ab772a91-e868-61fe-1064-297ecf43983b" : {
+          "id" : "ab772a91-e868-61fe-1064-297ecf43983b",
+          "alias" : "device1",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "3a5826a0-3841-11ef-8c5d-4b6c189654c3" ]
           }
         }
       },
