@@ -5,97 +5,6 @@
     "configuration" : {
       "description" : "",
       "widgets" : {
-        "ae40d427-4b53-83bf-4922-70b00a06e58d" : {
-          "typeFullFqn" : "system.cards.qr_code",
-          "type" : "latest",
-          "sizeX" : 4,
-          "sizeY" : 3.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
-              "filterId" : null,
-              "dataKeys" : [ {
-                "name" : "qr_code",
-                "type" : "timeseries",
-                "label" : "qr_code",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.5117938200621586,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "var clear ;\n\nreturn value;"
-              }, {
-                "name" : "clear",
-                "type" : "timeseries",
-                "label" : "clear",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.5958793244742218
-              }, {
-                "name" : "refresh",
-                "type" : "attribute",
-                "label" : "refresh",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.4333078211978538
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1719728057227,
-                  "endTimeMs" : 1719814457227
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "qrCodeTextPattern" : "${qr_code}",
-              "useQrCodeTextFunction" : false,
-              "qrCodeTextFunction" : "return data[0] ? data[0]['entityName'] : '';"
-            },
-            "title" : "QR Code",
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : false,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "ae40d427-4b53-83bf-4922-70b00a06e58d"
-        },
         "3ad4d425-e7af-4c65-8b8e-3abd5a04812b" : {
           "typeFullFqn" : "system.cards.html_value_card",
           "type" : "latest",
@@ -389,12 +298,6 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "ae40d427-4b53-83bf-4922-70b00a06e58d" : {
-                  "sizeX" : 9,
-                  "sizeY" : 5,
-                  "row" : 3,
-                  "col" : 14
-                },
                 "3ad4d425-e7af-4c65-8b8e-3abd5a04812b" : {
                   "sizeX" : 9,
                   "sizeY" : 3,
@@ -411,7 +314,7 @@
                   "sizeX" : 9,
                   "sizeY" : 5,
                   "row" : 3,
-                  "col" : 0
+                  "col" : 7
                 }
               },
               "gridSettings" : {
