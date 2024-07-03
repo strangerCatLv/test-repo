@@ -3,7 +3,78 @@
   "entity" : {
     "assignedCustomers" : null,
     "configuration" : {
-      "description" : ""
+      "description" : "",
+      "widgets" : { },
+      "states" : {
+        "default" : {
+          "name" : "testing",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "3ac6423c-b370-faa3-ef06-49b66923a942" : {
+          "id" : "3ac6423c-b370-faa3-ef06-49b66923a942",
+          "alias" : "device",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "2a00e000-38f8-11ef-8c5d-4b6c189654c3" ]
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1719896057918,
+            "endTimeMs" : 1719982457918
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
     },
     "customerId" : null,
     "externalId" : null,
