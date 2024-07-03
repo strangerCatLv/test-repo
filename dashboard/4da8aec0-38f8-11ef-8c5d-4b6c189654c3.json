@@ -204,6 +204,81 @@
           "row" : 0,
           "col" : 0,
           "id" : "2ba6fa2a-f254-9c13-3eaf-fdafd6e97fe2"
+        },
+        "ab6f2780-f376-6971-598d-026cc7b8b382" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "3ac6423c-b370-faa3-ef06-49b66923a942",
+              "dataKeys" : [ {
+                "name" : "nominal",
+                "type" : "timeseries",
+                "label" : "nominal",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.7787953208199161
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1719896304873,
+                  "endTimeMs" : 1719982704873
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n        <div class='column'>\n            <div class=\"nominal\">NOMINAL</div>\n            <div class='value'>\n                ${nominal:0}\n            </div>    \n            <div class='description'>\n            </div>\n        </div>\n    </div>\n</div>",
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 2px solid #ccc;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 20px;\n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 20px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}\n\n.card .value {\n    font-size: 40px;\n    font-weight: 600;\n}\n\n.card .description {\n    font-size: 20px;\n    color: #999;\n}\n\n.nominal {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 35px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}"
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "ab6f2780-f376-6971-598d-026cc7b8b382"
         }
       },
       "states" : {
@@ -216,12 +291,18 @@
                 "e17e8b9f-ea90-5532-8cc3-a2d5ba5255b1" : {
                   "sizeX" : 9,
                   "sizeY" : 2,
-                  "row" : 5,
+                  "row" : 7,
                   "col" : 7
                 },
                 "2ba6fa2a-f254-9c13-3eaf-fdafd6e97fe2" : {
                   "sizeX" : 9,
                   "sizeY" : 5,
+                  "row" : 2,
+                  "col" : 7
+                },
+                "ab6f2780-f376-6971-598d-026cc7b8b382" : {
+                  "sizeX" : 9,
+                  "sizeY" : 2,
                   "row" : 0,
                   "col" : 7
                 }
