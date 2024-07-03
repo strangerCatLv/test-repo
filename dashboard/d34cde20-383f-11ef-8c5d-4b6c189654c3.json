@@ -187,116 +187,6 @@
           "id" : "9199213d-091f-426f-c4ed-ed70a28ab03e",
           "typeFullFqn" : "system.cards.html_value_card"
         },
-        "0f5ef670-197b-df4a-3f01-8618bd8cb51c" : {
-          "typeFullFqn" : "system.cards.qr_code",
-          "type" : "latest",
-          "sizeX" : 4,
-          "sizeY" : 3.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "a0c49b70-7d5f-6439-090b-f135065c2197",
-              "filterId" : null,
-              "dataKeys" : [ {
-                "name" : "qr_code",
-                "type" : "timeseries",
-                "label" : "qr_code",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.5117938200621586,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "var clear ;\n\nreturn value;"
-              }, {
-                "name" : "clear",
-                "type" : "timeseries",
-                "label" : "clear",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.5958793244742218,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == 0) {\n    return \"http://192.168.88.58:5000/trigger\";\n} else if (value == 1) {\n    return \"https://media.licdn.com/dms/image/C510BAQHEOTT-xdI6mQ/company-logo_200_200/0/1630607622533/solu_filantropi_teknologi_logo?e=2147483647&v=beta&t=_or3Vv-awk89h4TOPaX9QZWyDlnXoYkFY8vcX-4ADFg\";\n} \n\nreturn value;\n"
-              }, {
-                "name" : "refresh",
-                "type" : "attribute",
-                "label" : "refresh",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.4333078211978538
-              }, {
-                "name" : "status_QR",
-                "type" : "timeseries",
-                "label" : "status_QR",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.5561042976374757
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1719728057227,
-                  "endTimeMs" : 1719814457227
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : true,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "qrCodeTextPattern" : "${clear}",
-              "useQrCodeTextFunction" : false,
-              "qrCodeTextFunction" : "return data[0] ? data[0]['entityName'] : '';"
-            },
-            "title" : "SCAN API",
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : false,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "0f5ef670-197b-df4a-3f01-8618bd8cb51c"
-        },
         "aaec24f5-23f4-88cb-9bce-7c4bbd18e41c" : {
           "typeFullFqn" : "system.cards.qr_code",
           "type" : "latest",
@@ -420,17 +310,11 @@
                   "row" : 8,
                   "col" : 7
                 },
-                "0f5ef670-197b-df4a-3f01-8618bd8cb51c" : {
-                  "sizeX" : 9,
-                  "sizeY" : 5,
-                  "row" : 3,
-                  "col" : 7
-                },
                 "aaec24f5-23f4-88cb-9bce-7c4bbd18e41c" : {
                   "sizeX" : 9,
                   "sizeY" : 5,
                   "row" : 3,
-                  "col" : 16
+                  "col" : 7
                 }
               },
               "gridSettings" : {
