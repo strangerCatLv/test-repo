@@ -222,6 +222,13 @@
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.7787953208199161
+              }, {
+                "name" : "logo_BRI",
+                "type" : "attribute",
+                "label" : "logo_BRI",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.9013322859200137
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -279,6 +286,84 @@
           "row" : 0,
           "col" : 0,
           "id" : "ab6f2780-f376-6971-598d-026cc7b8b382"
+        },
+        "dc1e0d0b-a108-accd-bf68-27cc29361f49" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "3ac6423c-b370-faa3-ef06-49b66923a942",
+              "dataKeys" : [ {
+                "name" : "nominal",
+                "type" : "timeseries",
+                "label" : "nominal",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.16932467565019071
+              }, {
+                "name" : "logo_BRI",
+                "type" : "attribute",
+                "label" : "logo_BRI",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.7743185972790421
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1720324994016,
+                  "endTimeMs" : 1720411394016
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n        <div class='column'>\n            <div class=\"nominal\">NOminal</div>\n            <div class='value'>\n                ${nominal:0}\n            </div>    \n            <div class='description'>\n                \n            </div>\n        </div>\n        <img height=\"80px\" src=\"${logo_BRI}\" />\n    </div>\n</div>",
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 2px solid #ccc;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 20px;\n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 20px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}\n\n.card .value {\n    font-size: 40px;\n    font-weight: 600;\n}\n\n.card .description {\n    font-size: 20px;\n    color: #999;\n}\n\n.nominal {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 35px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}"
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "dc1e0d0b-a108-accd-bf68-27cc29361f49"
         }
       },
       "states" : {
@@ -301,6 +386,12 @@
                   "col" : 7
                 },
                 "ab6f2780-f376-6971-598d-026cc7b8b382" : {
+                  "sizeX" : 7,
+                  "sizeY" : 2,
+                  "row" : 5,
+                  "col" : 16
+                },
+                "dc1e0d0b-a108-accd-bf68-27cc29361f49" : {
                   "sizeX" : 9,
                   "sizeY" : 2,
                   "row" : 0,
