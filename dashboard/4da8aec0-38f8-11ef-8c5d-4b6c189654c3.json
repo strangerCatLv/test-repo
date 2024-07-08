@@ -283,7 +283,7 @@
       },
       "states" : {
         "default" : {
-          "name" : "testing",
+          "name" : "${entityName}",
           "root" : true,
           "layouts" : {
             "main" : {
