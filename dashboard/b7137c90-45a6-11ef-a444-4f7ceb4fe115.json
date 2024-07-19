@@ -503,95 +503,6 @@
           "id" : "37fb2bb0-9e99-5b51-0993-c73828243cd0",
           "typeFullFqn" : "system.alarm_widgets.alarms_table"
         },
-        "b25897b5-505f-1ff2-ffad-4950c2cdf052" : {
-          "type" : "latest",
-          "sizeX" : 5,
-          "sizeY" : 3.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : null,
-              "entityAliasId" : "4bb50567-53dc-78d3-c026-4a0f38556dd4",
-              "filterId" : null,
-              "dataKeys" : [ ]
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1682924137231,
-                  "endTimeMs" : 1683010537231
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 2500
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "useMarkdownTextFunction" : true,
-              "markdownCss" : ".header {\n    height: 100%;\n    padding: 0 0 0 16px;\n} \n\n.header .mat-icon.title-icon {\n    width: 40px;\n    height: 40px;\n}\n\n.header .title {\n    font-size: 18px;\n    font-weight: 500;\n    color: #28232D;\n}\n\n.header .subtitle {\n    font-size: 13px;\n    font-weight: normal;\n    color: #757575;\n}\n",
-              "markdownTextFunction" : "\nvar darkMode = $('.tb-dashboard-page').hasClass('dark');\nvar darkModeExpression = darkMode ? '(darkMode !== false)' : 'darkMode';\n\nreturn '<div class=\"header\" fxLayout=\"row\" fxLayoutAlign=\"start stretch\" fxLayoutGap=\"8px\">' +\n        '<div fxLayout=\"column\" fxLayoutAlign=\"center\"><button id=\"go-back\" matTooltip=\"Go back\" type=\"button\" mat-icon-button><mat-icon>arrow_back</mat-icon></button></div>' +\n        '<div fxFlex fxLayout=\"column\" fxLayoutAlign=\"center\">' +\n           '<div class=\"title\">${entityLabel}</div>' +\n           '<div class=\"subtitle\">${entityName}</div>' +\n        '</div>' +\n        '<div fxLayout=\"column\" fxLayoutAlign=\"center\" style=\"padding-right: 24px;\">' +\n            '<button (click)=\"darkMode = '+darkModeExpression+' ? false : true\" id=\"dark-mode-switch\" mat-icon-button matTooltip=\"{{ '+ darkModeExpression +' ? &quot;Switch to light mode&quot; : &quot;Switch to dark mode&quot; }}\"><mat-icon>{{ '+ darkModeExpression +' ? &quot;light_mode&quot; : &quot;dark_mode&quot; }}</mat-icon></button>' +\n        '</div>' +\n'</div>';\n"
-            },
-            "title" : "New Markdown/HTML Card",
-            "showTitleIcon" : false,
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "showLegend" : false,
-            "widgetCss" : "",
-            "noDataDisplayMessage" : "",
-            "actions" : {
-              "elementClick" : [ {
-                "name" : "go-back",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "widgetContext.stateController.navigatePrevState(0);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "fd666ec9-cd5a-af01-47e1-b7e53911f87a"
-              }, {
-                "name" : "dark-mode-switch",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "$('.tb-dashboard-page').toggleClass('dark');",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "4431866e-87da-0a87-0fe0-1bd7bd404081"
-              } ]
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "b25897b5-505f-1ff2-ffad-4950c2cdf052",
-          "typeFullFqn" : "system.cards.markdown_card"
-        },
         "a0935d37-b7e9-096f-bd01-5bd9100fcc7b" : {
           "typeFullFqn" : "system.time_series_chart",
           "type" : "timeseries",
@@ -3710,44 +3621,37 @@
                 "37fb2bb0-9e99-5b51-0993-c73828243cd0" : {
                   "sizeX" : 8,
                   "sizeY" : 11,
-                  "row" : 1,
+                  "row" : 0,
                   "col" : 16,
                   "mobileOrder" : 1,
                   "mobileHeight" : 8
-                },
-                "b25897b5-505f-1ff2-ffad-4950c2cdf052" : {
-                  "sizeX" : 24,
-                  "sizeY" : 1,
-                  "row" : 0,
-                  "col" : 0,
-                  "mobileOrder" : 0
                 },
                 "4382b879-89e7-ac74-3fb6-f3c58357d5a9" : {
                   "sizeX" : 8,
                   "sizeY" : 5,
                   "mobileOrder" : 2,
-                  "row" : 1,
+                  "row" : 0,
                   "col" : 0
                 },
                 "f1b11dad-632c-9640-fa79-7a7584489057" : {
                   "sizeX" : 8,
                   "sizeY" : 5,
                   "mobileOrder" : 3,
-                  "row" : 1,
+                  "row" : 0,
                   "col" : 8
                 },
                 "4425f3f7-b476-7ac8-3831-b9fc093f890c" : {
                   "sizeX" : 8,
                   "sizeY" : 6,
                   "mobileOrder" : 4,
-                  "row" : 6,
+                  "row" : 5,
                   "col" : 0
                 },
                 "2ec088d7-1885-3850-8d00-cc44bbda329e" : {
                   "sizeX" : 8,
                   "sizeY" : 6,
                   "mobileOrder" : 5,
-                  "row" : 6,
+                  "row" : 5,
                   "col" : 8
                 }
               },
