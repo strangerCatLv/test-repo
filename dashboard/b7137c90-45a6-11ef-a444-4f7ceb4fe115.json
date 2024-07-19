@@ -3771,10 +3771,10 @@
           "id" : "2bb2294a-838e-2048-409e-448b9e5c377b",
           "alias" : "Energy meter",
           "filter" : {
-            "type" : "deviceType",
+            "type" : "entityList",
             "resolveMultiple" : true,
-            "deviceTypes" : [ "energy meter" ],
-            "deviceNameFilter" : ""
+            "entityType" : "DEVICE",
+            "entityList" : [ "23940bc0-45a5-11ef-a444-4f7ceb4fe115", "2eca6070-45a5-11ef-a444-4f7ceb4fe115" ]
           }
         },
         "4bb50567-53dc-78d3-c026-4a0f38556dd4" : {
