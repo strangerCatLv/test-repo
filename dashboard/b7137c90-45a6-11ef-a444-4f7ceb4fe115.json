@@ -1049,7 +1049,7 @@
               "hideTimezone" : false,
               "selectedTab" : 1,
               "history" : {
-                "historyType" : 2,
+                "historyType" : 0,
                 "timewindowMs" : 86400000,
                 "interval" : 7200000,
                 "fixedTimewindow" : {
@@ -1059,8 +1059,8 @@
                 "quickInterval" : "YESTERDAY"
               },
               "aggregation" : {
-                "type" : "AVG",
-                "limit" : 5000
+                "type" : "NONE",
+                "limit" : 50000
               },
               "timezone" : null
             },
@@ -2606,7 +2606,7 @@
               "fontWeight" : 700,
               "padding" : "5px 10px 5px 0px"
             },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
@@ -3020,7 +3020,7 @@
               "name" : "",
               "entityAliasId" : "4bb50567-53dc-78d3-c026-4a0f38556dd4",
               "dataKeys" : [ {
-                "name" : "amperage",
+                "name" : "ampere",
                 "type" : "timeseries",
                 "label" : "${entityName}",
                 "color" : "#ED7C2A",
@@ -3322,7 +3322,7 @@
               "fontWeight" : 700,
               "padding" : "5px 10px 5px 0px"
             },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
