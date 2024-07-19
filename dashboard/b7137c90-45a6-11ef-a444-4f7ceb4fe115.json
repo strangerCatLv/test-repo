@@ -3769,17 +3769,17 @@
       "entityAliases" : {
         "2bb2294a-838e-2048-409e-448b9e5c377b" : {
           "id" : "2bb2294a-838e-2048-409e-448b9e5c377b",
-          "alias" : "Energy meters",
+          "alias" : "Energy meter",
           "filter" : {
             "type" : "deviceType",
             "resolveMultiple" : true,
-            "deviceNameFilter" : "",
-            "deviceTypes" : [ "energy-meter" ]
+            "deviceTypes" : [ "energy meter" ],
+            "deviceNameFilter" : ""
           }
         },
         "4bb50567-53dc-78d3-c026-4a0f38556dd4" : {
           "id" : "4bb50567-53dc-78d3-c026-4a0f38556dd4",
-          "alias" : "Selected energy meter",
+          "alias" : "Selected device",
           "filter" : {
             "type" : "stateEntity",
             "resolveMultiple" : false,
