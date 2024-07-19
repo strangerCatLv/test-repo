@@ -122,9 +122,10 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
-                "postFuncBody" : null
+                "postFuncBody" : null,
+                "aggregationType" : "NONE"
               }, {
-                "name" : "amperage",
+                "name" : "ampere",
                 "type" : "timeseries",
                 "label" : "Amperage, V",
                 "color" : "#4caf50",
@@ -142,7 +143,8 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
-                "postFuncBody" : null
+                "postFuncBody" : null,
+                "aggregationType" : "NONE"
               }, {
                 "name" : "power",
                 "type" : "timeseries",
@@ -163,7 +165,10 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              } ]
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "showTitleIcon" : false,
             "titleTooltip" : "",
@@ -187,7 +192,8 @@
               } ]
             },
             "pageSize" : 1024,
-            "configMode" : "advanced"
+            "configMode" : "advanced",
+            "displayTimewindow" : true
           },
           "row" : 0,
           "col" : 0,
@@ -1346,7 +1352,7 @@
               "fontWeight" : 700,
               "padding" : "5px 10px 5px 0px"
             },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
@@ -1404,7 +1410,7 @@
               "name" : "",
               "entityAliasId" : "2bb2294a-838e-2048-409e-448b9e5c377b",
               "dataKeys" : [ {
-                "name" : "amperage",
+                "name" : "ampere",
                 "type" : "timeseries",
                 "label" : "${entityName}",
                 "color" : "#2196f3",
@@ -1702,7 +1708,7 @@
               "fontWeight" : 700,
               "padding" : "5px 10px 5px 0px"
             },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
