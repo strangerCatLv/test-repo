@@ -17,16 +17,18 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
+              "title" : "Switch control SDK",
+              "showOnOffLabels" : true,
               "initialValue" : true,
               "retrieveValueMethod" : "attribute",
               "valueKey" : "active",
+              "getValueMethod" : "getValue",
               "parseValueFunction" : "return data ? true : false;",
               "setValueMethod" : "active",
               "convertValueFunction" : "return value;",
               "requestTimeout" : 500,
               "requestPersistent" : false,
-              "title" : "Switch control",
-              "showOnOffLabels" : true
+              "persistentPollingInterval" : 5000
             },
             "title" : "Switch Control",
             "dropShadow" : true,
