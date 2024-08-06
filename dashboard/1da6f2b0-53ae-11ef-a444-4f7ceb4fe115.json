@@ -359,20 +359,34 @@
                 "1fd2dcd0-a547-3b3c-e279-c86a881be156" : {
                   "sizeX" : 3,
                   "sizeY" : 3,
-                  "row" : 9,
-                  "col" : 0
+                  "row" : 1,
+                  "col" : 2
                 }
               },
               "gridSettings" : {
-                "backgroundColor" : "#eeeeee",
-                "columns" : 24,
+                "backgroundColor" : "#A1ADB1",
+                "columns" : 12,
                 "margin" : 10,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
                 "autoFillHeight" : true,
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70
+                "mobileRowHeight" : 70,
+                "layoutDimension" : {
+                  "type" : "percentage",
+                  "leftWidthPercentage" : 69
+                }
+              }
+            },
+            "right" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 12,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
               }
             }
           }
