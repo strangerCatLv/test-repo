@@ -359,17 +359,17 @@
                 "1fd2dcd0-a547-3b3c-e279-c86a881be156" : {
                   "sizeX" : 3,
                   "sizeY" : 3,
-                  "row" : 0,
-                  "col" : 3
+                  "row" : 9,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
-                "margin" : 0,
+                "margin" : 10,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
-                "autoFillHeight" : false,
+                "autoFillHeight" : true,
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70
