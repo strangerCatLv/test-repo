@@ -3,7 +3,429 @@
   "entity" : {
     "assignedCustomers" : null,
     "configuration" : {
-      "description" : ""
+      "description" : "",
+      "widgets" : {
+        "e73deefd-5111-f4bc-a483-da21f19e5cbc" : {
+          "typeFullFqn" : "system.alarm_count",
+          "type" : "latest",
+          "sizeX" : 3.5,
+          "sizeY" : 1.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "alarmCount",
+              "name" : "",
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "settings" : { },
+                "_hash" : 0.07457036887421653
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1722832907538,
+                  "endTimeMs" : 1722919307538
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "showLabel" : true,
+              "label" : "Total",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.54)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "showIcon" : true,
+              "iconSize" : 20,
+              "iconSizeUnit" : "px",
+              "icon" : "warning",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "rgba(255, 255, 255, 1)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "showIconBackground" : true,
+              "iconBackgroundSize" : 36,
+              "iconBackgroundSizeUnit" : "px",
+              "iconBackgroundColor" : {
+                "type" : "range",
+                "color" : "rgba(0, 105, 92, 1)",
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ {
+                    "from" : 0,
+                    "to" : 0,
+                    "color" : "rgba(0, 105, 92, 1)"
+                  }, {
+                    "from" : 1,
+                    "to" : null,
+                    "color" : "rgba(209, 39, 48, 1)"
+                  } ]
+                },
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "24px"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "showChevron" : false,
+              "chevronSize" : 24,
+              "chevronSizeUnit" : "px",
+              "chevronColor" : "rgba(0, 0, 0, 0.38)",
+              "layout" : "column"
+            },
+            "title" : "Alarm count",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "",
+            "decimals" : null,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "basic",
+            "displayTimewindow" : true,
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "iconSize" : "14px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : null,
+                "weight" : null,
+                "style" : null,
+                "lineHeight" : "1"
+              },
+              "color" : null
+            },
+            "titleColor" : "rgba(0, 0, 0, 0.54)",
+            "enableDataExport" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e73deefd-5111-f4bc-a483-da21f19e5cbc"
+        },
+        "1fd2dcd0-a547-3b3c-e279-c86a881be156" : {
+          "typeFullFqn" : "system.cards.value_card",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "03218d90-d6fb-11ee-bebe-d97a1bfe6a79",
+              "dataKeys" : [ {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "Temperature",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2083209882976078
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1722832940257,
+                  "endTimeMs" : 1722919340257
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "labelPosition" : "top",
+              "layout" : "square",
+              "showLabel" : true,
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 16,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "showIcon" : true,
+              "iconSize" : 40,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "#5469FF",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 52,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "showDate" : true,
+              "dateFormat" : {
+                "format" : null,
+                "lastUpdateAgo" : true,
+                "custom" : false
+              },
+              "dateFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "dateColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.38)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "autoScale" : true
+            },
+            "title" : "Value card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "°C",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "basic",
+            "displayTimewindow" : true,
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "enableDataExport" : false,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "iconSize" : "14px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : null,
+                "weight" : null,
+                "style" : null,
+                "lineHeight" : "1"
+              },
+              "color" : null
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "1fd2dcd0-a547-3b3c-e279-c86a881be156"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "IoT",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "e73deefd-5111-f4bc-a483-da21f19e5cbc" : {
+                  "sizeX" : 3,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "1fd2dcd0-a547-3b3c-e279-c86a881be156" : {
+                  "sizeX" : 3,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 3
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : false,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : { },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1722832876502,
+            "endTimeMs" : 1722919276502
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : true,
+        "dashboardLogoUrl" : "tb-image:ZGlzdHJpY3RzX2Rhc2hib2FyZF93aWRnZXRfZGlzdHJpY3RzX21hcF9tYXJrZXJfaW1hZ2Uuc3Zn:IkRpc3RyaWN0cyIgZGFzaGJvYXJkIHdpZGdldCAiRGlzdHJpY3RzIE1hcCIgbWFya2VyIGltYWdl;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnNDQwOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTUwIDE1MCI+CiAgPHN0eWxlPgogICAgLnN0MHtvcGFjaXR5OjAuODkyO2VuYWJsZS1iYWNrZ3JvdW5kOm5ldyA7fSAuc3Qxe2ZpbGw6dXJsKCNTVkdJRF8xXyk7fSAuc3Qye2ZpbGw6I0ZGM0UwMTt9IC5zdDN7ZmlsbDojRkZGRkZGO30KICA8L3N0eWxlPgogIDxnIGlkPSJsYXllcjEiPgogICAgPGcgaWQ9InBhdGg2ODgxLTMtNS01LTEtOC00LTQtNy04IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQ2LjQzOCAtMjc2LjAyOCkiIGNsYXNzPSJzdDAiPgogICAgICA8cmFkaWFsR3JhZGllbnQgaWQ9IlNWR0lEXzFfIiBjeD0iMTI5Ni41MTMiIGN5PSIxNzQ0LjQwNiIgcj0iNDkuOTAxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC42NzkzIC4wMDc2IC0uNTA5IC41NjEyIDI1Mi41MDMgLTU5My4zNCkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjAiLz4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjE4OCIvPgogICAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjg1LjYgMzg4LjVjMTAuMy0xMi40IDQuNC0yMi40LTE0LjQtMjIuNC0xOC45IDAtNDIuNCAxMC01My45IDIyLjQtMTYuOCAxOCAuNCAyMy41LS4yIDM1LS4xIDEuOCAzLjkgMS44IDcgMCAxOS44LTExLjUgNDYuNS0xNyA2MS41LTM1Ii8+CiAgICA8L2c+CiAgICA8cGF0aCBpZD0icGF0aDY4ODEtMy01LTUtMS04LTQtNCIgY2xhc3M9InN0MiIgZD0iTTEyNC43IDY5LjFjLS45LTI3LjUtMjIuMy00OS44LTQ5LjgtNDkuOHMtNDkgMjIuMy00OS44IDQ5LjhjLTEuMyA0MC4xIDMwLjcgNTIuMiA0NC43IDc4IDIuMiA0IDggNCAxMC4xIDAgMTQuMS0yNS44IDQ2LjEtMzcuOSA0NC44LTc4Ii8+CiAgPC9nPgogIDxnIGlkPSJnNDkyOCI+CiAgICA8Y2lyY2xlIGlkPSJwYXRoNDk3OCIgY2xhc3M9InN0MiIgY3g9Ijc0LjkiIGN5PSI2OS4xIiByPSI0OS45Ii8+CiAgICA8ZyBpZD0iZzQ5MTUiPgogICAgICA8cGF0aCBpZD0icGF0aDY4ODMtMi0zLTUtMi00LTktNC05IiBjbGFzcz0ic3QzIiBkPSJNNzQuOCAxMDYuNGMtMjAuNiAwLTM3LjQtMTYuNy0zNy40LTM3LjQgMC0yMC42IDE2LjctMzcuNCAzNy40LTM3LjQgMjAuNiAwIDM3LjQgMTYuNyAzNy40IDM3LjRzLTE2LjcgMzcuNC0zNy40IDM3LjQiLz4KICAgIDwvZz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTk3LjQgODguOGMxLjEtLjIgMS45LTEuNSAxLjktMi45di0xLjhjMC0xLjYtMS0yLjktMi40LTIuOS0xLjMgMC0yLjQgMS4zLTIuNCAyLjl2MS44YzAgMS40LjggMi42IDEuOSAyLjl2My43aC0zLjNWNzIuNmwtNS0xLjl2MjEuN2gtLjZWNjIuMWwtNS0xLjl2MzIuM2gtLjZWNDguMWgtMS41di0xLjdoLTEuOHYtMS42aC0yLjN2LS41YzAtLjMtLjItLjYtLjUtLjZoLS4ybC0uMy03LjFjMC0uMS0uMS0uMi0uMi0uMnMtLjIuMS0uMi4ybC0uMyA3LjFoLS4yYy0uMiAwLS41LjItLjUuNnYuNWgtMi4zdjEuNmgtMS44djEuN2gtMS41djQ0LjNoLS42VjUzLjJsLTEwLjYgMS45djM3LjJoLTMuNHYtMy43YzEuMS0uMiAxLjktMS41IDEuOS0yLjl2LTEuOGMwLTEuNi0xLTIuOS0yLjQtMi45cy0yLjQgMS4zLTIuNCAyLjl2MS44YzAgMS40LjggMi42IDEuOSAyLjl2My43aC0xLjl2MS41aDQ4Ljh2LTEuNWgtMS45di0zLjdoLS4zem0tNy43LTE0LjFoMS44djIuNmgtMS44di0yLjZ6bTAgNC40aDEuOHYyLjZoLTEuOHYtMi42em0wIDQuNGgxLjhWODZoLTEuOHYtMi41em0wIDQuM2gxLjh2Mi42aC0xLjh2LTIuNnptLTUuNi0yMy42aDEuOHY1aC0xLjh2LTV6bTAgN2gxLjh2NWgtMS44di01em0wIDcuMWgxLjh2NWgtMS44di01em0wIDdoMS44djVoLTEuOHYtNXpNNjMuMiA1Ny40SDY1VjYwaC0xLjh2LTIuNnptMCA0LjNINjV2Mi42aC0xLjh2LTIuNnptMCA0LjRINjV2Mi42aC0xLjh2LTIuNnptMCA0LjNINjVWNzNoLTEuOHYtMi42em0wIDQuM0g2NXYyLjZoLTEuOHYtMi42em0wIDQuNEg2NXYyLjZoLTEuOHYtMi42em0wIDQuNEg2NVY4NmgtMS44di0yLjV6bTAgNC4zSDY1djIuNmgtMS44di0yLjZ6bS00LTMwLjRINjFWNjBoLTEuOHYtMi42em0wIDQuM0g2MXYyLjZoLTEuOHYtMi42em0wIDQuNEg2MXYyLjZoLTEuOHYtMi42em0wIDQuM0g2MVY3M2gtMS44di0yLjZ6bTAgNC4zSDYxdjIuNmgtMS44di0yLjZ6bTAgNC40SDYxdjIuNmgtMS44di0yLjZ6bTAgNC40SDYxVjg2aC0xLjh2LTIuNXptMCA0LjNINjF2Mi42aC0xLjh2LTIuNnptMTguNy0zNy41aDEuOHYyLjZoLTEuOHYtMi42em0wIDQuM2gxLjh2Mi42aC0xLjh2LTIuNnptMCA0LjRoMS44djIuNmgtMS44VjU5em0wIDQuM2gxLjh2Mi42aC0xLjh2LTIuNnptMCA0LjRoMS44djIuNmgtMS44di0yLjZ6bTAgNC4zaDEuOHYyLjZoLTEuOFY3MnptMCA0LjNoMS44djIuNmgtMS44di0yLjZ6bTAgNC40aDEuOHYyLjZoLTEuOHYtMi42em0uOCA0LjV2Ny4zaC0zLjR2LTcuM2gzLjR6TTc0IDUwLjNoMS44djIuNkg3NHYtMi42em0wIDQuM2gxLjh2Mi42SDc0di0yLjZ6bTAgNC40aDEuOHYyLjZINzRWNTl6bTAgNC4zaDEuOHYyLjZINzR2LTIuNnptMCA0LjRoMS44djIuNkg3NHYtMi42em0wIDQuM2gxLjh2Mi42SDc0Vjcyem0wIDQuM2gxLjh2Mi42SDc0di0yLjZ6bTAgNC40aDEuOHYyLjZINzR2LTIuNnptLTQtMzAuNGgxLjh2Mi42SDcwdi0yLjZ6bTAgNC4zaDEuOHYyLjZINzB2LTIuNnptMCA0LjRoMS44djIuNkg3MFY1OXptMCA0LjNoMS44djIuNkg3MHYtMi42em0wIDQuNGgxLjh2Mi42SDcwdi0yLjZ6bTAgNC4zaDEuOHYyLjZINzBWNzJ6bTAgNC4zaDEuOHYyLjZINzB2LTIuNnptMCA0LjRoMS44djIuNkg3MHYtMi42em0xLjIgNC41aDMuNHY3LjNoLTMuNHYtNy4zeiIvPgo8L3N2Zz4K",
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "dashboardCss" : ""
+      }
     },
     "customerId" : null,
     "externalId" : null,
