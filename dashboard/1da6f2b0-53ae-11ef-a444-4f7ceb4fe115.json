@@ -505,6 +505,17 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "fc1777e5-f85e-bf10-e43d-5ccfaa544fb9"
+              }, {
+                "name" : "to wokwi",
+                "icon" : "link",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openURL",
+                "openNewBrowserTab" : false,
+                "url" : "https://wokwi.com",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "31fde2bf-0788-649f-80c7-9f497592ca3a"
               } ]
             },
             "showTitleIcon" : false,
