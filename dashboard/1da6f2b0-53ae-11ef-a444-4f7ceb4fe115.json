@@ -516,6 +516,23 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "31fde2bf-0788-649f-80c7-9f497592ca3a"
+              }, {
+                "name" : "dialog",
+                "icon" : "insert_chart",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "detail_device",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "dialogTitle" : "",
+                "dialogHideDashboardToolbar" : true,
+                "dialogWidth" : 20,
+                "dialogHeight" : 20,
+                "openInSeparateDialog" : true,
+                "openInPopover" : false,
+                "id" : "2c6030ca-ce2f-f07f-2e9b-bd36835158de"
               } ]
             },
             "showTitleIcon" : false,
