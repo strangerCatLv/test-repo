@@ -478,6 +478,19 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "3761c145-b179-e727-a7e0-3b2abb5f6203"
+              }, {
+                "name" : "navigate",
+                "icon" : "more_vert",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "detail_device",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "9492df4a-78ed-01a8-4673-c559003f2783"
               } ]
             },
             "showTitleIcon" : false,
