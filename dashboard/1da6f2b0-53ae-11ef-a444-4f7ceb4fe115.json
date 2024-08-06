@@ -129,8 +129,23 @@
             "useDashboardTimewindow" : true,
             "showLegend" : false,
             "widgetStyle" : { },
-            "actions" : { },
-            "configMode" : "basic",
+            "actions" : {
+              "cardClick" : [ {
+                "name" : "details",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "detail_device",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "c5f86cd6-edf4-f5ae-5dc4-330419c5a577"
+              } ]
+            },
+            "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "0px",
@@ -365,25 +380,27 @@
               },
               "gridSettings" : {
                 "backgroundColor" : "#A1ADB1",
-                "columns" : 12,
+                "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
                 "autoFillHeight" : true,
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70,
-                "layoutDimension" : {
-                  "type" : "percentage",
-                  "leftWidthPercentage" : 69
-                }
+                "mobileRowHeight" : 70
               }
-            },
-            "right" : {
+            }
+          }
+        },
+        "detail_device" : {
+          "name" : "detail_device",
+          "root" : false,
+          "layouts" : {
+            "main" : {
               "widgets" : { },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
-                "columns" : 12,
+                "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%"
