@@ -464,7 +464,22 @@
             } ],
             "displayTimewindow" : false,
             "configMode" : "advanced",
-            "actions" : { },
+            "actions" : {
+              "actionCellButton" : [ {
+                "name" : "details",
+                "icon" : "open_in_new",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "detail_device",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "3761c145-b179-e727-a7e0-3b2abb5f6203"
+              } ]
+            },
             "showTitleIcon" : false,
             "titleIcon" : "list",
             "iconColor" : null,
