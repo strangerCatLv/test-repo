@@ -943,10 +943,10 @@
           "id" : "b4645123-57f1-d142-ce2c-4fb815bb7a2a",
           "alias" : "device",
           "filter" : {
-            "type" : "entityList",
+            "type" : "entityName",
             "resolveMultiple" : true,
             "entityType" : "DEVICE",
-            "entityList" : [ "57327e30-53ce-11ef-a444-4f7ceb4fe115", "03218d90-d6fb-11ee-bebe-d97a1bfe6a79", "e0e1dc00-d5d6-11ee-bebe-d97a1bfe6a79" ]
+            "entityNameFilter" : "energy"
           }
         }
       },
