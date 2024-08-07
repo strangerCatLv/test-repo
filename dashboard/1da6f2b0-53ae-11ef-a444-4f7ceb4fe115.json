@@ -945,7 +945,7 @@
           "filter" : {
             "type" : "assetSearchQuery",
             "resolveMultiple" : true,
-            "rootStateEntity" : false,
+            "rootStateEntity" : true,
             "stateEntityParamName" : null,
             "defaultStateEntity" : null,
             "rootEntity" : {
