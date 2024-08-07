@@ -417,10 +417,10 @@
             "useDashboardTimewindow" : false,
             "showLegend" : false,
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
               "deviceId" : "4a35c890-53a6-11ef-a444-4f7ceb4fe115",
-              "entityAliasId" : null,
+              "entityAliasId" : "b4645123-57f1-d142-ce2c-4fb815bb7a2a",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "name",
@@ -429,34 +429,6 @@
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.1317636695627098
-              }, {
-                "name" : "humidity",
-                "type" : "timeseries",
-                "label" : "humidity",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.5889149703495014
-              }, {
-                "name" : "smoke",
-                "type" : "timeseries",
-                "label" : "smoke",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.2602037087878495
-              }, {
-                "name" : "temperature",
-                "type" : "timeseries",
-                "label" : "temperature",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.24860762617619203
-              }, {
-                "name" : "voltage",
-                "type" : "timeseries",
-                "label" : "voltage",
-                "color" : "#607d8b",
-                "settings" : { },
-                "_hash" : 0.3882570408111736
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -966,7 +938,20 @@
           }
         }
       },
-      "entityAliases" : { },
+      "entityAliases" : {
+        "b4645123-57f1-d142-ce2c-4fb815bb7a2a" : {
+          "id" : "b4645123-57f1-d142-ce2c-4fb815bb7a2a",
+          "alias" : "device",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "57327e30-53ce-11ef-a444-4f7ceb4fe115"
+            }
+          }
+        }
+      },
       "filters" : { },
       "timewindow" : {
         "displayValue" : "",
