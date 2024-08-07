@@ -965,10 +965,13 @@
           "filter" : {
             "type" : "deviceSearchQuery",
             "resolveMultiple" : true,
-            "rootStateEntity" : true,
+            "rootStateEntity" : false,
             "stateEntityParamName" : null,
             "defaultStateEntity" : null,
-            "rootEntity" : null,
+            "rootEntity" : {
+              "entityType" : "ASSET",
+              "id" : "e9f14460-45a8-11ef-a444-4f7ceb4fe115"
+            },
             "direction" : "FROM",
             "maxLevel" : 1,
             "fetchLastLevelOnly" : false,
