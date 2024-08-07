@@ -420,7 +420,7 @@
               "type" : "entity",
               "name" : "",
               "deviceId" : "4a35c890-53a6-11ef-a444-4f7ceb4fe115",
-              "entityAliasId" : "b4645123-57f1-d142-ce2c-4fb815bb7a2a",
+              "entityAliasId" : "1b682ddb-0145-9f7b-473d-16e43d0b83d9",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "name",
@@ -957,6 +957,23 @@
             "fetchLastLevelOnly" : false,
             "relationType" : "Contains",
             "assetTypes" : [ "SMKN 1 Cibinong" ]
+          }
+        },
+        "1b682ddb-0145-9f7b-473d-16e43d0b83d9" : {
+          "id" : "1b682ddb-0145-9f7b-473d-16e43d0b83d9",
+          "alias" : "sensor",
+          "filter" : {
+            "type" : "deviceSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "Contains",
+            "deviceTypes" : [ "Energy Meter" ]
           }
         }
       },
