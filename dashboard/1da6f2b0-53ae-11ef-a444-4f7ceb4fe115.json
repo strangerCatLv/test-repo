@@ -943,13 +943,20 @@
           "id" : "b4645123-57f1-d142-ce2c-4fb815bb7a2a",
           "alias" : "device",
           "filter" : {
-            "type" : "stateEntityOwner",
-            "resolveMultiple" : false,
+            "type" : "assetSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : false,
             "stateEntityParamName" : null,
-            "defaultStateEntity" : {
-              "entityType" : "DEVICE",
-              "id" : "37bac1b0-378c-11ef-8c5d-4b6c189654c3"
-            }
+            "defaultStateEntity" : null,
+            "rootEntity" : {
+              "entityType" : "ASSET",
+              "id" : "e9f14460-45a8-11ef-a444-4f7ceb4fe115"
+            },
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "Contains",
+            "assetTypes" : [ "SMKN 1 Cibinong" ]
           }
         }
       },
