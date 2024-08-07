@@ -943,10 +943,9 @@
           "id" : "b4645123-57f1-d142-ce2c-4fb815bb7a2a",
           "alias" : "device",
           "filter" : {
-            "type" : "entityName",
+            "type" : "entityType",
             "resolveMultiple" : true,
-            "entityType" : "DEVICE",
-            "entityNameFilter" : "energy"
+            "entityType" : "ASSET"
           }
         }
       },
