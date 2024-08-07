@@ -943,12 +943,14 @@
           "id" : "b4645123-57f1-d142-ce2c-4fb815bb7a2a",
           "alias" : "device",
           "filter" : {
-            "type" : "singleEntity",
-            "resolveMultiple" : false,
-            "singleEntity" : {
-              "entityType" : "DEVICE",
-              "id" : "57327e30-53ce-11ef-a444-4f7ceb4fe115"
-            }
+            "type" : "entityGroup",
+            "resolveMultiple" : true,
+            "groupStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateGroupType" : null,
+            "defaultStateEntityGroup" : null,
+            "groupType" : "DEVICE",
+            "entityGroup" : "8c854a81-d5d5-11ee-bebe-d97a1bfe6a79"
           }
         }
       },
