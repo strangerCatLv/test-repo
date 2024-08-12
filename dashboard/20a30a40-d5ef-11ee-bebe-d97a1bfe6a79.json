@@ -512,6 +512,51 @@
           "row" : 0,
           "col" : 0,
           "id" : "e5b0d086-1c40-e8e0-13e8-ee9402ef97bb"
+        },
+        "08626f89-cd8b-57a7-4e69-1b3792fbc96d" : {
+          "typeFullFqn" : "system.control_widgets.switch_control",
+          "type" : "rpc",
+          "sizeX" : 4,
+          "sizeY" : 2.5,
+          "config" : {
+            "targetDeviceAliases" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "#e6e7e8",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "initialValue" : true,
+              "retrieveValueMethod" : "attribute",
+              "valueKey" : "active",
+              "parseValueFunction" : "return data ? true : false;",
+              "setValueMethod" : "active",
+              "convertValueFunction" : "return value;",
+              "requestTimeout" : 500,
+              "requestPersistent" : false,
+              "title" : "Switch control",
+              "showOnOffLabels" : true
+            },
+            "title" : "Switch Control",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "decimals" : 2,
+            "datasources" : [ ],
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "e0e1dc00-d5d6-11ee-bebe-d97a1bfe6a79"
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "08626f89-cd8b-57a7-4e69-1b3792fbc96d"
         }
       },
       "states" : {
@@ -543,6 +588,12 @@
                   "sizeX" : 8,
                   "sizeY" : 5,
                   "row" : 17,
+                  "col" : 0
+                },
+                "08626f89-cd8b-57a7-4e69-1b3792fbc96d" : {
+                  "sizeX" : 4,
+                  "sizeY" : 2,
+                  "row" : 22,
                   "col" : 0
                 }
               },
