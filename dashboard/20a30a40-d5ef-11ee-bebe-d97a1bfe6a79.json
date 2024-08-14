@@ -571,15 +571,13 @@
             "padding" : "0px",
             "settings" : {
               "initialValue" : true,
-              "retrieveValueMethod" : "rpc",
-              "valueKey" : "value",
-              "getValueMethod" : "togglePOWER",
+              "retrieveValueMethod" : "attribute",
+              "valueKey" : "POWER",
               "parseValueFunction" : "return data ? true : false;",
               "setValueMethod" : "togglePOWER",
               "convertValueFunction" : "return value;",
               "requestTimeout" : 500,
               "requestPersistent" : false,
-              "persistentPollingInterval" : 5000,
               "title" : "SONOFF",
               "showOnOffLabels" : true
             },
