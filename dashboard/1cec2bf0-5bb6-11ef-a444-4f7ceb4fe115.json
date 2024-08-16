@@ -228,13 +228,6 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              }, {
-                "name" : "logo_BRI",
-                "type" : "attribute",
-                "label" : "logo_BRI",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.7743185972790421
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
