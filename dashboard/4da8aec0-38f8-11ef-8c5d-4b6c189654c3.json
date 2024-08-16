@@ -114,7 +114,7 @@
               "entityAliasId" : "3ac6423c-b370-faa3-ef06-49b66923a942",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "qr_code",
+                "name" : "qrdata",
                 "type" : "timeseries",
                 "label" : "qr_code",
                 "color" : "#4caf50",
@@ -124,8 +124,8 @@
                 "units" : null,
                 "decimals" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "var clear ;\n\nreturn value;"
+                "usePostProcessing" : false,
+                "postFuncBody" : null
               }, {
                 "name" : "refresh",
                 "type" : "attribute",
@@ -216,12 +216,18 @@
               "name" : "",
               "entityAliasId" : "3ac6423c-b370-faa3-ef06-49b66923a942",
               "dataKeys" : [ {
-                "name" : "nominal",
+                "name" : "qrpay",
                 "type" : "timeseries",
                 "label" : "nominal",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.16932467565019071
+                "_hash" : 0.16932467565019071,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "logo_BRI",
                 "type" : "attribute",
@@ -337,7 +343,7 @@
             "type" : "entityList",
             "resolveMultiple" : true,
             "entityType" : "DEVICE",
-            "entityList" : [ "a1249b90-3cdb-11ef-a7ed-79a935ee4bd3" ]
+            "entityList" : [ "a1249b90-3cdb-11ef-a7ed-79a935ee4bd3", "b44a2160-5bb5-11ef-a444-4f7ceb4fe115" ]
           }
         }
       },
