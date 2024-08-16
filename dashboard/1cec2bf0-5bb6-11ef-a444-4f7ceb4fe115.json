@@ -114,19 +114,6 @@
               "entityAliasId" : "3ac6423c-b370-faa3-ef06-49b66923a942",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "qrdata",
-                "type" : "timeseries",
-                "label" : "qr_code",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.5117938200621586,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == value) {\n    return value;\n} else if (value == 1) {\n    return \"https://media.licdn.com/dms/image/C510BAQHEOTT-xdI6mQ/company-logo_200_200/0/1630607622533/solu_filantropi_teknologi_logo?e=2147483647&v=beta&t=_or3Vv-awk89h4TOPaX9QZWyDlnXoYkFY8vcX-4ADFg\";\n} \n\nreturn value;\n"
-              }, {
                 "name" : "refresh",
                 "type" : "attribute",
                 "label" : "refresh",
@@ -146,6 +133,13 @@
                 "funcBody" : null,
                 "usePostProcessing" : true,
                 "postFuncBody" : "if (value == 0) {\n    return \"http://192.168.88.58:5000/input\";\n} else if (value == 1) {\n    return \"https://media.licdn.com/dms/image/C510BAQHEOTT-xdI6mQ/company-logo_200_200/0/1630607622533/solu_filantropi_teknologi_logo?e=2147483647&v=beta&t=_or3Vv-awk89h4TOPaX9QZWyDlnXoYkFY8vcX-4ADFg\";\n} \n\nreturn value;\n"
+              }, {
+                "name" : "qrdata",
+                "type" : "timeseries",
+                "label" : "qrdata",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.7289775972835588
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
