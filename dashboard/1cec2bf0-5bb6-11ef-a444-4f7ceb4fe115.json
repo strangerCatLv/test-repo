@@ -124,8 +124,8 @@
                 "units" : null,
                 "decimals" : null,
                 "funcBody" : null,
-                "usePostProcessing" : false,
-                "postFuncBody" : null
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == value) {\n    return value;\n} else if (value == 1) {\n    return \"https://media.licdn.com/dms/image/C510BAQHEOTT-xdI6mQ/company-logo_200_200/0/1630607622533/solu_filantropi_teknologi_logo?e=2147483647&v=beta&t=_or3Vv-awk89h4TOPaX9QZWyDlnXoYkFY8vcX-4ADFg\";\n} \n\nreturn value;\n"
               }, {
                 "name" : "refresh",
                 "type" : "attribute",
@@ -182,7 +182,7 @@
             "settings" : {
               "qrCodeTextPattern" : "${qrdata}",
               "useQrCodeTextFunction" : false,
-              "qrCodeTextFunction" : "return data[0] ? data[0]['entityName'] : '';"
+              "qrCodeTextFunction" : "return data;"
             },
             "title" : "SCAN API",
             "useDashboardTimewindow" : true,
