@@ -139,7 +139,13 @@
                 "label" : "qrdata",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.08450937441357365
+                "_hash" : 0.6334288857371269,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
