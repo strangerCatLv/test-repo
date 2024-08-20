@@ -137,9 +137,9 @@
                 "name" : "qrdata",
                 "type" : "timeseries",
                 "label" : "qrdata",
-                "color" : "#ffc107",
+                "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.7289775972835588
+                "_hash" : 0.08450937441357365
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
