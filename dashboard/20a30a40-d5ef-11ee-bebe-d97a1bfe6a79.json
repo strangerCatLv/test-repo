@@ -404,13 +404,6 @@
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.24800080113390055
-              }, {
-                "name" : "perimeter",
-                "type" : "attribute",
-                "label" : "perimeter",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.2867933240450464
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
