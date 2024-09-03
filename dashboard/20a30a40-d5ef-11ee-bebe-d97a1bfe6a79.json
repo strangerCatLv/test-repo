@@ -411,13 +411,6 @@
                 "color" : "#f44336",
                 "settings" : { },
                 "_hash" : 0.8920610976908245
-              }, {
-                "name" : "radius",
-                "type" : "timeseries",
-                "label" : "radius",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.16226004614553324
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
