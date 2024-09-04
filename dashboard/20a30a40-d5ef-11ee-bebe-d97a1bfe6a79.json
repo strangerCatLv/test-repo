@@ -593,7 +593,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "b20f8fb0-6381-11ef-84e0-bdaca7ce12ef",
+              "deviceId" : "50b35cd0-6a73-11ef-84e0-bdaca7ce12ef",
               "entityAliasId" : null,
               "filterId" : null,
               "dataKeys" : [ {
