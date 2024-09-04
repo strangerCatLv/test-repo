@@ -767,7 +767,7 @@
               "useIconCreateFunction" : false,
               "clusterMarkerFunction" : null
             },
-            "title" : "LEFT",
+            "title" : "INSIDE",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
