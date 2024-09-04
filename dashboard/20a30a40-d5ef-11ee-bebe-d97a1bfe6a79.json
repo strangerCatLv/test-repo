@@ -609,14 +609,14 @@
                 "label" : "latitude",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.24911245837320917
+                "_hash" : 0.9151814242361358
               }, {
                 "name" : "longitude",
                 "type" : "timeseries",
                 "label" : "longitude",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.5020380260850932
+                "_hash" : 0.4791239668699563
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
