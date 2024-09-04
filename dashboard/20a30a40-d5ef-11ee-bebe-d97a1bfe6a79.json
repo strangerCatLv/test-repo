@@ -584,7 +584,7 @@
           "col" : 0,
           "id" : "d9cc9621-ce7e-50c9-4506-ad3832e98e3f"
         },
-        "7314f755-77cf-5ce3-eaaf-28ca473baaa3" : {
+        "5acf0abc-60b6-992e-d72a-af7342e3a134" : {
           "typeFullFqn" : "system.maps_v2.openstreetmap",
           "type" : "latest",
           "sizeX" : 8.5,
@@ -597,26 +597,26 @@
               "entityAliasId" : null,
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "perimeter",
-                "type" : "attribute",
-                "label" : "perimeter",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.993690445684291
-              }, {
                 "name" : "latitude",
                 "type" : "timeseries",
                 "label" : "latitude",
-                "color" : "#4caf50",
+                "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.9151814242361358
+                "_hash" : 0.7018119928073234
               }, {
                 "name" : "longitude",
                 "type" : "timeseries",
                 "label" : "longitude",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.24800080113390055
+              }, {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.4791239668699563
+                "_hash" : 0.8920610976908245
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -636,8 +636,8 @@
                 "interval" : 1000,
                 "timewindowMs" : 60000,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1725333729208,
-                  "endTimeMs" : 1725420129208
+                  "startTimeMs" : 1725183279952,
+                  "endTimeMs" : 1725269679952
                 },
                 "quickInterval" : "CURRENT_DAY"
               },
@@ -671,6 +671,8 @@
               "tmDefaultMapType" : "roadmap",
               "latKeyName" : "latitude",
               "lngKeyName" : "longitude",
+              "xPosKeyName" : "xPos",
+              "yPosKeyName" : "yPos",
               "defaultZoomLevel" : 18,
               "defaultCenterPosition" : "0,0",
               "disableScrollZooming" : false,
@@ -747,6 +749,12 @@
               "circleStrokeWeight" : 3,
               "useCircleStrokeColorFunction" : false,
               "circleStrokeColorFunction" : null,
+              "snappable" : false,
+              "initDragMode" : false,
+              "hideAllControlButton" : false,
+              "hideDrawControlButton" : false,
+              "hideEditControlButton" : false,
+              "hideRemoveControlButton" : false,
               "useClusterMarkers" : false,
               "zoomOnClick" : true,
               "maxZoom" : null,
@@ -759,7 +767,7 @@
               "useIconCreateFunction" : false,
               "clusterMarkerFunction" : null
             },
-            "title" : "INSIDE",
+            "title" : "LEFT",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
@@ -780,7 +788,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "7314f755-77cf-5ce3-eaaf-28ca473baaa3"
+          "id" : "5acf0abc-60b6-992e-d72a-af7342e3a134"
         }
       },
       "states" : {
@@ -820,7 +828,7 @@
                   "row" : 12,
                   "col" : 0
                 },
-                "7314f755-77cf-5ce3-eaaf-28ca473baaa3" : {
+                "5acf0abc-60b6-992e-d72a-af7342e3a134" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
                   "row" : 12,
