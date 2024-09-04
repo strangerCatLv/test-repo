@@ -561,7 +561,7 @@
               "useIconCreateFunction" : false,
               "clusterMarkerFunction" : null
             },
-            "title" : "OpenStreet Map",
+            "title" : "LEFT",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
@@ -572,7 +572,13 @@
             "showLegend" : false,
             "widgetStyle" : { },
             "actions" : { },
-            "displayTimewindow" : true
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
@@ -753,7 +759,7 @@
               "useIconCreateFunction" : false,
               "clusterMarkerFunction" : null
             },
-            "title" : "OpenStreet Map",
+            "title" : "INSIDE",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
@@ -764,7 +770,13 @@
             "showLegend" : false,
             "widgetStyle" : { },
             "actions" : { },
-            "displayTimewindow" : true
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
