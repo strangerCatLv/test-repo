@@ -362,19 +362,19 @@
                 "settings" : { },
                 "_hash" : 0.516845129489915
               }, {
-                "name" : "latitude",
-                "type" : "timeseries",
-                "label" : "latitude",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.9142324703108704
-              }, {
-                "name" : "longitude",
-                "type" : "timeseries",
-                "label" : "longitude",
+                "name" : "latitude1",
+                "type" : "attribute",
+                "label" : "latitude1",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.07301415975418357
+                "_hash" : 0.4935804576158307
+              }, {
+                "name" : "longitude1",
+                "type" : "attribute",
+                "label" : "longitude1",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.8808430539822123
               }, {
                 "name" : "perimeter",
                 "type" : "attribute",
