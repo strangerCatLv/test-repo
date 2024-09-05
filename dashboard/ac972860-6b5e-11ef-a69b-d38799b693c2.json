@@ -1131,16 +1131,18 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
+              "title" : "SONOFF",
+              "showOnOffLabels" : false,
               "initialValue" : true,
               "retrieveValueMethod" : "rpc",
+              "valueKey" : "value",
               "getValueMethod" : "togglePOWER",
               "parseValueFunction" : "return data ? true : false;",
               "setValueMethod" : "togglePOWER",
               "convertValueFunction" : "return value;",
               "requestTimeout" : 500,
               "requestPersistent" : false,
-              "title" : "SONOFF",
-              "showOnOffLabels" : true
+              "persistentPollingInterval" : 5000
             },
             "title" : "Switch Control",
             "dropShadow" : false,
