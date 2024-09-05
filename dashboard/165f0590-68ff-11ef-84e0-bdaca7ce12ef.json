@@ -911,7 +911,7 @@
                   "col" : 7
                 },
                 "06468f99-78fe-181e-8bfa-814e13b03948" : {
-                  "sizeX" : 9,
+                  "sizeX" : 12,
                   "sizeY" : 6,
                   "row" : 7,
                   "col" : 0
@@ -920,7 +920,7 @@
                   "sizeX" : 12,
                   "sizeY" : 6,
                   "row" : 7,
-                  "col" : 9
+                  "col" : 12
                 }
               },
               "gridSettings" : {
