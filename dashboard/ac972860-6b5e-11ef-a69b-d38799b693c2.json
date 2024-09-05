@@ -883,6 +883,484 @@
           },
           "id" : "b13f5acd-e3a8-393b-3625-cf88b17781a5",
           "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "72f7b7cc-297e-41d9-6363-f4bf7fb3dcb4" : {
+          "type" : "latest",
+          "sizeX" : 6,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5c52b62c-84ba-6827-22ef-b2a69bda3c24",
+              "dataKeys" : [ {
+                "name" : "Today",
+                "type" : "timeseries",
+                "label" : "Today",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.25604255299228273
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1693821090727,
+                  "endTimeMs" : 1693907490727
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fffefe",
+            "color" : "rgba(1, 1, 1, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 350,
+              "gaugeType" : "donut",
+              "donutStartAngle" : 90,
+              "defaultColor" : null,
+              "gaugeWidthScale" : 0.5,
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 0,
+              "roundedLineCap" : true,
+              "gaugeColor" : "#FFFFFF00",
+              "useFixedLevelColor" : false,
+              "levelColors" : [ "#673AB7" ],
+              "fixedLevelColors" : [ ],
+              "showTitle" : true,
+              "title" : "Today",
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "bold",
+                "color" : "#9C27B0"
+              },
+              "showUnitTitle" : false,
+              "unitTitle" : "Temperature",
+              "showTimestamp" : false,
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
+              },
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 14,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#9C27B0"
+              },
+              "showMinMax" : true,
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
+              },
+              "showTicks" : false,
+              "tickWidth" : 4,
+              "colorTicks" : "#666",
+              "ticksValue" : [ ],
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "barColor" : {
+                "type" : "gradient",
+                "color" : "#2196f3",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "#673AB7" ],
+                  "gradientAdvanced" : null,
+                  "minValue" : 0,
+                  "maxValue" : 350
+                }
+              }
+            },
+            "title" : "New Simple neon gauge - justGage",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : {
+              "borderBottom" : "solid 1px #aaa",
+              "borderRight" : "solid 1px #aaa"
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false,
+            "units" : "",
+            "decimals" : 3,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "id" : "72f7b7cc-297e-41d9-6363-f4bf7fb3dcb4",
+          "typeFullFqn" : "system.digital_gauges.simple_neon_gauge_justgage"
+        },
+        "d5b8cb99-9b68-fb8b-9024-4d76662745c7" : {
+          "type" : "latest",
+          "sizeX" : 8,
+          "sizeY" : 11,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5c52b62c-84ba-6827-22ef-b2a69bda3c24",
+              "dataKeys" : [ {
+                "name" : "POWER",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.8616213871439609,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value === 'ON' ? 'ON' : 'OFF';"
+              }, {
+                "name" : "Power",
+                "type" : "timeseries",
+                "label" : "Power",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.11595728806648564
+              }, {
+                "name" : "Current",
+                "type" : "timeseries",
+                "label" : "Current",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.08888790546768965
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1693821090727,
+                  "endTimeMs" : 1693907490727
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n        <div class='column'>\n            <h1>State</h1>\n            <div class='value state' style='color: green;'>\n                ${active}\n            </div>    \n            <br/>\n            <h1>Power</h1>\n            <div class='value temp'>\n                ${Power:1}\n            </div>    \n            <br/>\n            <h1>Current</h1>\n            <div class='value air-flow'>\n                ${Current}\n            </div>    \n        </div>\n    </div>\n</div>",
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 20px;\n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: rgba(0, 0, 0, 0.67);\n    font-size: 16px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}\n\n.card .value {\n    font-size: 38px;\n    font-weight: 500;\n}\n\n.card .value.state {\n    font-weight: 500;\n}\n\n.card .value.temp {\n    color: orange;\n}\n\n.card .value.air-flow {\n    color: #2196f3;\n}\n\n.card .description {\n    font-size: 20px;\n    color: #999;\n}\n"
+            },
+            "title" : "New HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "widgetStyle" : {
+              "borderBottom" : "solid 1px #aaa",
+              "borderRight" : "solid 1px #aaa"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "id" : "d5b8cb99-9b68-fb8b-9024-4d76662745c7",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "ef69019d-63e7-6c99-d1d2-58e4df916688" : {
+          "type" : "timeseries",
+          "sizeX" : 16,
+          "sizeY" : 11,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "8b8f47d0-4bcd-84f9-2443-a1a1470a0a54",
+              "dataKeys" : [ {
+                "name" : "Today",
+                "type" : "timeseries",
+                "label" : "Today",
+                "color" : "#2196f3",
+                "settings" : {
+                  "hideDataByDefault" : false,
+                  "disableDataHiding" : false,
+                  "removeFromLegend" : false,
+                  "excludeFromStacking" : false,
+                  "showLines" : true,
+                  "lineWidth" : 1,
+                  "fillLines" : false,
+                  "showPoints" : true,
+                  "showPointsLineWidth" : 5,
+                  "showPointsRadius" : 3,
+                  "showPointShape" : "circle",
+                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                  "tooltipValueFormatter" : "",
+                  "showSeparateAxis" : false,
+                  "axisTitle" : "",
+                  "axisMin" : null,
+                  "axisMax" : null,
+                  "axisPosition" : "left",
+                  "axisTickSize" : null,
+                  "axisTickDecimals" : null,
+                  "axisTicksFormatter" : "",
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : true,
+                    "comparisonValuesLabel" : "",
+                    "color" : ""
+                  },
+                  "thresholds" : [ ]
+                },
+                "_hash" : 0.36695472405492513,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Yesterday",
+                "type" : "timeseries",
+                "label" : "Yesterday",
+                "color" : "#4caf50",
+                "settings" : {
+                  "hideDataByDefault" : false,
+                  "disableDataHiding" : false,
+                  "removeFromLegend" : false,
+                  "excludeFromStacking" : false,
+                  "showLines" : true,
+                  "lineWidth" : 1,
+                  "fillLines" : false,
+                  "showPoints" : true,
+                  "showPointsLineWidth" : 5,
+                  "showPointsRadius" : 3,
+                  "showPointShape" : "circle",
+                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                  "tooltipValueFormatter" : "",
+                  "showSeparateAxis" : false,
+                  "axisTitle" : "",
+                  "axisMin" : null,
+                  "axisMax" : null,
+                  "axisPosition" : "left",
+                  "axisTickSize" : null,
+                  "axisTickDecimals" : null,
+                  "axisTicksFormatter" : "",
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : true,
+                    "comparisonValuesLabel" : "",
+                    "color" : ""
+                  },
+                  "thresholds" : [ ]
+                },
+                "_hash" : 0.5511282955809542,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Total",
+                "type" : "timeseries",
+                "label" : "Total",
+                "color" : "#f44336",
+                "settings" : {
+                  "hideDataByDefault" : false,
+                  "disableDataHiding" : false,
+                  "removeFromLegend" : false,
+                  "excludeFromStacking" : false,
+                  "showLines" : true,
+                  "lineWidth" : 1,
+                  "fillLines" : false,
+                  "showPoints" : true,
+                  "showPointsLineWidth" : 5,
+                  "showPointsRadius" : 3,
+                  "showPointShape" : "circle",
+                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                  "tooltipValueFormatter" : "",
+                  "showSeparateAxis" : false,
+                  "axisTitle" : "",
+                  "axisMin" : null,
+                  "axisMax" : null,
+                  "axisPosition" : "left",
+                  "axisTickSize" : null,
+                  "axisTickDecimals" : null,
+                  "axisTicksFormatter" : "",
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : true,
+                    "comparisonValuesLabel" : "",
+                    "color" : ""
+                  },
+                  "thresholds" : [ ]
+                },
+                "_hash" : 0.9545374087665035,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 0,
+                "timewindowMs" : 3600000,
+                "interval" : 300000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1714387487927,
+                  "endTimeMs" : 1714473887927
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 50000
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "stack" : true,
+              "enableSelection" : true,
+              "fontSize" : 10,
+              "fontColor" : "#545454",
+              "showTooltip" : true,
+              "tooltipIndividual" : false,
+              "tooltipCumulative" : false,
+              "hideZeros" : false,
+              "tooltipValueFormatter" : "",
+              "grid" : {
+                "verticalLines" : false,
+                "horizontalLines" : true,
+                "outlineWidth" : 0,
+                "color" : "#545454",
+                "backgroundColor" : null,
+                "tickColor" : "#DDDDDD"
+              },
+              "xaxis" : {
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454"
+              },
+              "yaxis" : {
+                "min" : 0,
+                "max" : null,
+                "title" : "",
+                "showLabels" : true,
+                "color" : "#545454",
+                "tickSize" : null,
+                "tickDecimals" : 1,
+                "ticksFormatter" : ""
+              },
+              "shadowSize" : 4,
+              "smoothLines" : true,
+              "thresholdsLineWidth" : null,
+              "comparisonEnabled" : false,
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : true,
+                "showMax" : true,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "customLegendEnabled" : false
+            },
+            "title" : "Energy History",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "20px",
+              "fontWeight" : "bold",
+              "opacity" : "0.67",
+              "padding" : "5px 10px 5px 0px"
+            },
+            "mobileHeight" : null,
+            "widgetStyle" : {
+              "borderBottom" : "solid 1px #aaa",
+              "borderRight" : "solid 1px #aaa"
+            },
+            "useDashboardTimewindow" : false,
+            "actions" : { },
+            "enableDataExport" : true,
+            "units" : "",
+            "decimals" : 3,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "displayTimewindow" : true
+          },
+          "id" : "ef69019d-63e7-6c99-d1d2-58e4df916688",
+          "typeFullFqn" : "system.charts.state_chart"
         }
       },
       "states" : {
@@ -928,6 +1406,25 @@
                   "sizeX" : 6,
                   "sizeY" : 4,
                   "row" : 0,
+                  "col" : 0
+                },
+                "72f7b7cc-297e-41d9-6363-f4bf7fb3dcb4" : {
+                  "sizeX" : 3,
+                  "sizeY" : 3,
+                  "row" : 15,
+                  "col" : 0
+                },
+                "d5b8cb99-9b68-fb8b-9024-4d76662745c7" : {
+                  "sizeX" : 3,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 18
+                },
+                "ef69019d-63e7-6c99-d1d2-58e4df916688" : {
+                  "sizeX" : 8,
+                  "sizeY" : 4,
+                  "mobileHeight" : null,
+                  "row" : 22,
                   "col" : 0
                 }
               },
