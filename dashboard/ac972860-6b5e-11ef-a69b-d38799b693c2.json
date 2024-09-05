@@ -1118,6 +1118,55 @@
           },
           "id" : "48fa0802-d3ac-dbc3-13dc-843e3a508a3d",
           "typeFullFqn" : "system.digital_gauges.simple_neon_gauge_justgage"
+        },
+        "c4a41f59-91c3-c229-fdf2-727cacfff233" : {
+          "typeFullFqn" : "system.control_widgets.switch_control",
+          "type" : "rpc",
+          "sizeX" : 4,
+          "sizeY" : 2.5,
+          "config" : {
+            "targetDeviceAliases" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "#E6E7E801",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "initialValue" : true,
+              "retrieveValueMethod" : "rpc",
+              "getValueMethod" : "togglePOWER",
+              "parseValueFunction" : "return data ? true : false;",
+              "setValueMethod" : "togglePOWER",
+              "convertValueFunction" : "return value;",
+              "requestTimeout" : 500,
+              "requestPersistent" : false,
+              "title" : "SONOFF",
+              "showOnOffLabels" : true
+            },
+            "title" : "Switch Control",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "decimals" : 2,
+            "datasources" : [ ],
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "1afcf1c0-59d7-11ef-a444-4f7ceb4fe115"
+            },
+            "enableDataExport" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : " "
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "c4a41f59-91c3-c229-fdf2-727cacfff233"
         }
       },
       "states" : {
@@ -1176,6 +1225,12 @@
                   "sizeY" : 3,
                   "row" : 3,
                   "col" : 21
+                },
+                "c4a41f59-91c3-c229-fdf2-727cacfff233" : {
+                  "sizeX" : 3,
+                  "sizeY" : 5,
+                  "row" : 0,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
