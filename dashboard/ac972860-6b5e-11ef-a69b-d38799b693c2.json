@@ -884,149 +884,6 @@
           "id" : "b13f5acd-e3a8-393b-3625-cf88b17781a5",
           "typeFullFqn" : "system.cards.html_value_card"
         },
-        "72f7b7cc-297e-41d9-6363-f4bf7fb3dcb4" : {
-          "type" : "latest",
-          "sizeX" : 6,
-          "sizeY" : 6,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "entityAliasId" : "5c52b62c-84ba-6827-22ef-b2a69bda3c24",
-              "dataKeys" : [ {
-                "name" : "Today",
-                "type" : "timeseries",
-                "label" : "Today",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.25604255299228273
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1693821090727,
-                  "endTimeMs" : 1693907490727
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fffefe",
-            "color" : "rgba(1, 1, 1, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "minValue" : 0,
-              "maxValue" : 350,
-              "gaugeType" : "donut",
-              "donutStartAngle" : 90,
-              "defaultColor" : null,
-              "gaugeWidthScale" : 0.5,
-              "neonGlowBrightness" : 0,
-              "dashThickness" : 0,
-              "roundedLineCap" : true,
-              "gaugeColor" : "#FFFFFF00",
-              "useFixedLevelColor" : false,
-              "levelColors" : [ "#673AB7" ],
-              "fixedLevelColors" : [ ],
-              "showTitle" : true,
-              "title" : "Today",
-              "titleFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "style" : "normal",
-                "weight" : "bold",
-                "color" : "#9C27B0"
-              },
-              "showUnitTitle" : false,
-              "unitTitle" : "Temperature",
-              "showTimestamp" : false,
-              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
-              "labelFont" : {
-                "family" : "Roboto",
-                "size" : 8,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : null
-              },
-              "showValue" : true,
-              "valueFont" : {
-                "family" : "Roboto",
-                "size" : 14,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#9C27B0"
-              },
-              "showMinMax" : true,
-              "minMaxFont" : {
-                "family" : "Segment7Standard",
-                "size" : 12,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : null
-              },
-              "showTicks" : false,
-              "tickWidth" : 4,
-              "colorTicks" : "#666",
-              "ticksValue" : [ ],
-              "animation" : true,
-              "animationDuration" : 500,
-              "animationRule" : "linear",
-              "barColor" : {
-                "type" : "gradient",
-                "color" : "#2196f3",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
-                "gradient" : {
-                  "advancedMode" : false,
-                  "gradient" : [ "#673AB7" ],
-                  "gradientAdvanced" : null,
-                  "minValue" : 0,
-                  "maxValue" : 350
-                }
-              }
-            },
-            "title" : "New Simple neon gauge - justGage",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "widgetStyle" : {
-              "borderBottom" : "solid 1px #aaa",
-              "borderRight" : "solid 1px #aaa"
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "enableDataExport" : false,
-            "units" : "",
-            "decimals" : 3,
-            "displayTimewindow" : true,
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
-          },
-          "id" : "72f7b7cc-297e-41d9-6363-f4bf7fb3dcb4",
-          "typeFullFqn" : "system.digital_gauges.simple_neon_gauge_justgage"
-        },
         "d5b8cb99-9b68-fb8b-9024-4d76662745c7" : {
           "type" : "latest",
           "sizeX" : 8,
@@ -1119,248 +976,148 @@
           "id" : "d5b8cb99-9b68-fb8b-9024-4d76662745c7",
           "typeFullFqn" : "system.cards.html_value_card"
         },
-        "ef69019d-63e7-6c99-d1d2-58e4df916688" : {
-          "type" : "timeseries",
-          "sizeX" : 16,
-          "sizeY" : 11,
+        "48fa0802-d3ac-dbc3-13dc-843e3a508a3d" : {
+          "type" : "latest",
+          "sizeX" : 6,
+          "sizeY" : 6,
           "config" : {
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "8b8f47d0-4bcd-84f9-2443-a1a1470a0a54",
+              "entityAliasId" : "5c52b62c-84ba-6827-22ef-b2a69bda3c24",
               "dataKeys" : [ {
-                "name" : "Today",
-                "type" : "timeseries",
-                "label" : "Today",
-                "color" : "#2196f3",
-                "settings" : {
-                  "hideDataByDefault" : false,
-                  "disableDataHiding" : false,
-                  "removeFromLegend" : false,
-                  "excludeFromStacking" : false,
-                  "showLines" : true,
-                  "lineWidth" : 1,
-                  "fillLines" : false,
-                  "showPoints" : true,
-                  "showPointsLineWidth" : 5,
-                  "showPointsRadius" : 3,
-                  "showPointShape" : "circle",
-                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
-                  "tooltipValueFormatter" : "",
-                  "showSeparateAxis" : false,
-                  "axisTitle" : "",
-                  "axisMin" : null,
-                  "axisMax" : null,
-                  "axisPosition" : "left",
-                  "axisTickSize" : null,
-                  "axisTickDecimals" : null,
-                  "axisTicksFormatter" : "",
-                  "comparisonSettings" : {
-                    "showValuesForComparison" : true,
-                    "comparisonValuesLabel" : "",
-                    "color" : ""
-                  },
-                  "thresholds" : [ ]
-                },
-                "_hash" : 0.36695472405492513,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
                 "name" : "Yesterday",
                 "type" : "timeseries",
                 "label" : "Yesterday",
-                "color" : "#4caf50",
-                "settings" : {
-                  "hideDataByDefault" : false,
-                  "disableDataHiding" : false,
-                  "removeFromLegend" : false,
-                  "excludeFromStacking" : false,
-                  "showLines" : true,
-                  "lineWidth" : 1,
-                  "fillLines" : false,
-                  "showPoints" : true,
-                  "showPointsLineWidth" : 5,
-                  "showPointsRadius" : 3,
-                  "showPointShape" : "circle",
-                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
-                  "tooltipValueFormatter" : "",
-                  "showSeparateAxis" : false,
-                  "axisTitle" : "",
-                  "axisMin" : null,
-                  "axisMax" : null,
-                  "axisPosition" : "left",
-                  "axisTickSize" : null,
-                  "axisTickDecimals" : null,
-                  "axisTicksFormatter" : "",
-                  "comparisonSettings" : {
-                    "showValuesForComparison" : true,
-                    "comparisonValuesLabel" : "",
-                    "color" : ""
-                  },
-                  "thresholds" : [ ]
-                },
-                "_hash" : 0.5511282955809542,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "Total",
-                "type" : "timeseries",
-                "label" : "Total",
-                "color" : "#f44336",
-                "settings" : {
-                  "hideDataByDefault" : false,
-                  "disableDataHiding" : false,
-                  "removeFromLegend" : false,
-                  "excludeFromStacking" : false,
-                  "showLines" : true,
-                  "lineWidth" : 1,
-                  "fillLines" : false,
-                  "showPoints" : true,
-                  "showPointsLineWidth" : 5,
-                  "showPointsRadius" : 3,
-                  "showPointShape" : "circle",
-                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
-                  "tooltipValueFormatter" : "",
-                  "showSeparateAxis" : false,
-                  "axisTitle" : "",
-                  "axisMin" : null,
-                  "axisMax" : null,
-                  "axisPosition" : "left",
-                  "axisTickSize" : null,
-                  "axisTickDecimals" : null,
-                  "axisTicksFormatter" : "",
-                  "comparisonSettings" : {
-                    "showValuesForComparison" : true,
-                    "comparisonValuesLabel" : "",
-                    "color" : ""
-                  },
-                  "thresholds" : [ ]
-                },
-                "_hash" : 0.9545374087665035,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5114715078585204
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
-              "hideAggregation" : false,
-              "hideAggInterval" : false,
-              "hideTimezone" : false,
-              "selectedTab" : 1,
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
               "history" : {
                 "historyType" : 0,
-                "timewindowMs" : 3600000,
-                "interval" : 300000,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1714387487927,
-                  "endTimeMs" : 1714473887927
+                  "startTimeMs" : 1693821090727,
+                  "endTimeMs" : 1693907490727
                 },
                 "quickInterval" : "CURRENT_DAY"
               },
               "aggregation" : {
-                "type" : "NONE",
-                "limit" : 50000
-              },
-              "timezone" : null
+                "type" : "AVG",
+                "limit" : 25000
+              }
             },
-            "showTitle" : true,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
+            "showTitle" : false,
+            "backgroundColor" : "#fffefe",
+            "color" : "rgba(1, 1, 1, 0.87)",
+            "padding" : "0px",
             "settings" : {
-              "stack" : true,
-              "enableSelection" : true,
-              "fontSize" : 10,
-              "fontColor" : "#545454",
-              "showTooltip" : true,
-              "tooltipIndividual" : false,
-              "tooltipCumulative" : false,
-              "hideZeros" : false,
-              "tooltipValueFormatter" : "",
-              "grid" : {
-                "verticalLines" : false,
-                "horizontalLines" : true,
-                "outlineWidth" : 0,
-                "color" : "#545454",
-                "backgroundColor" : null,
-                "tickColor" : "#DDDDDD"
+              "minValue" : 0,
+              "maxValue" : 350,
+              "gaugeType" : "donut",
+              "donutStartAngle" : 90,
+              "defaultColor" : null,
+              "gaugeWidthScale" : 0.5,
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 0,
+              "roundedLineCap" : true,
+              "gaugeColor" : "#FFFFFF00",
+              "useFixedLevelColor" : false,
+              "levelColors" : [ "#009688" ],
+              "fixedLevelColors" : [ ],
+              "showTitle" : true,
+              "title" : "Yesterday",
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "bold",
+                "color" : "#009688"
               },
-              "xaxis" : {
-                "title" : null,
-                "showLabels" : true,
-                "color" : "#545454"
+              "showUnitTitle" : false,
+              "unitTitle" : "Temperature",
+              "showTimestamp" : false,
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
               },
-              "yaxis" : {
-                "min" : 0,
-                "max" : null,
-                "title" : "",
-                "showLabels" : true,
-                "color" : "#545454",
-                "tickSize" : null,
-                "tickDecimals" : 1,
-                "ticksFormatter" : ""
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 14,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#009688"
               },
-              "shadowSize" : 4,
-              "smoothLines" : true,
-              "thresholdsLineWidth" : null,
-              "comparisonEnabled" : false,
-              "showLegend" : true,
-              "legendConfig" : {
-                "direction" : "column",
-                "position" : "bottom",
-                "sortDataKeys" : false,
-                "showMin" : true,
-                "showMax" : true,
-                "showAvg" : true,
-                "showTotal" : false,
-                "showLatest" : false
+              "showMinMax" : true,
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
               },
-              "customLegendEnabled" : false
+              "showTicks" : false,
+              "tickWidth" : 4,
+              "colorTicks" : "#666",
+              "ticksValue" : [ ],
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "barColor" : {
+                "type" : "gradient",
+                "color" : "#2196f3",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "#009688" ],
+                  "gradientAdvanced" : null,
+                  "minValue" : 0,
+                  "maxValue" : 350
+                }
+              }
             },
-            "title" : "Energy History",
+            "title" : "New Simple neon gauge - justGage",
             "dropShadow" : false,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "titleStyle" : {
-              "fontSize" : "20px",
-              "fontWeight" : "bold",
-              "opacity" : "0.67",
-              "padding" : "5px 10px 5px 0px"
+              "fontSize" : "16px",
+              "fontWeight" : 400
             },
-            "mobileHeight" : null,
             "widgetStyle" : {
               "borderBottom" : "solid 1px #aaa",
               "borderRight" : "solid 1px #aaa"
             },
-            "useDashboardTimewindow" : false,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
             "actions" : { },
-            "enableDataExport" : true,
+            "enableDataExport" : false,
             "units" : "",
             "decimals" : 3,
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
+            "displayTimewindow" : true,
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "displayTimewindow" : true
+            "noDataDisplayMessage" : ""
           },
-          "id" : "ef69019d-63e7-6c99-d1d2-58e4df916688",
-          "typeFullFqn" : "system.charts.state_chart"
+          "id" : "48fa0802-d3ac-dbc3-13dc-843e3a508a3d",
+          "typeFullFqn" : "system.digital_gauges.simple_neon_gauge_justgage"
         }
       },
       "states" : {
@@ -1408,24 +1165,17 @@
                   "row" : 0,
                   "col" : 0
                 },
-                "72f7b7cc-297e-41d9-6363-f4bf7fb3dcb4" : {
-                  "sizeX" : 3,
-                  "sizeY" : 3,
-                  "row" : 15,
-                  "col" : 0
-                },
                 "d5b8cb99-9b68-fb8b-9024-4d76662745c7" : {
                   "sizeX" : 3,
                   "sizeY" : 5,
                   "row" : 0,
                   "col" : 18
                 },
-                "ef69019d-63e7-6c99-d1d2-58e4df916688" : {
-                  "sizeX" : 8,
-                  "sizeY" : 4,
-                  "mobileHeight" : null,
-                  "row" : 22,
-                  "col" : 0
+                "48fa0802-d3ac-dbc3-13dc-843e3a508a3d" : {
+                  "sizeX" : 3,
+                  "sizeY" : 3,
+                  "row" : 3,
+                  "col" : 21
                 }
               },
               "gridSettings" : {
