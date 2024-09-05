@@ -59,7 +59,7 @@
             "alarmSource" : {
               "type" : "entity",
               "name" : "alarms",
-              "entityAliasId" : "8b8f47d0-4bcd-84f9-2443-a1a1470a0a54",
+              "entityAliasId" : "5c52b62c-84ba-6827-22ef-b2a69bda3c24",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "createdTime",
@@ -95,7 +95,10 @@
                   "cellContentFunction" : ""
                 },
                 "_hash" : 0.5593535448978897
-              } ]
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             },
             "alarmsPollingInterval" : 5,
             "datasources" : [ ],
