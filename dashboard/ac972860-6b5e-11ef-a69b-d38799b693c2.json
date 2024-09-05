@@ -1145,7 +1145,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "title" : "",
+              "title" : "SWITCH",
               "showOnOffLabels" : false,
               "initialValue" : true,
               "retrieveValueMethod" : "rpc",
