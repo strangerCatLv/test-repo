@@ -780,8 +780,10 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
+              "layout" : "column",
+              "autoScale" : false,
               "showLabel" : true,
-              "label" : "Devices",
+              "label" : "Devices Name",
               "labelFont" : {
                 "family" : "Roboto",
                 "size" : 12,
@@ -810,11 +812,11 @@
               "iconBackgroundColor" : {
                 "type" : "constant",
                 "color" : "rgb(241, 141, 23)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
                 "rangeList" : {
                   "advancedMode" : false,
                   "range" : [ ]
-                },
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                }
               },
               "valueFont" : {
                 "family" : "Roboto",
@@ -829,12 +831,7 @@
                 "color" : "rgba(0, 0, 0, 0.87)",
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
-              "showChevron" : false,
-              "chevronSize" : 24,
-              "chevronSizeUnit" : "px",
-              "chevronColor" : "rgba(0, 0, 0, 0.38)",
-              "layout" : "column",
-              "autoScale" : true
+              "showChevron" : false
             },
             "title" : "Entity count",
             "dropShadow" : true,
@@ -965,8 +962,10 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
+              "layout" : "column",
+              "autoScale" : false,
               "showLabel" : true,
-              "label" : "Devices",
+              "label" : "Devices Name",
               "labelFont" : {
                 "family" : "Roboto",
                 "size" : 12,
@@ -995,11 +994,11 @@
               "iconBackgroundColor" : {
                 "type" : "constant",
                 "color" : "rgb(241, 141, 23)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
                 "rangeList" : {
                   "advancedMode" : false,
                   "range" : [ ]
-                },
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                }
               },
               "valueFont" : {
                 "family" : "Roboto",
@@ -1014,12 +1013,7 @@
                 "color" : "rgba(0, 0, 0, 0.87)",
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
-              "showChevron" : false,
-              "chevronSize" : 24,
-              "chevronSizeUnit" : "px",
-              "chevronColor" : "rgba(0, 0, 0, 0.38)",
-              "layout" : "column",
-              "autoScale" : true
+              "showChevron" : false
             },
             "title" : "Entity count",
             "dropShadow" : true,
