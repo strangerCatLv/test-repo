@@ -119,7 +119,7 @@
             "actions" : { },
             "displayTimewindow" : true,
             "alarmFilterConfig" : {
-              "statusList" : [ "ACTIVE", "CLEARED" ],
+              "statusList" : [ "ACTIVE" ],
               "severityList" : [ ],
               "typeList" : [ "DEVICE OFFLINE" ],
               "searchPropagatedAlarms" : true,
