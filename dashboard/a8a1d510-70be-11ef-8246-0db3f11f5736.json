@@ -296,10 +296,10 @@
           "id" : "2e72446f-323c-5418-3612-b0bc3a415b08",
           "alias" : "GROUPS ASSET",
           "filter" : {
-            "type" : "entityGroupList",
+            "type" : "entityList",
             "resolveMultiple" : true,
-            "groupType" : "ASSET",
-            "entityGroupList" : [ "eed597c0-70bd-11ef-8246-0db3f11f5736", "f30510a0-70bd-11ef-8246-0db3f11f5736" ]
+            "entityType" : "CUSTOMER",
+            "entityList" : [ "de60eae0-70c0-11ef-8246-0db3f11f5736", "e2cd93d0-70c0-11ef-8246-0db3f11f5736" ]
           }
         },
         "d0bc601a-3cac-b414-e7df-557b02e502a3" : {
