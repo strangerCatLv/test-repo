@@ -3590,8 +3590,8 @@
               "padding" : "12px"
             },
             "title" : "MONTHLY PRICES",
-            "dropShadow" : true,
-            "enableFullscreen" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
             "titleStyle" : null,
             "configMode" : "advanced",
             "actions" : { },
@@ -3635,7 +3635,7 @@
             "margin" : "0px",
             "borderRadius" : "0px",
             "iconSize" : "0px",
-            "enableDataExport" : true
+            "enableDataExport" : false
           },
           "row" : 0,
           "col" : 0,
