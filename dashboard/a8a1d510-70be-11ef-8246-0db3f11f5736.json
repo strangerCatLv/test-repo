@@ -2003,7 +2003,14 @@
           "sizeX" : 5,
           "sizeY" : 3.5,
           "config" : {
-            "datasources" : [ ],
+            "datasources" : [ {
+              "type" : "device",
+              "deviceId" : "e0e1dc00-d5d6-11ee-bebe-d97a1bfe6a79",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
             "timewindow" : {
               "displayValue" : "",
               "selectedTab" : 0,
