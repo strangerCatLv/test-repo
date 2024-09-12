@@ -936,10 +936,10 @@
           "id" : "d0bc601a-3cac-b414-e7df-557b02e502a3",
           "alias" : "selectedAsset",
           "filter" : {
-            "type" : "stateEntity",
-            "resolveMultiple" : false,
-            "stateEntityParamName" : "selectedAsset",
-            "defaultStateEntity" : null
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "1afcf1c0-59d7-11ef-a444-4f7ceb4fe115" ]
           }
         },
         "f98a711f-3658-41b5-ace5-4ae99700b42e" : {
