@@ -204,6 +204,16 @@
             "groupType" : "ASSET",
             "entityGroupList" : [ "eed597c0-70bd-11ef-8246-0db3f11f5736", "f30510a0-70bd-11ef-8246-0db3f11f5736" ]
           }
+        },
+        "d0bc601a-3cac-b414-e7df-557b02e502a3" : {
+          "id" : "d0bc601a-3cac-b414-e7df-557b02e502a3",
+          "alias" : "selectedAsset",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "selectedAsset",
+            "defaultStateEntity" : null
+          }
         }
       },
       "filters" : { },
