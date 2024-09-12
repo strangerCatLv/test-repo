@@ -226,7 +226,7 @@
           }
         },
         "fakultas_ui" : {
-          "name" : "FAKULTAS UI",
+          "name" : "${entityName}",
           "root" : false,
           "layouts" : {
             "main" : {
