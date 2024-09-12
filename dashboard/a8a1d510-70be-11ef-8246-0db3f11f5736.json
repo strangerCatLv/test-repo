@@ -1997,6 +1997,81 @@
           "row" : 0,
           "col" : 0,
           "id" : "4c51f4d2-4668-bea4-98a4-56a069c9fadf"
+        },
+        "10bf51de-d4e8-d433-b171-de1e42ad9fa6" : {
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "6bc3038e-e58f-a6ee-c036-59687d056ee0",
+              "filterId" : null,
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1678117909802,
+                  "endTimeMs" : 1678204309802
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "#29313c",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "# Markdown/HTML card \\n - **Current entity**: **${entityName}**. \\n - **Current value**: **${Random}**.",
+              "markdownTextFunction" : "if (data && data.length && data[0]['entityId']) {\n    const entityIdString = '{entityType: '+ (data[0]['entityType'] === 'ASSET' ? '\\'ASSET\\'' : '\\'DEVICE\\'') +', id: \\''+ data[0]['entityId'] + '\\'}';\n    return '<div class=\"history-container\">' +\n            '<mat-tab-group disableRipple class=\"history-tabs\">' +\n                '<mat-tab label=\"Today\">' +\n                    '<tb-dashboard-state [ctx]=\"ctx\" [entityId]=\"'+ entityIdString +'\" stateId=\"chart_day\"></tb-dashboard-state>' +\n                '</mat-tab>' +\n                '<mat-tab label=\"Weekly\">' +\n                    '<tb-dashboard-state [ctx]=\"ctx\" [entityId]=\"'+ entityIdString +'\" stateId=\"chart_week\"></tb-dashboard-state>' +\n                '</mat-tab>' +\n                '<mat-tab label=\"Monthly\">' +\n                    '<tb-dashboard-state [ctx]=\"ctx\" [entityId]=\"'+ entityIdString +'\" stateId=\"chart_month\"></tb-dashboard-state>' +\n                '</mat-tab>' +\n            '</mat-tab-group>' +\n        '</div>';\n} else {\n    return '<div class=\"history-container\"></div>';\n}",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".history-container {\n    height: 100%;\n    width: 100%;\n    padding: 0;\n}\n\n.history-container .history-tabs {\n    height: 100%;\n}\n"
+            },
+            "title" : "New Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "\n.history-container .history-tabs .mat-mdc-tab-header {\n    border-bottom: none;\n}\n\n.history-container .history-tabs .mat-mdc-tab {\n    height: 40px;\n    min-width: 50px;\n    opacity: 1;\n}\n\n.history-container .history-tabs .mat-mdc-tab .mdc-tab__text-label {\n    font-size: 14px;\n    font-weight: 600;\n    line-height: 20px;\n    color: #9FA6B4;\n}\n\n.history-container .history-tabs .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {\n    color: #29313C;\n}\n\n.history-container .history-tabs .mat-mdc-tab .mdc-tab-indicator__content--underline {\n    border-color: #4B535B;\n}\n\n.history-container .history-tabs .mat-mdc-tab-body-wrapper {\n    height: calc(100% - 40px);\n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "10bf51de-d4e8-d433-b171-de1e42ad9fa6",
+          "typeFullFqn" : "system.cards.markdown_card"
         }
       },
       "states" : {
@@ -2029,6 +2104,12 @@
                   "sizeY" : 11,
                   "row" : 6,
                   "col" : 9
+                },
+                "10bf51de-d4e8-d433-b171-de1e42ad9fa6" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 17,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
@@ -2037,7 +2118,7 @@
                 "margin" : 10,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
-                "autoFillHeight" : true,
+                "autoFillHeight" : false,
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70
@@ -2185,6 +2266,16 @@
               "entityType" : "CURRENT_USER",
               "id" : "13814000-1dd2-11b2-8080-808080808080"
             }
+          }
+        },
+        "6bc3038e-e58f-a6ee-c036-59687d056ee0" : {
+          "id" : "6bc3038e-e58f-a6ee-c036-59687d056ee0",
+          "alias" : "selectedAsset1",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "selectedAsset",
+            "defaultStateEntity" : null
           }
         }
       },
