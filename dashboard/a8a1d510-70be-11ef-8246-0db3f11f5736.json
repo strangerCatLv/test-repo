@@ -1323,10 +1323,10 @@
                   "startTimeMs" : 1726028015036,
                   "endTimeMs" : 1726114415036
                 },
-                "quickInterval" : "CURRENT_YEAR_SO_FAR"
+                "quickInterval" : "PREVIOUS_MONTH"
               },
               "aggregation" : {
-                "type" : "AVG",
+                "type" : "MAX",
                 "limit" : 25000
               },
               "timezone" : null
@@ -1714,10 +1714,10 @@
                   "startTimeMs" : 1726028015036,
                   "endTimeMs" : 1726114415036
                 },
-                "quickInterval" : "CURRENT_YEAR_SO_FAR"
+                "quickInterval" : "CURRENT_MONTH"
               },
               "aggregation" : {
-                "type" : "AVG",
+                "type" : "MAX",
                 "limit" : 25000
               },
               "timezone" : null
