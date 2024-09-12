@@ -98,7 +98,7 @@
       },
       "states" : {
         "default" : {
-          "name" : "UI - FALKULTAS - GEDUNG - RUANGAN - LANTAI",
+          "name" : "UI DEPOK & SALEMBA",
           "root" : true,
           "layouts" : {
             "main" : {
@@ -110,6 +110,54 @@
                   "col" : 0
                 }
               },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "fakultas_ui" : {
+          "name" : "FAKULTAS UI",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "list_gedung" : {
+          "name" : "LIST GEDUNG",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "device_details" : {
+          "name" : "DEVICE DETAILS",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
