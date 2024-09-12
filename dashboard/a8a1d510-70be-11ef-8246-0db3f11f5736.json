@@ -199,6 +199,94 @@
           "row" : 0,
           "col" : 0,
           "id" : "60a4aa6c-9b16-f25f-9238-1958a3d7c782"
+        },
+        "66552c23-2b37-8c2f-6bc6-f74597bb261a" : {
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "f98a711f-3658-41b5-ace5-4ae99700b42e",
+              "filterId" : null,
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1682001930247,
+                  "endTimeMs" : 1682088330247
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "# Markdown/HTML card \\n - **Current entity**: **${entityName}**. \\n - **Current value**: **${Random}**.",
+              "markdownTextFunction" : "if (!ctx.markdownInited) {\r\n    ctx.markdownInited = true;\r\n    return '<div class=\"sidebar-layout\" style=\"width: 100%; height: 100%; padding: 0; overflow-y: auto;\">' +\r\n            '<tb-dashboard-state fxFlex [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"cost\"></tb-dashboard-state>' +\r\n        '</div>';\r\n}\r\n",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "New Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "\n.tank-layout .tb-widget-container .tb-widget .tb-multiple-input {\n    /*background-color: rgba(0, 0, 0, 0.04);*/\n    border-radius: 4px;\n}\n\n.tank-layout .tank-filter-layout .tb-widget-container .tb-widget .tb-multiple-input .tb-multiple-input-container .label-wrapper {\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    overflow: hidden;\n}\n\n/*.tb-widget-container .tb-widget .tb-multiple-input .mdc-form-field > label {*/\n/*    min-width: 160px;*/\n/*}*/\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-form-field > label .mat-icon {\n    margin-left: 0;\n}\n\n/*.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-form-field .label-wrapper {*/\n/*    font-weight: bold;*/\n/*}*/\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch {\n    width: 42px;\n    margin-left: 8px;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__track {\n    border-radius: 16px;\n    height: 24px;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__handle-track {\n    width: calc(100% - 24px);\n    left: 2px;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__handle {\n    border-radius: 10px;\n    width: 20px;\n    height: 20px;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__ripple {\n    width: 40px;\n    height: 40px;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__icons {\n    display: none;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch.mdc-switch--unselected:enabled .mdc-switch__handle::after {\n    background: #fafafa;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch.mdc-switch--selected:enabled .mdc-switch__handle::after {\n    background: #fafafa;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__track::after {\n    background: #9699FF !important;\n}\n\n.mat-content.mat-content-hide-toggle {\n    height: 100%;\n    margin: 0;\n}\n\n.tank-layout .mat-expansion-panel-body {\n    padding: 0;\n}\n\n.tank-layout .mdc-button {\n    color: #474BD2 !important;\n}\n\n\n.tank-layout .panel-buttons {\n    width: 100%;\n    padding-right: 1px !important;\n}\n\n.tank-layout .mat-mdc-slide-toggle .mdc-switch {\n    margin-left: 0 !important;\n}\n",
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "pageSize" : 1024,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "arrow_rotate",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "\nif ($event.target && \n        ($event.target.className.includes('expansion-panel-header') ||\n        $event.target.className.includes('panel-description') ||\n        $event.target.className.includes('panel-title') || \n        $event.target.className.includes('panel-text') || \n        $event.target.className.includes('panel-buttons'))\n   ) {\n    const arrow = document.querySelector('#tb-rotation-arrow');\n    const panelTextLabel = document.getElementsByClassName('panel-text-label')[0];\n    const panelButtons = document.getElementsByClassName('panel-buttons')[0];\n    \n    widgetContext.panelOpenState = !widgetContext.panelOpenState;\n    arrow.classList.toggle('clicked');\n    panelTextLabel.textContent = widgetContext.enabledFiltersString;\n    \n    if (widgetContext.panelOpenState) {\n        panelTextLabel.style = \"display: block\";\n        panelButtons.style = \"display: none\";\n    } else {\n        panelTextLabel.style = \"display: none\";\n        panelButtons.style = \"display: block\";\n    }\n}",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "d3236ada-e737-f872-1fe0-a3fe5f1fe985"
+              } ]
+            },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "66552c23-2b37-8c2f-6bc6-f74597bb261a",
+          "typeFullFqn" : "system.cards.markdown_card"
         }
       },
       "states" : {
@@ -213,6 +301,12 @@
                   "sizeY" : 6,
                   "row" : 0,
                   "col" : 0
+                },
+                "66552c23-2b37-8c2f-6bc6-f74597bb261a" : {
+                  "sizeX" : 8,
+                  "sizeY" : 5,
+                  "row" : 0,
+                  "col" : 7
                 }
               },
               "gridSettings" : {
@@ -314,6 +408,18 @@
             "resolveMultiple" : false,
             "stateEntityParamName" : "selectedAsset",
             "defaultStateEntity" : null
+          }
+        },
+        "f98a711f-3658-41b5-ace5-4ae99700b42e" : {
+          "id" : "f98a711f-3658-41b5-ace5-4ae99700b42e",
+          "alias" : "Current user",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "CURRENT_USER",
+              "id" : "13814000-1dd2-11b2-8080-808080808080"
+            }
           }
         }
       },
