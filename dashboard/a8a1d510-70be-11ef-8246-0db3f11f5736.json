@@ -286,10 +286,17 @@
           "id" : "8af277ee-4364-c3aa-0a87-726f7e895d1f",
           "alias" : "ASSET TYPE",
           "filter" : {
-            "type" : "assetType",
+            "type" : "assetSearchQuery",
             "resolveMultiple" : true,
-            "assetTypes" : [ "FASILKOM", "FKG UI" ],
-            "assetNameFilter" : ""
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedAsset",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "Contains",
+            "assetTypes" : [ "FASILKOM", "FKG UI" ]
           }
         },
         "2e72446f-323c-5418-3612-b0bc3a415b08" : {
