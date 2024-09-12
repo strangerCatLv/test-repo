@@ -226,7 +226,7 @@
           }
         },
         "fakultas_ui" : {
-          "name" : "${entityName}",
+          "name" : "${selectedAsset:entityName}",
           "root" : false,
           "layouts" : {
             "main" : {
@@ -249,7 +249,7 @@
           }
         },
         "list_gedung" : {
-          "name" : "LIST GEDUNG",
+          "name" : "${selectedAsset:entityName}",
           "root" : false,
           "layouts" : {
             "main" : {
@@ -265,7 +265,7 @@
           }
         },
         "device_details" : {
-          "name" : "DEVICE DETAILS",
+          "name" : "${selectedAsset:entityName}",
           "root" : false,
           "layouts" : {
             "main" : {
