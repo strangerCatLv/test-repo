@@ -286,10 +286,14 @@
           "id" : "8af277ee-4364-c3aa-0a87-726f7e895d1f",
           "alias" : "ASSET TYPE",
           "filter" : {
-            "type" : "entityList",
+            "type" : "entityGroup",
             "resolveMultiple" : true,
-            "entityType" : "CUSTOMER",
-            "entityList" : [ "de60eae0-70c0-11ef-8246-0db3f11f5736", "e2cd93d0-70c0-11ef-8246-0db3f11f5736" ]
+            "groupStateEntity" : true,
+            "stateEntityParamName" : "selectedAsset",
+            "defaultStateGroupType" : null,
+            "defaultStateEntityGroup" : null,
+            "groupType" : null,
+            "entityGroup" : null
           }
         },
         "2e72446f-323c-5418-3612-b0bc3a415b08" : {
