@@ -2462,9 +2462,10 @@
           "sizeY" : 5,
           "config" : {
             "datasources" : [ {
-              "type" : "entity",
+              "type" : "device",
               "name" : "",
-              "entityAliasId" : "d0bc601a-3cac-b414-e7df-557b02e502a3",
+              "deviceId" : "1afcf1c0-59d7-11ef-a444-4f7ceb4fe115",
+              "entityAliasId" : null,
               "dataKeys" : [ {
                 "name" : "agg_monthly_prices",
                 "type" : "timeseries",
