@@ -83,7 +83,22 @@
             } ],
             "displayTimewindow" : false,
             "configMode" : "advanced",
-            "actions" : { },
+            "actions" : {
+              "actionCellButton" : [ {
+                "name" : "FAKULTAS",
+                "icon" : "domain",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : null,
+                "setEntityId" : true,
+                "stateEntityParamName" : "selectedAsset",
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "ba95da31-567b-a32c-679a-1a5480b0eb86"
+              } ]
+            },
             "showTitleIcon" : false,
             "titleIcon" : "list",
             "iconColor" : null,
