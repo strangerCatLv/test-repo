@@ -3638,6 +3638,74 @@
           "row" : 0,
           "col" : 0,
           "id" : "f7a3532b-da3f-e9d4-f9ba-0c41bed919b0"
+        },
+        "b2ea55e7-552a-9f74-41c5-9dd8875277b2" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "dataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1720938885955,
+                  "endTimeMs" : 1721025285955
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"market-layout\" style=\"width: 100%; height: 100%; padding: 0;\" fxLayout=\"column\">\n     <!--<h5 class=\"market-title\">TYPE HRB</h5>-->\n    <div fxFlex fxLayout=\"column\" style=\"position: relative;\">\n        <tb-dashboard-state fxFlex [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"monthly_price\"></tb-dashboard-state>\n    </div>\n</div>",
+              "markdownTextFunction" : "return '<div class=\"card-layout\" >' +\n            '<tb-dashboard-state fxFlex [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"type_hrb\" class=\"farme-state\"></tb-dashboard-state>' +\n        '</div>';",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-markdown-view .tb-progress-cover, .tb-markdown-view .mat-drawer-container {\n    background-color: #fff;\n}\n\n.tb-markdown-view div, .tb-markdown-view p {\n    line-height: normal;\n}\n\n.market-title {\n    /*position: absolute;*/\n    top: 5px;\n    left: 10px;\n    z-index: 2;\n    padding-top: 10px;\n    color: grey;\n    padding-bottom: 0px;\n    padding-left: 15px;\n}\n\n.market-layout {\n    position: relative;\n}\n\n/*.market-title {*/\n/*    font-size: 26px;*/\n/*    padding-bottom: 16px;*/\n/*    padding-left: 10px;*/\n/*    padding-top: 5px;*/\n/*    color: grey;*/\n/*}*/\n\n.state-filter-title {\n    padding-bottom: 15px;\n    padding-left: 10px;\n    color: grey;\n}\n\n.market-layout .alarm-badges-layout {\n    position: absolute;\n    height: 50px;\n    top: 0;\n    left: 0;\n    right: 0;\n    z-index: 2;\n    display: flex;\n    justify-content: center;\n    pointer-events: none;\n     padding-top: 30px;\n}\n\n.market-layout .alarm-badges-layout .alarm-badges {\n    height: 70px;\n    width: 350px;\n    pointer-events: all;\n    \n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "b2ea55e7-552a-9f74-41c5-9dd8875277b2"
         }
       },
       "states" : {
@@ -3676,6 +3744,12 @@
                   "sizeY" : 10,
                   "row" : 17,
                   "col" : 0
+                },
+                "b2ea55e7-552a-9f74-41c5-9dd8875277b2" : {
+                  "sizeX" : 11,
+                  "sizeY" : 9,
+                  "row" : 17,
+                  "col" : 9
                 }
               },
               "gridSettings" : {
