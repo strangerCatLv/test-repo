@@ -665,7 +665,7 @@
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
