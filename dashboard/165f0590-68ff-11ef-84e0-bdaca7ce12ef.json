@@ -877,6 +877,45 @@
           "col" : 0,
           "id" : "0f0515b0-d5e1-c7a5-9eb1-aa1d4cd2c2f5",
           "typeFullFqn" : "system.maps_v2.openstreetmap"
+        },
+        "ebe7de34-1afb-6b9e-c1d0-d38c7c2ebb8c" : {
+          "typeFullFqn" : "tenant.testing",
+          "type" : "static",
+          "sizeX" : 6.5,
+          "sizeY" : 12.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>HTML code here</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "testing",
+            "dropShadow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "ebe7de34-1afb-6b9e-c1d0-d38c7c2ebb8c"
         }
       },
       "states" : {
@@ -919,8 +958,14 @@
                 "dc341b1e-48f7-b44b-33a8-56237ce00beb" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
-                  "row" : 7,
-                  "col" : 12
+                  "row" : 23,
+                  "col" : 8
+                },
+                "ebe7de34-1afb-6b9e-c1d0-d38c7c2ebb8c" : {
+                  "sizeX" : 5,
+                  "sizeY" : 8,
+                  "row" : 13,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
