@@ -970,7 +970,7 @@
             "settings" : {
               "layout" : "square",
               "autoScale" : false,
-              "showLabel" : false,
+              "showLabel" : true,
               "labelFont" : {
                 "family" : "Roboto",
                 "size" : 16,
@@ -984,7 +984,7 @@
                 "color" : "rgba(0, 0, 0, 0.87)",
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
-              "showIcon" : false,
+              "showIcon" : true,
               "iconSize" : 40,
               "iconSizeUnit" : "px",
               "icon" : "thermostat",
