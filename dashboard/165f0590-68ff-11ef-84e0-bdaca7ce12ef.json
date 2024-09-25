@@ -969,14 +969,14 @@
             "padding" : "8px",
             "settings" : {
               "layout" : "square",
-              "autoScale" : false,
+              "autoScale" : true,
               "showLabel" : true,
               "labelFont" : {
+                "family" : "Roboto",
                 "size" : 16,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "500",
                 "style" : "normal",
+                "weight" : "500",
                 "lineHeight" : ""
               },
               "labelColor" : {
@@ -1006,7 +1006,7 @@
                 "color" : "rgba(0, 0, 0, 0.87)",
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
-              "showDate" : true,
+              "showDate" : false,
               "dateFormat" : {
                 "format" : null,
                 "lastUpdateAgo" : true,
@@ -1014,11 +1014,11 @@
                 "auto" : false
               },
               "dateFont" : {
+                "family" : "Roboto",
                 "size" : 12,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "500",
                 "style" : "normal",
+                "weight" : "500",
                 "lineHeight" : ""
               },
               "dateColor" : {
