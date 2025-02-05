@@ -101,7 +101,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : null,
-              "deviceId" : "e0e1dc00-d5d6-11ee-bebe-d97a1bfe6a79",
+              "deviceId" : "1afcf1c0-59d7-11ef-a444-4f7ceb4fe115",
               "entityAliasId" : null,
               "filterId" : null,
               "dataKeys" : [ {
