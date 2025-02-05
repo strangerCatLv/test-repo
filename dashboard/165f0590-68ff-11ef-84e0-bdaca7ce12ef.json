@@ -1413,7 +1413,7 @@
                 "type" : "openDashboardState",
                 "targetDashboardStateId" : "detail-devices",
                 "setEntityId" : true,
-                "stateEntityParamName" : null,
+                "stateEntityParamName" : "selectedDevice",
                 "openRightLayout" : false,
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
