@@ -1403,8 +1403,23 @@
               }
             } ],
             "displayTimewindow" : false,
-            "configMode" : "basic",
-            "actions" : { },
+            "configMode" : "advanced",
+            "actions" : {
+              "actionCellButton" : [ {
+                "name" : "device",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "detail-devices",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "7c2d5bd6-4958-5e65-6160-ee22a9934b68"
+              } ]
+            },
             "showTitleIcon" : false,
             "titleIcon" : "list",
             "iconColor" : null,
@@ -1537,6 +1552,23 @@
                   "col" : 7
                 }
               },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "detail-devices" : {
+          "name" : "detail-devices",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
