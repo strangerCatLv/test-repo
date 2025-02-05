@@ -1369,7 +1369,7 @@
           "filter" : {
             "type" : "assetType",
             "resolveMultiple" : true,
-            "assetTypes" : [ "Smart Residence" ],
+            "assetTypes" : [ "Smart Residences" ],
             "assetNameFilter" : ""
           }
         }
