@@ -1564,7 +1564,7 @@
           }
         },
         "detail-devices" : {
-          "name" : "detail-devices",
+          "name" : "${entityName}",
           "root" : false,
           "layouts" : {
             "main" : {
