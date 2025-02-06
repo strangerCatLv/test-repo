@@ -1063,7 +1063,7 @@
                 "type" : "openDashboardState",
                 "targetDashboardStateId" : "list-lantai",
                 "setEntityId" : true,
-                "stateEntityParamName" : "",
+                "stateEntityParamName" : "selectedAsset",
                 "openRightLayout" : false,
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
