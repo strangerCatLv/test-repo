@@ -1472,7 +1472,22 @@
             } ],
             "displayTimewindow" : false,
             "configMode" : "advanced",
-            "actions" : { },
+            "actions" : {
+              "actionCellButton" : [ {
+                "name" : "list unit",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "list-unit",
+                "setEntityId" : true,
+                "stateEntityParamName" : "selectedLantai",
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "17dc68ce-495e-33ba-c67b-544bb0dd5914"
+              } ]
+            },
             "showTitleIcon" : false,
             "titleIcon" : "list",
             "iconColor" : null,
@@ -1657,6 +1672,23 @@
               }
             }
           }
+        },
+        "list-unit" : {
+          "name" : "list-unit",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
         }
       },
       "entityAliases" : {
@@ -1777,6 +1809,23 @@
             "fetchLastLevelOnly" : false,
             "relationType" : "Contains",
             "assetTypes" : [ "LANTAI" ]
+          }
+        },
+        "ec55375b-c3d2-ca8f-d987-7637d877a913" : {
+          "id" : "ec55375b-c3d2-ca8f-d987-7637d877a913",
+          "alias" : "selectedLantai",
+          "filter" : {
+            "type" : "assetSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedLantai",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "Contains",
+            "assetTypes" : [ "UNIT" ]
           }
         }
       },
