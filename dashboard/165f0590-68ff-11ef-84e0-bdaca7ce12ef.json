@@ -1584,7 +1584,22 @@
             } ],
             "displayTimewindow" : false,
             "configMode" : "advanced",
-            "actions" : { },
+            "actions" : {
+              "actionCellButton" : [ {
+                "name" : "device",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "list-device",
+                "setEntityId" : true,
+                "stateEntityParamName" : "selectedDevices",
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "0f6233ba-cd92-4f29-2b55-c490ce27f7c4"
+              } ]
+            },
             "showTitleIcon" : false,
             "titleIcon" : "list",
             "iconColor" : null,
@@ -1930,6 +1945,23 @@
             "fetchLastLevelOnly" : false,
             "relationType" : "Contains",
             "assetTypes" : [ "UNIT" ]
+          }
+        },
+        "c0691ac8-a695-7b17-894e-dd03660f0928" : {
+          "id" : "c0691ac8-a695-7b17-894e-dd03660f0928",
+          "alias" : "list devices",
+          "filter" : {
+            "type" : "deviceSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedDevices",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "Contains",
+            "deviceTypes" : [ "LEFT", "SELIN", "soundbox_ECP", "INSIDE" ]
           }
         }
       },
