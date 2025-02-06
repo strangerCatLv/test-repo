@@ -1767,8 +1767,10 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
+              "layout" : "column",
+              "autoScale" : true,
               "showLabel" : true,
-              "label" : "Devices",
+              "label" : "lantai",
               "labelFont" : {
                 "family" : "Roboto",
                 "size" : 12,
@@ -1797,11 +1799,11 @@
               "iconBackgroundColor" : {
                 "type" : "constant",
                 "color" : "rgb(241, 141, 23)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
                 "rangeList" : {
                   "advancedMode" : false,
                   "range" : [ ]
-                },
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                }
               },
               "valueFont" : {
                 "family" : "Roboto",
@@ -1816,12 +1818,7 @@
                 "color" : "rgba(0, 0, 0, 0.87)",
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
-              "showChevron" : false,
-              "chevronSize" : 24,
-              "chevronSizeUnit" : "px",
-              "chevronColor" : "rgba(0, 0, 0, 0.38)",
-              "layout" : "column",
-              "autoScale" : true
+              "showChevron" : false
             },
             "title" : "Entity count",
             "dropShadow" : true,
@@ -1937,8 +1934,10 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
+              "layout" : "column",
+              "autoScale" : true,
               "showLabel" : true,
-              "label" : "Devices",
+              "label" : "unit",
               "labelFont" : {
                 "family" : "Roboto",
                 "size" : 12,
@@ -1967,11 +1966,11 @@
               "iconBackgroundColor" : {
                 "type" : "constant",
                 "color" : "rgb(241, 141, 23)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
                 "rangeList" : {
                   "advancedMode" : false,
                   "range" : [ ]
-                },
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                }
               },
               "valueFont" : {
                 "family" : "Roboto",
@@ -1986,12 +1985,7 @@
                 "color" : "rgba(0, 0, 0, 0.87)",
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
-              "showChevron" : false,
-              "chevronSize" : 24,
-              "chevronSizeUnit" : "px",
-              "chevronColor" : "rgba(0, 0, 0, 0.38)",
-              "layout" : "column",
-              "autoScale" : true
+              "showChevron" : false
             },
             "title" : "Entity count",
             "dropShadow" : true,
@@ -2619,10 +2613,10 @@
           "id" : "0a4a9892-a324-4af7-c45a-df00151d72ff",
           "alias" : "count device",
           "filter" : {
-            "type" : "entityGroupList",
+            "type" : "deviceType",
             "resolveMultiple" : true,
-            "groupType" : "DEVICE",
-            "entityGroupList" : [ "45e77330-d609-11ee-bebe-d97a1bfe6a79", "cf778c90-38d6-11ef-8c5d-4b6c189654c3" ]
+            "deviceTypes" : [ "INSIDE", "LEFT", "SELIN", "soundbox_ECP" ],
+            "deviceNameFilter" : ""
           }
         }
       },
