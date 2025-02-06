@@ -16,7 +16,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : null,
-              "deviceId" : "e0e1dc00-d5d6-11ee-bebe-d97a1bfe6a79",
+              "deviceId" : "b44a2160-5bb5-11ef-a444-4f7ceb4fe115",
               "entityAliasId" : null,
               "filterId" : null,
               "dataKeys" : [ {
@@ -1061,9 +1061,9 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "list-device",
+                "targetDashboardStateId" : "list-lantai",
                 "setEntityId" : true,
-                "stateEntityParamName" : "selectedAsset",
+                "stateEntityParamName" : "",
                 "openRightLayout" : false,
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
@@ -1536,6 +1536,23 @@
               }
             }
           }
+        },
+        "list-lantai" : {
+          "name" : "list-lantai",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
         }
       },
       "entityAliases" : {
@@ -1578,12 +1595,16 @@
         },
         "a5a993e3-eebd-bc51-9139-dba01ca706aa" : {
           "id" : "a5a993e3-eebd-bc51-9139-dba01ca706aa",
-          "alias" : "home",
+          "alias" : "ALL GEDUNG",
           "filter" : {
-            "type" : "assetType",
+            "type" : "entityGroup",
             "resolveMultiple" : true,
-            "assetTypes" : [ "Smart Residences" ],
-            "assetNameFilter" : ""
+            "groupStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateGroupType" : null,
+            "defaultStateEntityGroup" : null,
+            "groupType" : "ASSET",
+            "entityGroup" : "096c1f60-e467-11ef-ae26-5189aec2d912"
           }
         },
         "2975cf2d-f6f1-fbd6-2d79-870c6e6e1f3b" : {
