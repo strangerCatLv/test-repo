@@ -1707,6 +1707,176 @@
           "row" : 0,
           "col" : 0,
           "id" : "86295f3a-612a-a297-e39e-46a6098a7ab5"
+        },
+        "de2f5b3d-0e14-2f6d-3ea1-bdf623e50f63" : {
+          "typeFullFqn" : "system.entity_count",
+          "type" : "latest",
+          "sizeX" : 3.5,
+          "sizeY" : 1.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entityCount",
+              "name" : "",
+              "entityAliasId" : "4896fb38-cac4-64aa-f38f-b0bd05ad0421",
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "settings" : { },
+                "_hash" : 0.3593375954571967
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ],
+                "assignedToCurrentUser" : false,
+                "assigneeId" : null
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1738746442473,
+                  "endTimeMs" : 1738832842473
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "showLabel" : true,
+              "label" : "Devices",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.54)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "showIcon" : true,
+              "iconSize" : 20,
+              "iconSizeUnit" : "px",
+              "icon" : "devices",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "rgba(255, 255, 255, 1)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "showIconBackground" : true,
+              "iconBackgroundSize" : 36,
+              "iconBackgroundSizeUnit" : "px",
+              "iconBackgroundColor" : {
+                "type" : "constant",
+                "color" : "rgb(241, 141, 23)",
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ]
+                },
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "24px"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "showChevron" : false,
+              "chevronSize" : 24,
+              "chevronSizeUnit" : "px",
+              "chevronColor" : "rgba(0, 0, 0, 0.38)",
+              "layout" : "column",
+              "autoScale" : true
+            },
+            "title" : "Entity count",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "",
+            "decimals" : null,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "advanced",
+            "displayTimewindow" : true,
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "iconSize" : "14px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : null,
+                "weight" : null,
+                "style" : null,
+                "lineHeight" : "1"
+              },
+              "color" : null
+            },
+            "titleColor" : "rgba(0, 0, 0, 0.54)",
+            "enableDataExport" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "de2f5b3d-0e14-2f6d-3ea1-bdf623e50f63"
         }
       },
       "states" : {
@@ -1763,6 +1933,12 @@
                   "sizeY" : 6,
                   "row" : 1,
                   "col" : 14
+                },
+                "de2f5b3d-0e14-2f6d-3ea1-bdf623e50f63" : {
+                  "sizeX" : 3,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 9
                 }
               },
               "gridSettings" : {
@@ -2065,6 +2241,36 @@
             "fetchLastLevelOnly" : false,
             "relationType" : "Contains",
             "deviceTypes" : [ "LEFT", "SELIN", "soundbox_ECP", "INSIDE" ]
+          }
+        },
+        "4896fb38-cac4-64aa-f38f-b0bd05ad0421" : {
+          "id" : "4896fb38-cac4-64aa-f38f-b0bd05ad0421",
+          "alias" : "count lantai",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "LANTAI" ],
+            "assetNameFilter" : ""
+          }
+        },
+        "c723d319-3140-222f-3652-e5d8bc34e60a" : {
+          "id" : "c723d319-3140-222f-3652-e5d8bc34e60a",
+          "alias" : "count unit",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "UNIT" ],
+            "assetNameFilter" : ""
+          }
+        },
+        "0a4a9892-a324-4af7-c45a-df00151d72ff" : {
+          "id" : "0a4a9892-a324-4af7-c45a-df00151d72ff",
+          "alias" : "count device",
+          "filter" : {
+            "type" : "entityGroupList",
+            "resolveMultiple" : true,
+            "groupType" : "DEVICE",
+            "entityGroupList" : [ "45e77330-d609-11ee-bebe-d97a1bfe6a79", "cf778c90-38d6-11ef-8c5d-4b6c189654c3" ]
           }
         }
       },
