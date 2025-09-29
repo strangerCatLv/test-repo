@@ -242,7 +242,7 @@
             "direction" : "FROM",
             "maxLevel" : null,
             "fetchLastLevelOnly" : false,
-            "relationType" : "Contains",
+            "relationType" : "User",
             "deviceTypes" : [ "thermostat", "INSIDE", "SoundBox", "SELIN", "LEFT" ]
           }
         }
