@@ -48,7 +48,7 @@
               "failedClaimDevice" : "",
               "requiredErrorDevice" : "",
               "requiredErrorSecretKey" : "",
-              "relateDevice" : false,
+              "relateDevice" : true,
               "relateDirection" : "from",
               "relateType" : "Contains"
             },
