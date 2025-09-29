@@ -191,6 +191,93 @@
           "row" : 0,
           "col" : 0,
           "id" : "f4dd3ce1-dd1c-94c6-5808-860b1f6d2978"
+        },
+        "a4eb1c1b-ac04-405c-8408-1141b3888b81" : {
+          "typeFullFqn" : "system.input_widgets.device_claiming_widget",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 4.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "SCAN QR",
+              "labelClaimButon" : "",
+              "deviceSecret" : true,
+              "showLabel" : true,
+              "deviceLabel" : "",
+              "secretKeyLabel" : "",
+              "successfulClaimDevice" : "",
+              "deviceNotFound" : "",
+              "failedClaimDevice" : "",
+              "requiredErrorDevice" : "",
+              "requiredErrorSecretKey" : "",
+              "relateDevice" : true,
+              "relateDirection" : "to",
+              "relateType" : "Contains"
+            },
+            "title" : "Device claiming widget",
+            "dropShadow" : true,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "headerButton" : [ {
+                "name" : "QR",
+                "buttonType" : "icon",
+                "icon" : "more_horiz",
+                "buttonColor" : "rgba(0, 0, 0, 0.87)",
+                "customButtonStyle" : { },
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "mobileAction",
+                "mobileAction" : {
+                  "type" : "scanQrCode",
+                  "handleEmptyResultFunction" : "// Optional function body to handle empty result. \n// Usually this happens when user cancels the action (for ex. by pressing phone back button). \n\nshowEmptyResultDialog('Scan QR code action was canceled!');\n\nfunction showEmptyResultDialog(message) {\n    setTimeout(function() {\n        widgetContext.showInfoToast(message).subscribe();\n    }, 100);\n}\n",
+                  "handleErrorFunction" : "// Optional function body to handle error occurred while mobile action execution \n// - error - Error message\n\nshowErrorDialog('Failed to scan QR code', error);\n\nfunction showErrorDialog(title, error) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, error).subscribe();\n    }, 100);\n}\n",
+                  "processQrCodeFunction" : "// Function body to process result of QR code scanning. \n// - code - scanned QR code\n// - format - scanned QR code format\n\nshowQrCodeDialog('QR Code', code, format);\n\nfunction showQrCodeDialog(title, code, format) {\n    setTimeout(function() {\n        widgetContext.dialogs.alert(title, 'Code: ['+code+']<br>Format: ' + format).subscribe();\n    }, 100);\n}\n"
+                },
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "4aa8c3e9-47bd-aea6-a55a-692f386d101e"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a4eb1c1b-ac04-405c-8408-1141b3888b81"
         }
       },
       "states" : {
@@ -211,6 +298,12 @@
                   "sizeY" : 8,
                   "row" : 4,
                   "col" : 0
+                },
+                "a4eb1c1b-ac04-405c-8408-1141b3888b81" : {
+                  "sizeX" : 7,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 10
                 }
               },
               "gridSettings" : {
