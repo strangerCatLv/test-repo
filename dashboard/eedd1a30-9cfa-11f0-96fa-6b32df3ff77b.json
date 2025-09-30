@@ -245,15 +245,9 @@
               "activatedState" : {
                 "action" : "DO_NOTHING",
                 "defaultValue" : true,
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
-                },
                 "getAttribute" : {
-                  "scope" : null,
-                  "key" : "state"
+                  "key" : "state",
+                  "scope" : null
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -264,8 +258,14 @@
                 },
                 "dataToValue" : {
                   "type" : "NONE",
-                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                  "compareToValue" : "76b0f090-9a85-11ef-8268-b3103611f169"
+                  "compareToValue" : "76b0f090-9a85-11ef-8268-b3103611f169",
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                },
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
                 }
               },
               "disabledState" : {
@@ -290,21 +290,48 @@
               },
               "appearance" : {
                 "type" : "outlined",
-                "autoScale" : true,
                 "showLabel" : true,
-                "label" : "Button",
+                "label" : "Dashboard",
                 "showIcon" : true,
-                "icon" : "home",
+                "icon" : "mdi:monitor-dashboard",
                 "iconSize" : 24,
                 "iconSizeUnit" : "px",
-                "mainColor" : "var(--tb-primary-500)",
+                "mainColor" : "var(--tb-primary-900)",
                 "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
                 "customStyle" : {
-                  "enabled" : null,
-                  "hovered" : null,
-                  "pressed" : null,
-                  "activated" : null,
-                  "disabled" : null
+                  "enabled" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "var(--tb-primary-900)",
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "#FFFFFF",
+                    "overrideDropShadow" : false
+                  },
+                  "hovered" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "var(--tb-primary-900)",
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "#FFFFFF",
+                    "overrideDropShadow" : false
+                  },
+                  "pressed" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "var(--tb-primary-900)",
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "#FFFFFF"
+                  },
+                  "activated" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "var(--tb-primary-900)",
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "#FFFFFF"
+                  },
+                  "disabled" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "rgb(67, 91, 99)",
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "rgb(255, 255, 255)"
+                  }
                 }
               }
             },
@@ -350,77 +377,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "af12b1a5-aaa3-d308-fa5a-d4d7c64db04c"
-        },
-        "4f8dbc2e-301a-877d-4044-445affdbdcb6" : {
-          "typeFullFqn" : "system.navigation_widgets.navigation_card",
-          "type" : "static",
-          "sizeX" : 2.5,
-          "sizeY" : 2,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgba(255,255,255,0)",
-            "color" : "rgba(255,255,255,0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "name" : "{i18n:device.devices}",
-              "icon" : "devices_other",
-              "path" : "/dashboards/all/3b80bcb0-9da6-11f0-96fa-6b32df3ff77b"
-            },
-            "title" : "Navigation card",
-            "dropShadow" : false,
-            "showTitleIcon" : false,
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "showLegend" : false,
-            "actions" : {
-              "headerButton" : [ {
-                "name" : "test",
-                "buttonType" : "icon",
-                "icon" : "more_horiz",
-                "buttonColor" : "rgba(255,255,255,0.87)",
-                "customButtonStyle" : { },
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboard",
-                "targetDashboardStateId" : "",
-                "setEntityId" : false,
-                "stateEntityParamName" : null,
-                "openNewBrowserTab" : false,
-                "targetDashboardId" : "3b80bcb0-9da6-11f0-96fa-6b32df3ff77b",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "e7faeecc-b83f-fd1c-5730-fc5e0f66f80e"
-              } ]
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "4f8dbc2e-301a-877d-4044-445affdbdcb6"
         }
       },
       "states" : {
@@ -444,15 +400,9 @@
                 },
                 "af12b1a5-aaa3-d308-fa5a-d4d7c64db04c" : {
                   "sizeX" : 5,
-                  "sizeY" : 3,
+                  "sizeY" : 2,
                   "row" : 0,
                   "col" : 8
-                },
-                "4f8dbc2e-301a-877d-4044-445affdbdcb6" : {
-                  "sizeX" : 2,
-                  "sizeY" : 2,
-                  "row" : 5,
-                  "col" : 10
                 }
               },
               "gridSettings" : {
