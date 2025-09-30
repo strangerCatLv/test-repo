@@ -709,9 +709,9 @@
           "sizeY" : 3,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "b8056670-9d0e-11f0-96fa-6b32df3ff77b",
+              "entityAliasId" : "f0899613-14bd-dec3-fee1-431f86e831d9",
               "dataKeys" : [ ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -888,6 +888,20 @@
             "fetchLastLevelOnly" : false,
             "relationType" : "Asset",
             "assetTypes" : [ "LANTAI" ]
+          }
+        },
+        "f0899613-14bd-dec3-fee1-431f86e831d9" : {
+          "id" : "f0899613-14bd-dec3-fee1-431f86e831d9",
+          "alias" : "grup",
+          "filter" : {
+            "type" : "entityGroup",
+            "resolveMultiple" : true,
+            "groupStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateGroupType" : null,
+            "defaultStateEntityGroup" : null,
+            "groupType" : "DEVICE",
+            "entityGroup" : "69076710-9a87-11ef-8268-b3103611f169"
           }
         }
       },
