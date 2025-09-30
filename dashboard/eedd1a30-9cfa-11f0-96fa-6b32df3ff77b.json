@@ -377,70 +377,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "af12b1a5-aaa3-d308-fa5a-d4d7c64db04c"
-        },
-        "fcc4fd96-92ff-529a-67c2-d0360f6d2fe7" : {
-          "typeFullFqn" : "system.cards.qr_code",
-          "type" : "latest",
-          "sizeX" : 4,
-          "sizeY" : 3.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "131c2729-0e12-a73a-4b43-84d7b5d24315",
-              "filterId" : null,
-              "dataKeys" : [ ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1759115033309,
-                  "endTimeMs" : 1759201433309
-                },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : true,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "qrCodeTextPattern" : "${entityName}",
-              "useQrCodeTextFunction" : false,
-              "qrCodeTextFunction" : "return data[0] ? data[0]['entityName'] : '';"
-            },
-            "title" : "QR Code",
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "fcc4fd96-92ff-529a-67c2-d0360f6d2fe7"
         }
       },
       "states" : {
@@ -466,12 +402,6 @@
                   "sizeX" : 5,
                   "sizeY" : 2,
                   "row" : 0,
-                  "col" : 8
-                },
-                "fcc4fd96-92ff-529a-67c2-d0360f6d2fe7" : {
-                  "sizeX" : 4,
-                  "sizeY" : 3,
-                  "row" : 2,
                   "col" : 8
                 }
               },
