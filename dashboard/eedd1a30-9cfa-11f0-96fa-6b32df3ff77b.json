@@ -850,6 +850,155 @@
           "row" : 0,
           "col" : 0,
           "id" : "d302cedf-fc9e-c481-b824-cedf9e850e4d"
+        },
+        "0b9eb076-5f3c-5884-bec0-be23d84b6a51" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "f0899613-14bd-dec3-fee1-431f86e831d9",
+              "dataKeys" : [ {
+                "name" : "userId",
+                "type" : "attribute",
+                "label" : "userId",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.7578133930427007
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1750231856461,
+                  "endTimeMs" : 1750318256461
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\" />\r\n    <title>ThingsBoard Relations</title>\r\n</head>\r\n\r\n<body>\r\n    <div>\r\n        <button id=\"startBtn\" onclick=\"fetchRelations()\">Start</button>\r\n        <pre id=\"result_container\" style=\"margin-top: 20px;\"></pre>\r\n    </div>\r\n\r\n    <script>\r\n        const userId = \"531429a0-2fae-11ef-8438-43038932f97c\"; // permanent\r\n\r\n        async function fetchRelations() {\r\n            try {\r\n                // Login\r\n                const loginResp = await fetch('https://selin.solu.co.id:8700/api/auth/login', {\r\n                    method: 'POST',\r\n                    headers: {\r\n                        'Content-Type': 'application/json'\r\n                    },\r\n                    body: JSON.stringify({\r\n                        username: \"demo@solu.co.id\",\r\n                        password: \"5bHncB3qLkKzbWWkpFJMTX2NGQu8Qm\"\r\n                    })\r\n                });\r\n                if (!loginResp.ok) throw new Error(\"Login gagal\");\r\n                const {\r\n                    token\r\n                } = await loginResp.json();\r\n\r\n                // Fetch relations\r\n                const url = \"https://selin.solu.co.id:8700/api/relations/info?fromId=\" + userId + \"&fromType=USER\";\r\n                const resp = await fetch(url, {\r\n                    method: 'GET',\r\n                    headers: {\r\n                        'Content-Type': 'application/json',\r\n                        'Authorization': \"Bearer \" + token\r\n                    }\r\n                });\r\n                if (!resp.ok) throw new Error(\"Gagal fetch relations\");\r\n                const data = await resp.json();\r\n\r\n                // Grouping ke format yang diinginkan\r\n                const grouped = {};\r\n                data.forEach(item => {\r\n                    const entityType = item.to.entityType;\r\n                    const toName = item.toName || \"-\";\r\n                    const toId = item.to.id;\r\n\r\n                    if (!grouped[entityType]) grouped[entityType] = {};\r\n                    grouped[entityType][toName] = toId;\r\n                });\r\n\r\n                // Tampilkan hasil sebagai JSON terformat\r\n                document.getElementById(\"result_container\").textContent =\r\n                    JSON.stringify(grouped, null, 4);\r\n\r\n            } catch (error) {\r\n                console.error(\"❌ Error:\", error);\r\n                document.getElementById(\"result_container\").textContent =\r\n                    `Error: ${error.message}`;\r\n            }\r\n        }\r\n    </script>\r\n</body>\r\n\r\n</html>",
+              "cardCss" : "    #startBtn {\r\n        padding: 10px 20px;\r\n        font-size: 16px;\r\n        cursor: pointer;\r\n    }\r\n\r\n    #result_container {\r\n        margin-top: 20px;\r\n        text-align: left;\r\n        width: 80%;\r\n        max-width: 800px;\r\n    }\r\n\r\n    body {\r\n        font-family: Arial, sans-serif;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        margin-top: 40px;\r\n    }\r\n\r\n    "
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "today",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "today",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "4691758d-7fdb-9b7f-a54d-cf3bfdeb3d37"
+              }, {
+                "name" : "lastDay",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "lastDay",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "6eb2542d-d63f-0718-099f-3a3b394629c3"
+              }, {
+                "name" : "thisWeek",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "thisWeek",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "7167afda-be10-1b36-3c4b-8bc9bc435b75"
+              }, {
+                "name" : "thisMonth",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "thisMonth",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "055f9134-eff4-a0cc-30a8-25b103e8ce41"
+              }, {
+                "name" : "default",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "default",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "5b1bb53e-1717-a160-9775-de03e0e60f17"
+              } ]
+            },
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "0b9eb076-5f3c-5884-bec0-be23d84b6a51"
         }
       },
       "states" : {
@@ -891,7 +1040,13 @@
                 },
                 "d302cedf-fc9e-c481-b824-cedf9e850e4d" : {
                   "sizeX" : 10,
-                  "sizeY" : 13,
+                  "sizeY" : 6,
+                  "row" : 7,
+                  "col" : 14
+                },
+                "0b9eb076-5f3c-5884-bec0-be23d84b6a51" : {
+                  "sizeX" : 10,
+                  "sizeY" : 6,
                   "row" : 0,
                   "col" : 14
                 }
