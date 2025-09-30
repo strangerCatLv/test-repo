@@ -378,24 +378,18 @@
           "col" : 0,
           "id" : "af12b1a5-aaa3-d308-fa5a-d4d7c64db04c"
         },
-        "db499cee-8016-932d-bb8e-81a437db7ca6" : {
-          "typeFullFqn" : "system.input_widgets.web_camera_input",
+        "fcc4fd96-92ff-529a-67c2-d0360f6d2fe7" : {
+          "typeFullFqn" : "system.cards.qr_code",
           "type" : "latest",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
+          "sizeX" : 4,
+          "sizeY" : 3.5,
           "config" : {
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
               "entityAliasId" : "131c2729-0e12-a73a-4b43-84d7b5d24315",
-              "dataKeys" : [ {
-                "name" : "test",
-                "type" : "attribute",
-                "label" : "test",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.3033050019202419
-              } ],
+              "filterId" : null,
+              "dataKeys" : [ ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
@@ -417,8 +411,8 @@
                 "interval" : 1000,
                 "timewindowMs" : 60000,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1759114848493,
-                  "endTimeMs" : 1759201248493
+                  "startTimeMs" : 1759115033309,
+                  "endTimeMs" : 1759201433309
                 },
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
@@ -435,28 +429,18 @@
             "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
-            "settings" : { },
-            "title" : "Photo camera input",
-            "showTitleIcon" : false,
-            "titleIcon" : "more_horiz",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
+            "settings" : {
+              "qrCodeTextPattern" : "${entityName}",
+              "useQrCodeTextFunction" : false,
+              "qrCodeTextFunction" : "return data[0] ? data[0]['entityName'] : '';"
             },
+            "title" : "QR Code",
             "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { }
+            "displayTimewindow" : true
           },
           "row" : 0,
           "col" : 0,
-          "id" : "db499cee-8016-932d-bb8e-81a437db7ca6"
+          "id" : "fcc4fd96-92ff-529a-67c2-d0360f6d2fe7"
         }
       },
       "states" : {
@@ -484,8 +468,8 @@
                   "row" : 0,
                   "col" : 8
                 },
-                "db499cee-8016-932d-bb8e-81a437db7ca6" : {
-                  "sizeX" : 7,
+                "fcc4fd96-92ff-529a-67c2-d0360f6d2fe7" : {
+                  "sizeX" : 4,
                   "sizeY" : 3,
                   "row" : 2,
                   "col" : 8
