@@ -243,8 +243,8 @@
             "padding" : "0px",
             "settings" : {
               "activatedState" : {
-                "action" : "GET_DASHBOARD_STATE",
-                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "defaultValue" : true,
                 "executeRpc" : {
                   "method" : null,
                   "requestTimeout" : null,
@@ -328,7 +328,24 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "borderRadius" : "4px",
-            "configMode" : "advanced"
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "name" : "dash",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboard",
+                "targetDashboardStateId" : "",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : false,
+                "targetDashboardId" : "76b0f090-9a85-11ef-8268-b3103611f169",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "4d4e1e24-7459-c04a-e0d2-484704881990"
+              } ]
+            }
           },
           "row" : 0,
           "col" : 0,
