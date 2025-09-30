@@ -377,6 +377,86 @@
           "row" : 0,
           "col" : 0,
           "id" : "af12b1a5-aaa3-d308-fa5a-d4d7c64db04c"
+        },
+        "db499cee-8016-932d-bb8e-81a437db7ca6" : {
+          "typeFullFqn" : "system.input_widgets.web_camera_input",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "131c2729-0e12-a73a-4b43-84d7b5d24315",
+              "dataKeys" : [ {
+                "name" : "test",
+                "type" : "attribute",
+                "label" : "test",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.3033050019202419
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1759114848493,
+                  "endTimeMs" : 1759201248493
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Photo camera input",
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "db499cee-8016-932d-bb8e-81a437db7ca6"
         }
       },
       "states" : {
@@ -402,6 +482,12 @@
                   "sizeX" : 5,
                   "sizeY" : 2,
                   "row" : 0,
+                  "col" : 8
+                },
+                "db499cee-8016-932d-bb8e-81a437db7ca6" : {
+                  "sizeX" : 7,
+                  "sizeY" : 3,
+                  "row" : 2,
                   "col" : 8
                 }
               },
