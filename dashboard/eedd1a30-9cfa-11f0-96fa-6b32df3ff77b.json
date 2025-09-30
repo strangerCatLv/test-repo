@@ -790,7 +790,7 @@
             "direction" : "FROM",
             "maxLevel" : null,
             "fetchLastLevelOnly" : false,
-            "relationType" : "User",
+            "relationType" : "Asset",
             "assetTypes" : [ "LANTAI" ]
           }
         }
