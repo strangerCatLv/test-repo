@@ -382,7 +382,7 @@
             "settings" : {
               "name" : "{i18n:device.devices}",
               "icon" : "devices_other",
-              "path" : "/dashboards"
+              "path" : "/dashboards/all/3b80bcb0-9da6-11f0-96fa-6b32df3ff77b"
             },
             "title" : "Navigation card",
             "dropShadow" : false,
