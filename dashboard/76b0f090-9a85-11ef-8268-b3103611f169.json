@@ -583,10 +583,12 @@
           "id" : "be46c070-444f-c6d5-b6c0-a7f1b76e0e2a",
           "alias" : "user",
           "filter" : {
-            "type" : "stateEntity",
+            "type" : "singleEntity",
             "resolveMultiple" : false,
-            "stateEntityParamName" : null,
-            "defaultStateEntity" : null
+            "singleEntity" : {
+              "entityType" : "CURRENT_USER",
+              "id" : "13814000-1dd2-11b2-8080-808080808080"
+            }
           }
         },
         "a751d70e-5817-02e8-4227-2457bbcfe172" : {
