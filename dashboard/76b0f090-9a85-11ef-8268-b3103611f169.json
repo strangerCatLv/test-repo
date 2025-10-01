@@ -147,7 +147,22 @@
             } ],
             "displayTimewindow" : false,
             "configMode" : "advanced",
-            "actions" : { },
+            "actions" : {
+              "rowClick" : [ {
+                "name" : "current",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "current_device",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "2a1bd994-c551-b808-7fb3-7d793e903a27"
+              } ]
+            },
             "showTitleIcon" : false,
             "titleIcon" : "list",
             "iconColor" : null,
@@ -187,6 +202,23 @@
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
                 "layoutType" : "default"
+              }
+            }
+          }
+        },
+        "current_device" : {
+          "name" : "current_device",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
               }
             }
           }
