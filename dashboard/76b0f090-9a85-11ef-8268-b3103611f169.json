@@ -548,13 +548,23 @@
           "id" : "be46c070-444f-c6d5-b6c0-a7f1b76e0e2a",
           "alias" : "current user",
           "filter" : {
-            "type" : "stateEntity",
-            "resolveMultiple" : false,
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
             "stateEntityParamName" : null,
             "defaultStateEntity" : {
               "entityType" : "CURRENT_CUSTOMER",
               "id" : "7304ef60-2fa4-11ef-8438-43038932f97c"
-            }
+            },
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : null,
+            "fetchLastLevelOnly" : false,
+            "filters" : [ {
+              "relationType" : "Customer",
+              "entityTypes" : [ "USER" ],
+              "negate" : false
+            } ]
           }
         }
       },
