@@ -77,7 +77,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "c8e1fea6-c90b-625f-b0a9-334b850ed915",
+              "entityAliasId" : "a751d70e-5817-02e8-4227-2457bbcfe172",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "name",
@@ -301,7 +301,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "be46c070-444f-c6d5-b6c0-a7f1b76e0e2a",
+              "entityAliasId" : "c8e1fea6-c90b-625f-b0a9-334b850ed915",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "name",
@@ -310,84 +310,6 @@
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.7489336761614557
-              }, {
-                "name" : "email",
-                "type" : "entityField",
-                "label" : "email",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.38980827590072975,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "firstName",
-                "type" : "entityField",
-                "label" : "firstName",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.8828423314007378,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "lastName",
-                "type" : "entityField",
-                "label" : "lastName",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.35215307553396613,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "phone",
-                "type" : "entityField",
-                "label" : "phone",
-                "color" : "#607d8b",
-                "settings" : { },
-                "_hash" : 0.045263267311379196,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "ownerName",
-                "type" : "entityField",
-                "label" : "ownerName",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.8796690332260231,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "ownerType",
-                "type" : "entityField",
-                "label" : "ownerType",
-                "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.6002662717598599,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -528,10 +450,20 @@
           "id" : "c8e1fea6-c90b-625f-b0a9-334b850ed915",
           "alias" : "device type",
           "filter" : {
-            "type" : "deviceType",
+            "type" : "deviceSearchQuery",
             "resolveMultiple" : true,
-            "deviceTypes" : [ "thermostat" ],
-            "deviceNameFilter" : ""
+            "rootStateEntity" : true,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : {
+              "entityType" : "CURRENT_USER",
+              "id" : "13814000-1dd2-11b2-8080-808080808080"
+            },
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : null,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "User",
+            "deviceTypes" : [ "thermostat" ]
           }
         },
         "0cf2a65b-ec3a-1fd3-c4a5-d9192b64284f" : {
@@ -565,6 +497,16 @@
               "entityTypes" : [ "USER" ],
               "negate" : false
             } ]
+          }
+        },
+        "a751d70e-5817-02e8-4227-2457bbcfe172" : {
+          "id" : "a751d70e-5817-02e8-4227-2457bbcfe172",
+          "alias" : "list device",
+          "filter" : {
+            "type" : "deviceType",
+            "resolveMultiple" : true,
+            "deviceTypes" : [ "thermostat" ],
+            "deviceNameFilter" : ""
           }
         }
       },
