@@ -8,53 +8,6 @@
     "configuration" : {
       "description" : "",
       "widgets" : {
-        "2da0208a-c6fb-55cc-6a43-0dc62fdabac3" : {
-          "typeFullFqn" : "system.control_widgets.switch_control",
-          "type" : "rpc",
-          "sizeX" : 4,
-          "sizeY" : 2.5,
-          "config" : {
-            "targetDeviceAliases" : [ ],
-            "showTitle" : false,
-            "backgroundColor" : "#e6e7e8",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "initialValue" : false,
-              "retrieveValueMethod" : "rpc",
-              "valueKey" : "value",
-              "getValueMethod" : "toggleOut",
-              "parseValueFunction" : "return data ? true : false;",
-              "setValueMethod" : "toggleOut",
-              "convertValueFunction" : "return value;",
-              "requestTimeout" : 500,
-              "requestPersistent" : false,
-              "persistentPollingInterval" : 5000,
-              "title" : "Switch control",
-              "showOnOffLabels" : true
-            },
-            "title" : "Switch Control",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "decimals" : 2,
-            "datasources" : [ ],
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "6903bd90-9a87-11ef-8268-b3103611f169"
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "2da0208a-c6fb-55cc-6a43-0dc62fdabac3"
-        },
         "eaa1a76a-7afb-2ea4-d584-8fbb4d8836df" : {
           "typeFullFqn" : "system.cards.entities_table",
           "type" : "latest",
@@ -148,7 +101,8 @@
             "displayTimewindow" : false,
             "configMode" : "advanced",
             "actions" : {
-              "rowClick" : [ {
+              "rowClick" : [ ],
+              "actionCellButton" : [ {
                 "name" : "current",
                 "icon" : "more_horiz",
                 "useShowWidgetActionFunction" : null,
@@ -161,6 +115,19 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "2a1bd994-c551-b808-7fb3-7d793e903a27"
+              }, {
+                "name" : "room",
+                "icon" : "chair",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "list_room",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "a055fd6a-16a7-24ed-010b-703cd3604eb5"
               } ]
             },
             "showTitleIcon" : false,
@@ -260,16 +227,10 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "2da0208a-c6fb-55cc-6a43-0dc62fdabac3" : {
-                  "sizeX" : 9,
-                  "sizeY" : 4,
-                  "row" : 0,
-                  "col" : 0
-                },
                 "eaa1a76a-7afb-2ea4-d584-8fbb4d8836df" : {
                   "sizeX" : 7,
                   "sizeY" : 6,
-                  "row" : 4,
+                  "row" : 0,
                   "col" : 0
                 }
               },
@@ -297,6 +258,23 @@
                   "col" : 0
                 }
               },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "list_room" : {
+          "name" : "list_room",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
