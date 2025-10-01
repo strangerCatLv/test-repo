@@ -392,7 +392,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "6bf9e390-cbb1-bee9-6a55-0ba25d0f8a40",
+              "entityAliasId" : "be46c070-444f-c6d5-b6c0-a7f1b76e0e2a",
               "dataKeys" : [ {
                 "name" : "userId",
                 "type" : "attribute",
@@ -581,25 +581,15 @@
         },
         "be46c070-444f-c6d5-b6c0-a7f1b76e0e2a" : {
           "id" : "be46c070-444f-c6d5-b6c0-a7f1b76e0e2a",
-          "alias" : "current user",
+          "alias" : "user",
           "filter" : {
-            "type" : "relationsQuery",
-            "resolveMultiple" : true,
-            "rootStateEntity" : true,
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
             "stateEntityParamName" : null,
             "defaultStateEntity" : {
-              "entityType" : "CURRENT_CUSTOMER",
-              "id" : "7304ef60-2fa4-11ef-8438-43038932f97c"
-            },
-            "rootEntity" : null,
-            "direction" : "FROM",
-            "maxLevel" : null,
-            "fetchLastLevelOnly" : false,
-            "filters" : [ {
-              "relationType" : "Customer",
-              "entityTypes" : [ "USER" ],
-              "negate" : false
-            } ]
+              "entityType" : "CURRENT_USER",
+              "id" : "13814000-1dd2-11b2-8080-808080808080"
+            }
           }
         },
         "a751d70e-5817-02e8-4227-2457bbcfe172" : {
