@@ -552,8 +552,8 @@
             "resolveMultiple" : false,
             "stateEntityParamName" : null,
             "defaultStateEntity" : {
-              "entityType" : "CURRENT_USER",
-              "id" : "13814000-1dd2-11b2-8080-808080808080"
+              "entityType" : "CURRENT_CUSTOMER",
+              "id" : "7304ef60-2fa4-11ef-8438-43038932f97c"
             }
           }
         }
