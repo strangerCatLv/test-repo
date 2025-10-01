@@ -586,7 +586,10 @@
             "type" : "stateEntityOwner",
             "resolveMultiple" : false,
             "stateEntityParamName" : null,
-            "defaultStateEntity" : null
+            "defaultStateEntity" : {
+              "entityType" : "CURRENT_USER",
+              "id" : "13814000-1dd2-11b2-8080-808080808080"
+            }
           }
         },
         "a751d70e-5817-02e8-4227-2457bbcfe172" : {
