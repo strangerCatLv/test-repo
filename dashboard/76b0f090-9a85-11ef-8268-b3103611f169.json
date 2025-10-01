@@ -313,45 +313,81 @@
               }, {
                 "name" : "email",
                 "type" : "entityField",
-                "label" : "Email",
+                "label" : "email",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.38980827590072975
+                "_hash" : 0.38980827590072975,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "firstName",
                 "type" : "entityField",
-                "label" : "First name",
+                "label" : "firstName",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.8828423314007378
+                "_hash" : 0.8828423314007378,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "lastName",
                 "type" : "entityField",
-                "label" : "Last name",
+                "label" : "lastName",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.35215307553396613
+                "_hash" : 0.35215307553396613,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "phone",
                 "type" : "entityField",
-                "label" : "Phone",
+                "label" : "phone",
                 "color" : "#607d8b",
                 "settings" : { },
-                "_hash" : 0.045263267311379196
+                "_hash" : 0.045263267311379196,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "ownerName",
                 "type" : "entityField",
-                "label" : "Owner name",
+                "label" : "ownerName",
                 "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.8796690332260231
+                "_hash" : 0.8796690332260231,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "ownerType",
                 "type" : "entityField",
-                "label" : "Owner type",
+                "label" : "ownerType",
                 "color" : "#8bc34a",
                 "settings" : { },
-                "_hash" : 0.6002662717598599
+                "_hash" : 0.6002662717598599,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
