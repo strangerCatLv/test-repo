@@ -301,7 +301,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "c8e1fea6-c90b-625f-b0a9-334b850ed915",
+              "entityAliasId" : "6d8efa56-9a7a-2ca4-edfb-1dbb0731957d",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "name",
@@ -507,6 +507,26 @@
             "resolveMultiple" : true,
             "deviceTypes" : [ "thermostat" ],
             "deviceNameFilter" : ""
+          }
+        },
+        "6d8efa56-9a7a-2ca4-edfb-1dbb0731957d" : {
+          "id" : "6d8efa56-9a7a-2ca4-edfb-1dbb0731957d",
+          "alias" : "list asset",
+          "filter" : {
+            "type" : "assetSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : {
+              "entityType" : "CURRENT_USER",
+              "id" : "13814000-1dd2-11b2-8080-808080808080"
+            },
+            "direction" : "FROM",
+            "maxLevel" : null,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "Asset",
+            "assetTypes" : [ "LANTAI" ]
           }
         }
       },
