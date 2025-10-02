@@ -850,6 +850,77 @@
           "row" : 0,
           "col" : 0,
           "id" : "0b9eb076-5f3c-5884-bec0-be23d84b6a51"
+        },
+        "4d97dd4c-1ed5-7ac5-eba7-e81f40bda75e" : {
+          "typeFullFqn" : "system.cards.qr_code",
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "eff836b0-9f35-11f0-96fa-6b32df3ff77b",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "claimingData",
+                "type" : "attribute",
+                "label" : "claimingData",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.16437533385105985
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1759285812434,
+                  "endTimeMs" : 1759372212434
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "qrCodeTextPattern" : "${entityName}",
+              "useQrCodeTextFunction" : true,
+              "qrCodeTextFunction" : "var entityData = data[0];\r\nif (entityData) {\r\n    return JSON.stringify({\r\n        deviceName: entityData.entityName,\r\n        secretKey: JSON.parse(entityData.claimingData).secretKey\r\n    });\r\n} else {\r\n    return '';\r\n}\r\n"
+            },
+            "title" : "QR Code",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "4d97dd4c-1ed5-7ac5-eba7-e81f40bda75e"
         }
       },
       "states" : {
@@ -893,6 +964,12 @@
                   "sizeX" : 10,
                   "sizeY" : 6,
                   "row" : 0,
+                  "col" : 14
+                },
+                "4d97dd4c-1ed5-7ac5-eba7-e81f40bda75e" : {
+                  "sizeX" : 9,
+                  "sizeY" : 6,
+                  "row" : 6,
                   "col" : 14
                 }
               },
