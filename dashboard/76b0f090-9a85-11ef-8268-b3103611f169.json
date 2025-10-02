@@ -605,7 +605,7 @@
           "id" : "6d8efa56-9a7a-2ca4-edfb-1dbb0731957d",
           "alias" : "list asset",
           "filter" : {
-            "type" : "assetSearchQuery",
+            "type" : "relationsQuery",
             "resolveMultiple" : true,
             "rootStateEntity" : false,
             "stateEntityParamName" : null,
@@ -617,8 +617,11 @@
             "direction" : "FROM",
             "maxLevel" : null,
             "fetchLastLevelOnly" : false,
-            "relationType" : "Asset",
-            "assetTypes" : [ "LANTAI" ]
+            "filters" : [ {
+              "relationType" : "Asset",
+              "entityTypes" : [ "ASSET" ],
+              "negate" : false
+            } ]
           }
         },
         "6bf9e390-cbb1-bee9-6a55-0ba25d0f8a40" : {
