@@ -1023,7 +1023,7 @@
             "maxLevel" : null,
             "fetchLastLevelOnly" : false,
             "relationType" : "Asset",
-            "assetTypes" : [ "LANTAI" ]
+            "assetTypes" : [ "ROOMS" ]
           }
         },
         "f0899613-14bd-dec3-fee1-431f86e831d9" : {
