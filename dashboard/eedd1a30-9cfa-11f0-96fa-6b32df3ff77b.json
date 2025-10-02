@@ -860,7 +860,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "968de800-9f39-11f0-96fa-6b32df3ff77b",
+              "deviceId" : "82b47730-9f3a-11f0-96fa-6b32df3ff77b",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "claimingData",
