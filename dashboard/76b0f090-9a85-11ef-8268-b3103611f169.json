@@ -83,7 +83,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "6d8efa56-9a7a-2ca4-edfb-1dbb0731957d",
+              "entityAliasId" : "0e187012-78bf-3767-b518-050bf4210cf7",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "name",
@@ -631,6 +631,29 @@
               "entityType" : "USER",
               "id" : "531429a0-2fae-11ef-8438-43038932f97c"
             }
+          }
+        },
+        "0e187012-78bf-3767-b518-050bf4210cf7" : {
+          "id" : "0e187012-78bf-3767-b518-050bf4210cf7",
+          "alias" : "test",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : {
+              "entityType" : "CURRENT_USER",
+              "id" : "13814000-1dd2-11b2-8080-808080808080"
+            },
+            "direction" : "FROM",
+            "maxLevel" : null,
+            "fetchLastLevelOnly" : false,
+            "filters" : [ {
+              "relationType" : "Asset",
+              "entityTypes" : [ "ASSET" ],
+              "negate" : false
+            } ]
           }
         }
       },
