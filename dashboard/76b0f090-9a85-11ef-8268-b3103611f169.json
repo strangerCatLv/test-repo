@@ -650,8 +650,8 @@
             "maxLevel" : null,
             "fetchLastLevelOnly" : false,
             "filters" : [ {
-              "relationType" : "Asset",
-              "entityTypes" : [ "ASSET" ],
+              "relationType" : "User",
+              "entityTypes" : [ "DEVICE" ],
               "negate" : false
             } ]
           }
