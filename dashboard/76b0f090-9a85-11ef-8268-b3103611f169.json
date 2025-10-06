@@ -680,8 +680,8 @@
             "type" : "singleEntity",
             "resolveMultiple" : false,
             "singleEntity" : {
-              "entityType" : "CURRENT_USER",
-              "id" : "13814000-1dd2-11b2-8080-808080808080"
+              "entityType" : "USER",
+              "id" : "531429a0-2fae-11ef-8438-43038932f97c"
             }
           }
         },
