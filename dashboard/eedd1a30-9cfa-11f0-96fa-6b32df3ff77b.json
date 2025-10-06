@@ -396,9 +396,9 @@
           "sizeY" : 1.5,
           "config" : {
             "datasources" : [ {
-              "type" : "entity",
+              "type" : "device",
               "name" : "",
-              "entityAliasId" : "131c2729-0e12-a73a-4b43-84d7b5d24315",
+              "deviceId" : "1c8da900-9f3e-11f0-96fa-6b32df3ff77b",
               "dataKeys" : [ {
                 "name" : "ADD ASSET",
                 "type" : "entityField",
